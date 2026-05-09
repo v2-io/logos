@@ -1,6 +1,6 @@
 # SUBMISSION.md — How to submit
 
-*Manuscript format, anonymization protocol with verbatim Synthese guidance, length calibration, production checklist, action plan. For the strategic framing see [STRATEGY.md](STRATEGY.md); for section-by-section drafting see [DRAFT-GUIDE.md](DRAFT-GUIDE.md); for the CFP see [CFP.md](CFP.md); for the working TODO see [FEEDBACK.md](FEEDBACK.md).*
+*Manuscript format, anonymization protocol with verbatim Synthese guidance, length calibration, production checklist, action plan. For the strategic framing see [STRATEGY.md](../STRATEGY.md); for section-by-section drafting see [DRAFT-GUIDE.md](DRAFT-GUIDE.md); for the CFP see [CFP.md](CFP.md); for the working TODO see [FEEDBACK.md](FEEDBACK.md).*
 
 ---
 
@@ -54,7 +54,7 @@ This is the explicit "we accept perfect anonymity is impossible; please don't in
 
 > *"Excessive and inappropriate self-citation or coordinated efforts among several authors to collectively self-cite is strongly discouraged."*
 
-The constraint is on *proportion*, not *existence*. The four in-review NeurIPS papers can be cited third-person; apparatus papers (when forthcoming) can be cited third-person; the Zenodo deposit can be cited third-person. Per the (α′) discipline (see [STRATEGY.md](STRATEGY.md) §"Thesis primacy"), treat each apparatus citation as paying a budget — three to four well-placed apparatus citations sit comfortably within the proportion-constraint and serve the argument; ten to fifteen would tip the paper into "application of prior framework" register.
+The constraint is on *proportion*, not *existence*. The four in-review NeurIPS papers can be cited third-person; apparatus papers (when forthcoming) can be cited third-person; the Zenodo deposit can be cited third-person. Per the (α′) discipline (see [STRATEGY.md](../STRATEGY.md) §"Thesis primacy"), treat each apparatus citation as paying a budget — three to four well-placed apparatus citations sit comfortably within the proportion-constraint and serve the argument; ten to fifteen would tip the paper into "application of prior framework" register.
 
 **De-anonymization at acceptance** (verbatim from guidelines, p. 3):
 
@@ -192,7 +192,7 @@ Sequential argument structure; each paragraph carries one move; Synthese readers
 - [ ] Abstract finalized at 150–250 words.
 - [ ] LaTeX compile clean.
 - [ ] Submit via Editorial Manager.
-- [ ] Log submission in [LOG.md](LOG.md); update `~/src/ops/STATUS.md`.
+- [ ] Log submission in [LOG.md](../LOG.md); update `~/src/ops/STATUS.md`.
 
 ### Post-submission watch (June → September)
 

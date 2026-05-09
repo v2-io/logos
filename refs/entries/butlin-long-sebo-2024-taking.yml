@@ -1,0 +1,30 @@
+---
+title: Taking AI Welfare Seriously
+year: 2024
+howpublished: 'arXiv preprint, arXiv:2411.00986'
+url: https://arxiv.org/abs/2411.00986
+key: butlin-long-sebo-2024-taking
+type: misc
+authors:
+- Long, Robert
+- Sebo, Jeff
+- Butlin, Patrick
+- Finlinson, Kathleen
+- Fish, Kyle
+- Harding, Jacqueline
+- Pfau, Jacob
+- Sims, Toni
+- Birch, Jonathan
+- Chalmers, David J.
+internal_note: |
+  Verified 2026-05-09 via WebSearch + arXiv. Submitted 2024-11-04. Published as a
+  technical report by Eleos AI Research; lead author by alphabetical convention is
+  Long but the paper is co-equal among the named lead authors (Long, Sebo, Butlin).
+  Cited in 01-synthese-asymmetric-comprehension/DRAFT-GUIDE.md §"Welfare-research
+  positioning" as the primary positioning reference for the present argument's
+  structural difference from the empirical-precautionary framework.
+
+  Note that Birch (also author of birch-2024-edge.yml) and Chalmers are co-authors,
+  which means the paper sits at a hub of the welfare-research literature this paper
+  positions against. Bibkey uses "butlin-long-sebo" rather than "long-sebo-butlin"
+  for searchability against the dossier's citation form ("Butlin, Long, Sebo et al.").

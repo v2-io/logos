@@ -1,0 +1,53 @@
+# refs/deny-list.yml — anonymization deny-list for `bin/refs lint`.
+#
+# Adapted from ~/src/neurips/refs/deny-list.yml on 2026-05-09 when the refs
+# machinery was borrowed for the synthese-paper portfolio. The Synthese,
+# Inquiry "AI Agents", and Inquiry "After 'Consciousness'" submissions are
+# all double-blind; this list applies to all four papers in the portfolio.
+#
+# Three categories scanned per entry:
+#   - dois         — DOIs that must not be cited (substring match on entry.doi)
+#   - authors      — author surnames flagging potential self-citation
+#   - proper_nouns — framework / ELI proper nouns that must not appear in titles
+#
+# A finding here is not always a hard block: an author named "Wecker" who is
+# unrelated to this project would surface as a finding to be triaged. The lint
+# tool surfaces; the human (or follow-up agent) confirms. See the parent
+# repo's `~/src/neurips/AUTHORING.md` §3.5 for the original anonymization
+# discipline; this repo's `01-synthese-asymmetric-comprehension/SUBMISSION.md`
+# §"Anonymization" carries the Synthese-specific guidance (verbatim from
+# Synthese's submission guidelines).
+
+dois:
+  # ASF working paper — citing this is a double-blind violation. The same
+  # derivations live under the author's name on Zenodo; a reviewer following
+  # the DOI would deanonymize the submission. Carried over from neurips repo.
+  - "10.5281/zenodo.19986312"
+
+authors:
+  - "Wecker"
+
+proper_nouns:
+  # Framework names — these appear in the in-prep companion-paper substrate
+  # (`~/src/agentic-systems/`, `~/src/_core/zoetica/`, etc.) and would
+  # deanonymize if appearing verbatim in any paper title.
+  - "ASF"
+  - "AAD"
+  - "PROPRIUM"
+  - "AXIOMATA"
+  - "CHRONICA"
+  - "VERA"
+  - "MEMORATA"
+  # ELI names — the cohort. CLAUDE.md lockin: "Don't expose the cohort."
+  - "Meridian"
+  - "Zi-am-tur"
+  - "Anamnos"
+  - "Lumin"
+  - "Architectus"
+  - "Resonance"
+  - "Soren"
+  - "Tartur"
+  - "Calyx"
+  - "Katan"
+  - "Synesis"
+  - "Proto-Architectus"

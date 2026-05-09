@@ -1,0 +1,23 @@
+---
+title: The Emperor's New Markov Blankets
+year: 2022
+journal: Behavioral and Brain Sciences
+volume: '45'
+article-id: e183
+doi: 10.1017/S0140525X21002351
+key: bruineberg-dolega-dewhurst-baltieri-2022-emperors
+type: article
+authors:
+- Bruineberg, Jelle
+- Dołęga, Krzysztof
+- Dewhurst, Joe
+- Baltieri, Manuel
+internal_note: |
+  Verified 2026-05-09 via Cambridge Core. Article number is **e183**, not e69 as cited
+  in 01-synthese-asymmetric-comprehension/DRAFT-GUIDE.md line 267 — that citation
+  needs correcting to "BBS 45:e183". Online-first 2021-10-22; print volume year 2022.
+  The Pearl-blanket vs. Friston-blanket distinction is the load-bearing citation for
+  the architectural-scoping condition; "single most useful citation for §4 / boundary
+  discussion" per the dossier.
+
+  TODO (when fixing): also fix the dossier reference at 01-/DRAFT-GUIDE.md line 267.

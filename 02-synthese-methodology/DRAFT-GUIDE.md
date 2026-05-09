@@ -133,13 +133,7 @@ The hermeneutic/phenomenological line in particular needs careful search — som
 
 ## Open items / FEEDBACK
 
-These are the items that need decisions before drafting (not yet in [FEEDBACK.md](FEEDBACK.md); add at next pass):
-
-- **A.5 (parallel paper) — Hermeneutic / phenomenological precedent search depth.** Specifically Gadamer, Merleau-Ponty, Polanyi, ethnographic reflexivity. Needs 1–2 day pass before claiming novelty for the wandering-thoughts-as-data move in print.
-- **A.6 (parallel paper) — §1 first-paragraph register.** Same calibration concern as the Synthese paper: a §1 that *reads* methodology-best-practice will be evaluated lower than a §1 that *reads* methodology-as-philosophy. The opening has to land philosophical-first.
-- **A.7 (parallel paper) — Audit-cycle anonymization for §4 worked example.** The AUDIT-WORKING-471203 FINAL contains identifying material (project-specific slugs, user-background framings, ASF-specific terminology). For the worked-example section, the cycle needs anonymizing in a way that preserves the *method's behavior* while obscuring the *project's specifics*. Non-trivial work; flag for draft-time.
-- **B.8 (parallel paper) — Engagement with Lipton-Steinhardt and Tetlock-Mellers.** Both are the natural-neighbor-positioning targets for the paper; substantive engagement, not citation. Needs reading time before drafting.
-- **C.4 (parallel paper) — Substrate-anonymization for the cross-citation between the Synthese paper and this paper.** Both papers need each other to do load-bearing work, but third-person anonymization makes "[Author, in preparation]" footnotes the only way to cite during review. Worth checking whether the cross-citation discipline survives anonymization or whether the papers need to stand fully on their own.
+Open pre-draft and section-specific items now live in [FEEDBACK.md](FEEDBACK.md) (paper-2-local A.1–A.3, B.1, C.1; promoted there during the 2026-05-09 multi-paper restructure). Append further items there as drafting surfaces them.
 
 ## Notes from the conversation that produced this file (2026-05-09)
 

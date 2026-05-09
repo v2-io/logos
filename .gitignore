@@ -1,0 +1,8 @@
+.DS_Store
+
+# refs/ — citation system: entries + verifications + deny-list are tracked;
+# PDFs are large + likely copyrighted; _emitted/ is generated artifact.
+refs/pdfs/*
+!refs/pdfs/.gitkeep
+refs/_emitted/
+.obsidian/

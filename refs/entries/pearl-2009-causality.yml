@@ -1,0 +1,14 @@
+---
+title: 'Causality: Models, Reasoning, and Inference'
+year: 2009
+publisher: Cambridge University Press
+edition: '2nd'
+key: pearl-2009-causality
+type: book
+authors:
+- Pearl, Judea
+internal_note: |
+  Cited in 01-synthese-asymmetric-comprehension/DRAFT-GUIDE.md §"Architectural-scoping"
+  as adjacent literature (do-calculus / structural causal models). 2nd edition (2009);
+  1st edition was 2000. Cite [Author, in review] for the formal κ × 𝒜 version that
+  builds on Pearl-blanket discipline.

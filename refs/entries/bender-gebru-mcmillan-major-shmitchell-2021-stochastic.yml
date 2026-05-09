@@ -1,0 +1,21 @@
+---
+title: 'On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?'
+year: 2021
+booktitle: Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)
+publisher: Association for Computing Machinery
+address: 'New York, NY'
+pages: 610--623
+doi: 10.1145/3442188.3445922
+key: bender-gebru-mcmillan-major-shmitchell-2021-stochastic
+type: inproceedings
+authors:
+- Bender, Emily M.
+- Gebru, Timnit
+- McMillan-Major, Angelina
+- Shmitchell, Shmargaret
+internal_note: |
+  Verified 2026-05-09 via WebSearch (ACM Digital Library). Cited in
+  02-synthese-methodology/DRAFT-GUIDE.md §"LLM / AI-evaluation literature" as part of
+  the language-model-evaluation critique tradition. Light-but-substantive engagement
+  in §5; the audit-discipline's failure-modes target is a different cut than the
+  ethical/environmental-cost critique here.

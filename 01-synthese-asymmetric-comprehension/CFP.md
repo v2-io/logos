@@ -1,6 +1,6 @@
 # CFP — "The Philosophy of Generative AI: Perspectives from East and West"
 
-*Verbatim CFP for the Synthese special issue. Source: editor-published call for papers, captured 2026-05-08. This file is a stable reference; for our strategic interpretation and the Path A reframe decision, see [STRATEGY.md](STRATEGY.md). For the editorial culture and journal context (Synthese Affair, lineage, reach), see [README.md](README.md) §"Overview".*
+*Verbatim CFP for the Synthese special issue. Source: editor-published call for papers, captured 2026-05-08. This file is a stable reference; for our strategic interpretation and the Path A reframe decision, see [STRATEGY.md](../STRATEGY.md). For the editorial culture and journal context (Synthese Affair, lineage, reach), see [README.md](../README.md) §"Overview".*
 
 ---
 
@@ -55,7 +55,7 @@ Contributions may address, but are not limited to, the following areas or domain
 
 ## Notes on themes most likely to anchor our paper
 
-*Light interpretive notes here for navigation; full strategic-framing analysis is in [STRATEGY.md](STRATEGY.md).*
+*Light interpretive notes here for navigation; full strategic-framing analysis is in [STRATEGY.md](../STRATEGY.md).*
 
 - **Epistemology** — primary anchor under Path A. The CFP's named questions (epistemic-broker influence on sense-making, illusion-of-understanding, undermining-of-epistemic-agency, bias-perpetuation) are exactly where the asymmetric-comprehension argument lands; §5 of the paper engages these directly. The bias-perpetuation question is an additional lever for the symmetric-epistemic-agency move (see [FEEDBACK.md](FEEDBACK.md) item B.7).
 - **Philosophy of Mind and Cognition** — secondary anchor with structural pull. The Extended Minds question (Clark & Chalmers neighborhood) is a natural hook for the engaged-identity / hybrid-thinking-systems framing — though the paper's polarity is roughly the inverse of the CFP's framing (the CFP asks whether AI extends human cognition; we are asking what reasoning structures apply when the AI itself is the cognitive agent under asymmetric-comprehension uncertainty). Worth a deliberate paragraph or footnote acknowledging the question and the inversion.

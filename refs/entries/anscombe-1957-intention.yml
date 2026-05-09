@@ -1,0 +1,14 @@
+---
+title: Intention
+year: 1957
+publisher: Basil Blackwell
+address: Oxford
+key: anscombe-1957-intention
+type: book
+authors:
+- Anscombe, G. E. M.
+internal_note: |
+  Cited in 03-inquiry-ai-agents/literature-and-agency-paper.md as the action-vs-behavior
+  distinction grounding §2 architectural-scoping ("under a description"). Reissued by
+  Harvard UP in 2000 with a new introduction by Mary Geach; cite the 1957 original unless
+  page-numbers from the 2000 reissue are needed.

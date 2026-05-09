@@ -199,7 +199,7 @@ The CFP's questions sort onto Joseph's existing substrate. Each row names the CF
 **Hour 15–17:** §7 (responsibility-gap; Sparrow / Matthias engagement; bad-faith-contracts-the-sphere as answer).
 **Hour 17–18:** §1 (methodological preamble; LLM-disclosure subsection; recursive-to-content framing).
 **Hour 18–19:** §8 + §9 (limits, update conditions, conclusion).
-**Hour 19–20:** anonymization sweep (per the Synthese paper's discipline — see [SUBMISSION.md](SUBMISSION.md)); abstract (150–250 words); keywords; statements & declarations; title page (separate); LaTeX/Word format check; submit via T&F portal.
+**Hour 19–20:** anonymization sweep (per the Synthese paper's discipline — see [01-synthese-asymmetric-comprehension/SUBMISSION.md](../01-synthese-asymmetric-comprehension/SUBMISSION.md)); abstract (150–250 words); keywords; statements & declarations; title page (separate); LaTeX/Word format check; submit via T&F portal.
 
 **Critical checklist before submission:**
 - [ ] No links to v2-io / Zenodo / agentic-systems repos.
