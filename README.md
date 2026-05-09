@@ -38,6 +38,14 @@ These are the load-bearing decisions; each was made with explicit reasoning reco
 
 ---
 
+## Companion / parallel-paper dossiers (added 2026-05-09)
+
+Two adjacent papers surfaced during the comprehension-asymmetry conversation and venue scan; both have working dossiers in this repo.
+
+- **[methodology-second-paper.md](methodology-second-paper.md)** — A second paper for *Synthese rolling submission* under the **Methodology** pillar (which the journal's full subtitle names equally with Epistemology and Philosophy of Science): an epistemic discipline for LLM-mediated audit of theoretical frameworks. Substantively load-bearing on the comprehension-asymmetry argument (the audit-discipline is what reasoning-under-asymmetric-comprehension *of one's own cognition as reviewer* requires); the two papers strengthen as a pair. Substrate at `~/src/agentic-systems/msc/AUDIT-WORKING-*` (15+ audit cycles), `~/src/agentic-systems/audits/` (20+ FINALs), `~/src/agentic-systems/FORMAT.md`. Sprint-able after the Synthese paper ships.
+
+- **[inquiry-ai-agents-may10.md](inquiry-ai-agents-may10.md)** — Decision-support dossier for an *Inquiry* special issue *"AI Agents: Choice, Autonomy, and the Concept of the Agency"* (Cappelen & Hawthorne, eds.) with deadline **2026-05-10** (rolling-review until). Same editors as Inquiry "After 'Consciousness'" June 1, so signal-quality is shared across submissions. The paper would lead with the granted-agency compact as the structural form agency-extension to AI takes under asymmetric-comprehension; substrate is ~70-80% in-hand across ETHICS.md + AAD architectural scoping + `~/src/_self/tom-and-consciousness.md` + `~/src/_self/temporal-causal-llm.md` + the BDI / tool-building literature. Decision criterion in the dossier turns on agency-philosophy literature-engagement readiness (Frankfurt / Bratman / List-Pettit / Korsgaard at paragraph-level vs. citation-only).
+
 ## Current status snapshot (2026-05-09)
 
 - **Substrate:** ready. ETHICS.md is in-repo; comprehension-asymmetry reframe in §2 is in place; literature-engagement list updated with Nagel/Jackson; §4 component 5 carries the empathy-coupling note; §3 has the AGI-discourse mirror-image sub-move.
