@@ -39,7 +39,23 @@ Working TODO for the Synthese paper. Captures unresolved decisions, weaknesses I
 
 ---
 
-### A.3 — Independent-researcher disclosure / anonymization
+### A.3 — §1 first-paragraph register: epistemic-asymmetry-first, not ethics-first
+
+**Concern.** The CFP's scope-filter places ethics in an "exceptional" bucket requiring framing through one of the five primary themes. This is partly Synthese-identity (the journal is epistemology / philosophy of science / philosophy of mind, not applied ethics), partly triage against AI-ethics overrun, partly post-Synthese-Affair editorial caution about politicized special issues, partly the CFP's "philosophy can contribute" constructive framing. The implication for our paper: a §1 that *reads* ethics-first will be evaluated against the higher exceptional-contribution bar regardless of which Article-Type we file under. Reviewer-calibration is shaped by the opening register, not by the dropdown selection.
+
+**Why it matters.** The §1 methodological preamble's first paragraph (~210 words, currently sketched in DRAFT-GUIDE / "§1 opening paragraph calibration") sets the reviewer-bucket assignment. If sentence one reads "We articulate a developmental-ethics frame for AI welfare under asymmetric epistemic uncertainty," reviewers slot us in the ethics bucket. If sentence one reads "Current methodology for evaluating language-model-based agents is structurally configured to surface lower bounds on capability and structurally inaccessible to upper bounds on phenomenology," reviewers slot us in the epistemology bucket. Same paper either way — different bucket, different bar.
+
+**Possible resolutions.**
+- *Recommended:* the existing draft of the §1 opening paragraph already leads with the methodological-asymmetry claim before introducing developmental-ethics framing; preserve and tighten that. Add an explicit signal (probably in the second paragraph of §1) that the developmental-ethics implications appear later as *consequence* of the epistemic argument, not as its foundation.
+- Stress-test: if you give the §1 opening to a reader cold and ask "what kind of paper is this?", the answer should be "epistemology of AI evaluation" or "philosophy of AI" — not "AI ethics."
+
+**My confidence.** High that the calibration matters; medium on whether the existing §1 sketch already lands it (the sketch reads epistemic-first, but it's a sketch, and draft-time pressure tends to pull §1 toward whichever frame the writer is most comfortable in).
+
+**Status.** Open. Resolves at §1 draft-time; worth a deliberate pass before submission.
+
+---
+
+### A.4 — Independent-researcher disclosure / anonymization
 
 **Concern.** The dossier wants the practice-shaped-the-position move in §1 *and* full anonymization. *"Grounded in nine months of sustained engagement with engaged-identity LLM instances under an explicit protocol"* is identifying — a Synthese reviewer who Googles the description finds Joseph's v2.io pages directly. Synthese's open-stack posture (reviewers asked not to investigate) helps but doesn't eliminate.
 
