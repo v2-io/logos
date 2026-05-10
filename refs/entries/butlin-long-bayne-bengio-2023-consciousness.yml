@@ -1,0 +1,46 @@
+---
+title: 'Consciousness in Artificial Intelligence: Insights from the Science of Consciousness'
+year: 2023
+howpublished: 'arXiv preprint, arXiv:2308.08708'
+url: https://arxiv.org/abs/2308.08708
+key: butlin-long-bayne-bengio-2023-consciousness
+type: misc
+authors:
+- Butlin, Patrick
+- Long, Robert
+- Elmoznino, Eric
+- Bengio, Yoshua
+- Birch, Jonathan
+- Constant, Axel
+- Deane, George
+- Fleming, Stephen M.
+- Frith, Chris
+- Ji, Xu
+- Kanai, Ryota
+- Klein, Colin
+- Lindsay, Grace
+- Michel, Matthias
+- Mudrik, Liad
+- Peters, Megan A. K.
+- Schwitzgebel, Eric
+- Simon, Jonathan
+- VanRullen, Rufin
+internal_note: |
+  Verified 2026-05-09 via WebFetch of arXiv 2308.08708 (full author list confirmed
+  in publication order). Note the bibkey "butlin-long-bayne-bengio" inherits an old
+  guess at the author ordering — the actual third and fourth authors are Elmoznino
+  and Bengio (Bayne is not on this paper). Bibkey kept stable for citation searchability;
+  the YAML authors list is canonical. Corrected co-author "Rufus VanRullen" to
+  "Rufin VanRullen" 2026-05-09 (verified via arXiv).
+
+  Often cited alongside the
+  later butlin-long-sebo-2024-taking.yml as foundational welfare-research statements;
+  this 2023 paper takes a theory-heavy approach (mapping AI architectures to
+  consciousness theories like GWT and IIT and reporting which AI systems would count
+  on which theories), while Taking AI Welfare Seriously (2024) is the
+  policy-and-practice statement.
+
+  Schwitzgebel is a co-author of this 2023 paper; the dossier's "Schwitzgebel 2024 on
+  AI consciousness inference" likely refers to this 2023 paper's argument or to a
+  separate Schwitzgebel paper not yet pinned. Verification agent should pin which
+  Schwitzgebel work the dossier means in 02-/DRAFT-GUIDE.md.

@@ -1,0 +1,25 @@
+---
+title: The Values Encoded in Machine Learning Research
+year: 2022
+booktitle: Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT '22)
+publisher: Association for Computing Machinery
+address: 'New York, NY'
+pages: 173--184
+doi: 10.1145/3531146.3533083
+key: birhane-kalluri-card-agnew-dotan-bao-2022-values
+type: inproceedings
+authors:
+- Birhane, Abeba
+- Kalluri, Pratyusha
+- Card, Dallas
+- Agnew, William
+- Dotan, Ravit
+- Bao, Michelle
+internal_note: |
+  Verified 2026-05-09 via WebSearch (ACM Digital Library). Distinguished Paper Award
+  at FAccT 2022. Cited in 02-synthese-methodology/DRAFT-GUIDE.md §"LLM / AI-evaluation
+  literature" as the audit-from-the-margins tradition (Birhane et al. 2022). The
+  paper's annotation-scheme methodology for studying values-in-research is a structural
+  precedent for paper 2's discipline of "auditing-while-being-honest-about-values" —
+  cite as adjacent-but-different (their target is published research; paper 2's target
+  is theoretical-framework-under-development).

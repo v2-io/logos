@@ -1,0 +1,19 @@
+---
+title: 'Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data'
+year: 2020
+booktitle: Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics
+publisher: Association for Computational Linguistics
+pages: 5185--5198
+doi: 10.18653/v1/2020.acl-main.463
+url: https://aclanthology.org/2020.acl-main.463/
+key: bender-koller-2020-climbing
+type: inproceedings
+authors:
+- Bender, Emily M.
+- Koller, Alexander
+internal_note: |
+  Verified 2026-05-09 via WebSearch (ACL Anthology). Cited in 02-synthese-methodology/
+  DRAFT-GUIDE.md §"LLM / AI-evaluation literature" alongside Bender et al. 2021
+  Stochastic Parrots as the language-model-evaluation critique tradition. The "octopus
+  test" thought experiment is the load-bearing rhetorical device for the form-vs-meaning
+  argument that paper 2's ten-moves discipline indirectly engages.

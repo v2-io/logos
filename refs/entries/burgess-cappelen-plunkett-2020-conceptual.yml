@@ -1,0 +1,30 @@
+---
+title: Conceptual Engineering and Conceptual Ethics
+year: 2020
+publisher: Oxford University Press
+isbn: '9780198801856'
+doi: 10.1093/oso/9780198801856.001.0001
+key: burgess-cappelen-plunkett-2020-conceptual
+type: book
+editors:
+- Burgess, Alexis
+- Cappelen, Herman
+- Plunkett, David
+authors:
+- Burgess, Alexis
+- Cappelen, Herman
+- Plunkett, David
+internal_note: |
+  Verified 2026-05-09 via OUP (https://global.oup.com/academic/product/conceptual-engineering-and-conceptual-ethics-9780198801856)
+  + Oxford Academic (https://academic.oup.com/book/36673): Burgess, Cappelen & Plunkett
+  (eds.), Conceptual Engineering and Conceptual Ethics, OUP 2020, ISBN 978-0-19-880185-6.
+
+  Added 2026-05-09 from 03-inquiry-ai-agents/DRAFT-GUIDE.md §"Conceptual engineering":
+  "Burgess & Plunkett 'Conceptual Ethics' — the volume." The dossier names "Burgess &
+  Plunkett" but the actual edited volume is co-edited by Burgess, Cappelen, and Plunkett
+  (Cappelen is also one of the special-issue editors paper 3 targets — additional reason
+  to engage). Authors-field carries editors as primary creators per the schema convention
+  for incollection/edited volumes when type is `book`. Note the dossier may instead
+  intend the earlier 2013 Philosophy Compass two-part article (Burgess & Plunkett
+  "Conceptual Ethics I" / "Conceptual Ethics II") — flagged for Joseph if the
+  shorter article-form is preferred over this volume.

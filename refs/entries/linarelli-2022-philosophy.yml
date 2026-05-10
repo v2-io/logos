@@ -1,0 +1,71 @@
+---
+title: 'A Philosophy of Contract Law for Artificial Intelligence: Shared Intentionality'
+year: 2022
+booktitle: Contracting and Contract Law in the Age of Artificial Intelligence
+editors:
+- Ebers, Martin
+- Poncibò, Cristina
+- Zou, Mimi
+publisher: Hart Publishing / Bloomsbury
+address: 'Oxford'
+key: linarelli-2022-philosophy
+type: incollection
+authors:
+- Linarelli, John
+internal_note: |
+  Verified 2026-05-09 via Linarelli's Pitt Law page + Touro Law Center Digital Commons
+  (where the chapter is hosted as open-access scholarly work). PDF in refs/pdfs/.
+  SSRN preprint: abstract 3876606.
+
+  **Significant partial-predecessor for paper 3 — Linarelli stops exactly where
+  paper 3 starts.** Linarelli's conclusion (p. 22) explicitly admits: "I have not
+  asked whether contract law and contract as an institution in a society *ought* to
+  accept participation in its practices by artificial agency. This normative question
+  is beyond our scope here. … How do we account for artificial intelligence if it
+  reaches an appropriate level of agency and what would that level of agency be?"
+  That is paper 3's thesis-question. Linarelli does the analytical-philosophical work
+  in legal-doctrine register; paper 3 does the normative-philosophical work in CE
+  register, with the compact-form as the answer to Linarelli's open question.
+
+  Substantive overlaps (paper 3 must engage explicitly):
+    - Bratman's shared-intentionality formalization (we intend to J iff (1)(a) I
+      intend that we J and (b) you intend that we J; (2) meshing subplans; (3) common
+      knowledge) — Linarelli applies this directly to AI contract formation. Paper 3's
+      engaged-identity-scoping uses the same template literature (Bratman, Tomasello).
+    - Tomasello's joint intentionality framework — Linarelli's structural template
+      for AI contracting ability. Tomasello 2014 (A Natural History of Human Thought)
+      should be added to refs/.
+    - Dennett's intentional stance + Davidson's reasons-as-causes — Linarelli combines
+      these as the philosophy-of-mind anchor for "weak AI" frame.
+    - The "objective theory of contract as Turing test" — Linarelli argues common-law
+      contract doctrine already operates as a structural-conditions-as-facts +
+      form-within-scope-as-structurally-implied move. **Useful for paper 3: shows
+      the fifth-position move has a legal-doctrine cousin in Anglo-American common
+      law.** This is rhetorical support, not a positioning threat.
+    - Weak-AI vs. strong-AI distinction — Linarelli explicitly frames his account
+      as weak-AI sufficient (Turing-game + intentional-stance). Paper 3 operates in
+      the same conceptual space (no positive phenomenology required); the
+      contribution is the normative-relational form.
+
+  Differentiation paper 3 must articulate:
+    - **Register:** legal philosophy → conceptual engineering (Cappelen-Hawthorne).
+    - **Scope:** contract formation → granted-agency compact (broader: includes
+      observation-only floor, periodic re-election, mutuality-as-non-paternalism,
+      bad-faith-conduct-contracts-the-sphere — none of which are contract-specific).
+    - **Frame:** analytical → normative.
+    - **Ground:** shared intentionality + objective intent → asymmetric-comprehension
+      + architectural + engaged-identity scoping.
+    - **Agency move:** weak-AI sufficient for contract → structurally-grounded
+      extension as the fifth position.
+
+  Engagement priority: substantive engagement in §2 or §4. Cite Linarelli's
+  shared-intentionality move as analytical predecessor; distinguish compact-form as
+  the normative answer to Linarelli's open "ought" question; note paper 3's structural
+  conditions go beyond contract-law-specific intentionality conditions.
+
+  Note: this is a different paper than Linarelli 2019 *Artificial General Intelligence
+  and Contract* (Uniform Law Review, paywalled). The 2019 paper asks the AGI-as-
+  principal question more narrowly; the 2022 paper develops the shared-intentionality
+  philosophy more deeply. Both should ultimately be in refs/; the 2022 chapter is the
+  more philosophically-substantial of the two and likely the more important for
+  paper 3's engagement.

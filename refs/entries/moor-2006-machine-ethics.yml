@@ -1,0 +1,21 @@
+---
+title: 'The Nature, Importance, and Difficulty of Machine Ethics'
+year: 2006
+journal: IEEE Intelligent Systems
+volume: '21'
+number: '4'
+pages: 18--21
+doi: 10.1109/MIS.2006.80
+key: moor-2006-machine-ethics
+type: article
+authors:
+- Moor, James H.
+internal_note: |
+  Verified 2026-05-09 via IEEE Xplore (https://ieeexplore.ieee.org/document/1667948/)
+  + ACM Digital Library + PhilPapers: IEEE Intelligent Systems 21(4):18-21, 2006,
+  DOI 10.1109/MIS.2006.80.
+
+  Added 2026-05-09 from 03-inquiry-ai-agents/DRAFT-GUIDE.md §"AI agency / philosophy
+  of computing and information": "Moor 'The Nature, Importance, and Difficulty of
+  Machine Ethics' — machine-ethics framing." Light reference; introduces the
+  ethical-impact / implicit / explicit / full ethical agent distinction.

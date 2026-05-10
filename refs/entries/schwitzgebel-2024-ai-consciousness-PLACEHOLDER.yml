@@ -1,0 +1,38 @@
+---
+title: '[PLACEHOLDER] AI Consciousness — specific Schwitzgebel-2024 work to be identified'
+year: 2024
+howpublished: '[Placeholder: see internal_note. Likely candidates include Schwitzgebel ''AI and Consciousness'' (forthcoming Cambridge Elements, drafts 2024-2025) and/or ''Introspection'' Stanford Encyclopedia of Philosophy Fall 2024.]'
+key: schwitzgebel-2024-ai-consciousness-PLACEHOLDER
+type: misc
+authors:
+- Schwitzgebel, Eric
+internal_note: |
+  PLACEHOLDER ENTRY — flagged uncertain 2026-05-09. Joseph's verification spec specifically
+  asked the verifier to identify which "Schwitzgebel 2024" work the dossier means
+  in 02-synthese-methodology/DRAFT-GUIDE.md line 93: "Schwitzgebel 2024 on AI consciousness
+  inference; the broader Schwitzgebel-Garza-Adkins line on opaque cognition."
+
+  Web search 2026-05-09 surfaced multiple candidate Schwitzgebel-2024 works on AI
+  consciousness, none clearly canonical-as-cited:
+
+  - "AI and Consciousness" — manuscript in progress, posted on Schwitzgebel's UCR page;
+    October 2025 / January 2026 / March 2026 versions are dated, forthcoming in the
+    Cambridge Elements series. There may have been a 2024 draft circulated; canonical
+    publication date not 2024.
+
+  - "Introspection" — Stanford Encyclopedia of Philosophy, Fall 2024 Edition. Updated
+    Schwitzgebel SEP entry; the AI-consciousness-inference connection is indirect
+    (introspection theory generally).
+
+  - The Butlin-Long-Bayne-Bengio et al. 2023 "Consciousness in AI" paper (already in
+    refs/) lists Schwitzgebel as co-author; the dossier's "Schwitzgebel 2024" could
+    plausibly refer back to that 2023 paper, possibly by year-of-revision.
+
+  Outcome: uncertain. The dossier should clarify which Schwitzgebel work it means
+  before this placeholder is replaced with a real entry. Verifier did not add a
+  guess-citation per Joseph's "no bibliographic field hallucination" constraint and
+  per the instruction to flag-uncertain rather than fabricate.
+
+  ACTION FOR JOSEPH: clarify which Schwitzgebel work the 02-/DRAFT-GUIDE.md citation
+  intends; replace this placeholder with a real entry once identified, OR delete the
+  placeholder and remove the dossier mention.

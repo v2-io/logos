@@ -1,0 +1,26 @@
+---
+title: A Route to More Tractable Expert Advice
+year: 2010
+journal: Nature
+volume: '463'
+number: '7279'
+pages: 294--295
+doi: 10.1038/463294a
+key: aspinall-2010-route
+type: article
+authors:
+- Aspinall, Willy
+internal_note: |
+  Verified 2026-05-09 via Nature + Google Scholar lookup
+  (scholar.google.com/scholar_lookup?volume=463&publication_year=2010&pages=294-295&journal=Nature&author=W.+Aspinall&title=A+route+to+more+tractable+expert+advice).
+  Comment piece in Nature 463(7279):294-295, 21 January 2010.
+
+  Added 2026-05-09 to fill the dossier mention in 02-synthese-methodology/DRAFT-GUIDE.md
+  via the cooke-1991-experts.yml internal_note: "Aspinall as adjacent expert-elicitation
+  source". Joseph's verification spec named this canonically as "Aspinall 2010 'A Route
+  Map for Successful Application of Expert Judgement' in Reliability Engineering &
+  System Safety", but no such paper exists at the named title; the canonical 2010
+  Aspinall reference on expert-judgement methodology is the Nature comment cited here.
+  Verifier picked the canonical fit per Joseph's instructions for non-specific dossier
+  mentions; flagged for Joseph's review since this differs from the spec's example
+  citation.

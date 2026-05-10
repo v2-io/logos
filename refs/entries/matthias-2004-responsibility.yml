@@ -1,0 +1,21 @@
+---
+title: 'The Responsibility Gap: Ascribing Responsibility for the Actions of Learning Automata'
+year: 2004
+journal: Ethics and Information Technology
+volume: '6'
+number: '3'
+pages: 175--183
+doi: 10.1007/s10676-004-3422-1
+key: matthias-2004-responsibility
+type: article
+authors:
+- Matthias, Andreas
+internal_note: |
+  Verified 2026-05-09 via Springer (https://link.springer.com/article/10.1007/s10676-004-3422-1)
+  + PhilPapers: Ethics and Information Technology 6(3):175-183, 2004, DOI
+  10.1007/s10676-004-3422-1.
+
+  Added 2026-05-09 from 03-inquiry-ai-agents/DRAFT-GUIDE.md §"Responsibility / liability
+  / fiction": "Matthias 'The Responsibility Gap: Ascribing Responsibility for the Actions
+  of Learning Automata' (2004) — names the gap." This is the foundational paper that
+  introduced the term "responsibility gap" into the AI-ethics discourse.

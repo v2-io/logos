@@ -1,0 +1,24 @@
+---
+title: 'Social Epistemology: Essential Readings'
+year: 2011
+publisher: Oxford University Press
+address: 'New York'
+isbn: '9780195334531'
+key: goldman-whitcomb-2011-social
+type: book
+editors:
+- Goldman, Alvin I.
+- Whitcomb, Dennis
+internal_note: |
+  Verified 2026-05-09 via WebSearch (Oxford UP catalog). Edited volume; the entry's
+  authors-field carries the editors but type is `book` (the schema allows editors as
+  primary creators when there's no single author). Cited in 02-synthese-methodology/
+  DRAFT-GUIDE.md alongside goldman-2001-experts.yml as foundational social-epistemology
+  / testimonial-reliability grounding for §3 move 7 (multi-axis trust calibration).
+
+  When citing in print, use the full editor list ("Alvin I. Goldman and Dennis
+  Whitcomb (eds.), Social Epistemology: Essential Readings, OUP 2011") rather than
+  Goldman alone — joint editorship is the canonical form.
+authors:
+- Goldman, Alvin I.
+- Whitcomb, Dennis

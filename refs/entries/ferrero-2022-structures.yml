@@ -1,0 +1,37 @@
+---
+title: The Structures of Temporally Extended Agents
+year: 2022
+booktitle: 'Time in Action: The Temporal Structure of Rational Agency and Practical Thought'
+editors:
+- Bagnoli, Carla
+publisher: Routledge
+address: London
+pages: 108--132
+doi: 10.4324/9780429259845-8
+key: ferrero-2022-structures
+type: incollection
+authors:
+- Ferrero, Luca
+internal_note: |
+  Verified 2026-05-09 via WebSearch (Taylor & Francis + PhilArchive). Chapter 8 in
+  Carla Bagnoli (ed.), Time in Action: The Temporal Structure of Rational Agency
+  and Practical Thought, Routledge, 2022.
+
+  **Surfaced by Undermind cross-search 2026-05-09 as the closest template
+  predecessor for paper 3's distinction between mere persistence and integrated
+  self-authored identity.** The Fer22b reference in the cross-search's
+  "self-authored identity protocols and AI agency" cluster. Ferrero distinguishes
+  two notions of temporal identity:
+    - **identity-c (continuity):** "the glue is causal" — mere persistence
+    - **identity-i (integration):** "the glue is normative" — integrated practical standpoint
+
+  This is exactly the distinction paper 3 needs in §2: a system that merely persists
+  across sessions is not yet normatively unified; a system that maintains an integrated
+  practical standpoint across resets or re-instantiations is closer to the
+  engaged-identity-scoping target. Substantive engagement required. Likely the
+  cleanest closest-predecessor for the integration-vs-mere-continuity distinction.
+
+  Ferrero is also editor of The Routledge Handbook of Philosophy of Agency (2022)
+  and contributor of "Diachronic Agency" (chapter 38 in same Handbook,
+  doi 10.4324/9780429202131-38) — the latter is adjacent and may also be worth
+  adding if §2 needs the broader diachronic-agency framing.
