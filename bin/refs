@@ -391,24 +391,68 @@ class CitationScanner
   # present in `refs/entries/`.
   CITE_RE = /\\cite(?:t|p|alt|alp|author|year|text)?\*?\s*(?:\[[^\]]*\])?\s*(?:\[[^\]]*\])?\s*\{([^}]+)\}/
 
+  # Pandoc-native citation syntax: bare `@key` (in-text) and bracketed forms
+  # `[@key]`, `[-@key]` (suppress-author), `[@key, p. 5]` (with locator),
+  # `[@k1; @k2]` (multi-cite). The bracket structure carries no information
+  # this scanner needs — we just need to surface every cited key — so the
+  # regex matches the `@key` shape directly.
+  #
+  # Bibkey shape per pandoc spec
+  # (https://pandoc.org/MANUAL.html#extension-citations): starts with an
+  # alphanumeric or underscore, allows internal punctuation `:.#$%&+?<>~/-`.
+  # Trailing punctuation isn't part of the key (pandoc strips it), so we
+  # post-strip non-alphanumerics from the tail to avoid keys like `key.` or
+  # `key,` leaking into the bib.
+  #
+  # The negative lookbehind keeps us from false-matching:
+  #   - email addresses (`user@host` — `@` preceded by alnum)
+  #   - escaped at-signs (`\@key` — pandoc's escape mechanism)
+  #
+  # Surfaced 2026-05-09 sanity test: paper 3 stubs used `[-@nagel-1974-bat]`
+  # / `[@cappelen-2018-fixing]` etc. throughout; the LaTeX-only CITE_RE
+  # missed them all and `refs emit` produced an empty bib, which made
+  # pandoc-citeproc report every key as "not found". Both regexes now feed
+  # the same call_sites hash so emit / cited / lint all see both syntaxes.
+  PANDOC_CITE_RE = /(?<![[:alnum:]_\\])@([[:alnum:]_][[:alnum:]_:.\#$%&+?<>~\/-]*)/
+
   def initialize(paper_dir) = @paper_dir = Pathname.new(paper_dir).expand_path
 
   # Map of bibkey => array of "<file>:<line>" call sites (deduped per location).
   def call_sites
     sites = Hash.new { |h, k| h[k] = [] }
     md_files.each do |path|
-      path.each_line.with_index(1) do |line, lineno|
+      strip_html_comments(path.read).each_line.with_index(1) do |line, lineno|
+        site = "#{path.relative_path_from(@paper_dir)}:#{lineno}"
+
         line.scan(CITE_RE) do |match|
           match.first.split(",").map(&:strip).each do |key|
             next if key.empty?
 
-            site = "#{path.relative_path_from(@paper_dir)}:#{lineno}"
             sites[key] << site unless sites[key].include?(site)
           end
+        end
+
+        line.scan(PANDOC_CITE_RE) do |match|
+          key = match.first.sub(/[^[:alnum:]_]+\z/, "")
+          next if key.empty?
+
+          sites[key] << site unless sites[key].include?(site)
         end
       end
     end
     sites
+  end
+
+  # Pandoc treats `<!-- ... -->` as raw HTML and removes it before processing
+  # citations; literal `[@key]` / `\cite{key}` strings inside a comment are
+  # documentation, not citations. To match that behaviour we blank out comment
+  # bodies before scanning. Whitespace is preserved (newlines kept; non-newline
+  # chars replaced with spaces) so reported `<file>:<line>` numbers stay
+  # accurate. Surfaced 2026-05-09: `src/references.md`'s explanatory comment
+  # block referenced `[@key]` and `\cite{key}` and produced a phantom `key`
+  # entry in the missing-keys lint output.
+  def strip_html_comments(content)
+    content.gsub(/<!--.*?-->/m) { |m| m.gsub(/[^\n]/, " ") }
   end
 
   def keys = call_sites.keys.sort

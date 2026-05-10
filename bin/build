@@ -1,0 +1,546 @@
+#!/usr/bin/env ruby
+#
+# bin/build — assemble a paper from an OUT.*.md manifest into Inquiry / T&F
+# submission targets (DOCX primary; PDF preview).
+#
+# Status (2026-05-09 — minimum-viable port):
+#   - Wired:  manifest parsing, segment concat, refs emission, pandoc → DOCX,
+#             pandoc → PDF (preview), Chicago author-date CSL, basic
+#             anonymisation lint at build time.
+#   - Stubbed: NeurIPS-style Obsidian callouts (kramdown parser/converter),
+#              theorem environments, [[#^anchor]] cross-refs, equation
+#              anchors. The Inquiry/T&F target doesn't need them — analytic-
+#              philosophy prose has no theorems / aligned equations / heavy
+#              cross-ref structure. If a future paper needs that, port the
+#              kramdown extensions from ~/src/neurips/bin/build (lines 75–480
+#              there) and route around pandoc.
+#   - Skipped: LaTeX target. T&F provides only Word templates for Inquiry;
+#              there is no T&F LaTeX class to compile against. Word is the
+#              preferred submission format anyway.
+#
+# Usage:
+#   bin/build                                # cwd-aware; if cwd is a paper-dir, build all OUT.*.md manifests
+#   bin/build <paper-dir>                    # all OUT.*.md manifests in <paper-dir>
+#   bin/build <paper-dir> <manifest-stem>    # specific manifest
+#   bin/build <manifest-stem>                # specific manifest in cwd (cwd must be a paper-dir)
+#
+#   <paper-dir>      e.g., 03-inquiry-ai-agents
+#   <manifest-stem>  reads OUT.<stem>.md (e.g., `inquiry-ai-agents-2026`).
+#
+# Output layout (per (paper, manifest) pair):
+#   <paper>/.build/<stem>/<stem>.md           concatenated markdown (intermediate)
+#   <paper>/.build/<stem>/<stem>.references.bib  auto-emitted by `bin/refs emit`
+#   <paper>/<stem>.docx                       primary submission artifact (Word)
+#   <paper>/<stem>.pdf                        preview PDF (for self-review)
+#
+# Conventions:
+#   - meta.md in <paper-dir> root carries YAML frontmatter (title, authors,
+#     abstract, keywords) + body abstract. Same shape as the NeurIPS pipeline.
+#   - OUT.<stem>.md is a markdown table whose rows enumerate segments under
+#     <paper-dir>/src/. Same shape as NeurIPS. The build does not invent a
+#     new manifest format — minimum-viable port reuses the existing one.
+#   - Anonymisation lint reads refs/deny-list.yml against each segment's
+#     source text. Findings printed at end of build; non-fatal.
+#
+# Shells out to `bin/refs emit <paper-dir> --output <bib>` for the bib;
+# shells out to `pandoc` for DOCX and PDF. Pandoc 3.x with the
+# citation-style-language CSL (chicago-author-date.csl, system-installed at
+# /usr/local/texlive/2025/texmf-dist/.../chicago-author-date.csl) handles
+# citations natively via `--citeproc`.
+
+require "yaml"
+require "fileutils"
+require "open3"
+require "pathname"
+
+ROOT     = Pathname.new(__dir__).parent.expand_path
+REFS_BIN = ROOT / "bin" / "refs"
+
+# Chicago author-date CSL — T&F house style for Inquiry. Falls back to
+# pandoc's bundled default if the texlive copy isn't present.
+CSL_CANDIDATES = [
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/citation-style-language/styles/chicago-author-date.csl",
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/citation-style-language/styles/chicago-author-date.csl",
+  "/Library/TeX/texbin/../texlive/styles/chicago-author-date.csl"
+].freeze
+
+def csl_path
+  CSL_CANDIDATES.find { |p| File.exist?(p) }
+end
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Manifest & meta — shape matches the NeurIPS pipeline so OUT.*.md / meta.md
+# files are portable. Authors familiar with the NeurIPS layout don't have to
+# re-learn anything.
+# ─────────────────────────────────────────────────────────────────────────────
+
+class Manifest
+  Row = Struct.new(:section, :type, :slug, :path, :title, :stage, keyword_init: true)
+
+  attr_reader :rows
+
+  def initialize(manifest_path)
+    @path = manifest_path
+    @rows = parse
+  end
+
+  private
+
+  def parse
+    rows  = []
+    state = :outside
+    @path.each_line do |line|
+      next unless line.start_with?("|")
+
+      cells = parse_row(line)
+      next unless cells
+
+      case state
+      when :outside then state = :header
+      when :header  then state = (separator?(cells) ? :data : :outside)
+      when :data    then rows << build_row(cells)
+      end
+    end
+    rows.compact
+  end
+
+  def parse_row(line)
+    return nil unless line.strip.start_with?("|")
+
+    line.strip.split("|")[1..-2]&.map(&:strip)
+  end
+
+  def separator?(cells) = cells.all? { |c| c.match?(/\A:?-+:?\z/) }
+
+  def build_row(cells)
+    section    = cells[0]
+    type       = cells[1]&.downcase
+    slug, path = extract_link(cells[2])
+    return nil unless slug
+
+    Row.new(section: section, type: type, slug: slug, path: path,
+            title: cells[3], stage: cells[4])
+  end
+
+  def extract_link(cell)
+    m = cell&.match(/\[(?<label>[^\]]*)\]\((?<path>[^)]+)\)/)
+    return [nil, nil] unless m
+
+    [m[:label], m[:path]]
+  end
+end
+
+class Meta
+  attr_reader :title, :authors, :abstract, :keywords, :data
+
+  def initialize(meta_path)
+    raw = meta_path.read
+    if raw.start_with?("---\n")
+      _, frontmatter, body = raw.split(/^---\n/, 3)
+      @data     = YAML.safe_load(frontmatter) || {}
+      @title    = @data["title"] || ""
+      @authors  = @data["authors"] || []
+      @keywords = @data["keywords"] || []
+      @abstract = body.strip
+    else
+      @data, @title, @authors, @keywords = {}, "", [], []
+      @abstract = raw.strip
+    end
+  end
+end
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Builder — orchestrates concat + refs emit + pandoc DOCX + pandoc PDF.
+# ─────────────────────────────────────────────────────────────────────────────
+
+class Builder
+  def initialize(paper_dir, manifest_stem)
+    @paper_dir     = paper_dir.is_a?(Pathname) ? paper_dir.expand_path : (ROOT / paper_dir).expand_path
+    @manifest_stem = manifest_stem
+    @build_dir     = @paper_dir / ".build" / @manifest_stem
+    @lint_findings = []
+  end
+
+  def call
+    raise "paper dir not found: #{@paper_dir}" unless @paper_dir.directory?
+
+    meta     = Meta.new(@paper_dir / "meta.md")
+    manifest = Manifest.new(@paper_dir / "OUT.#{@manifest_stem}.md")
+
+    FileUtils.mkdir_p(@build_dir)
+    bib_path             = emit_references_bib
+    docx_md_path, pdf_md_path = assemble_markdown(meta, manifest)
+
+    docx_path = render_docx(docx_md_path, bib_path)
+    pdf_path  = render_pdf_preview(pdf_md_path, bib_path)
+
+    publish(docx_path, pdf_path)
+    report_lint
+    report_success(docx_path, pdf_path)
+  end
+
+  private
+
+  # `bin/refs emit` is the contract. Lands the bib in our build dir; pandoc
+  # consumes it via --bibliography. Same atomicity discipline as the NeurIPS
+  # pipeline (process-isolated; refs-side bug surfaces here as a build error
+  # rather than a silent partial bib).
+  def emit_references_bib
+    output = @build_dir / "#{@manifest_stem}.references.bib"
+    cmd    = [REFS_BIN.to_s, "emit", @paper_dir.to_s, "--output", output.to_s]
+    out, status = Open3.capture2e(*cmd)
+    raise "bin/refs emit failed:\n#{out}" unless status.success?
+
+    output
+  end
+
+  # Concatenate manifest segments into intermediate markdown. Two writer
+  # outputs need slightly-different YAML frontmatter, so we factor body
+  # assembly once and write two intermediates:
+  #
+  #   - <stem>.md              — for DOCX (full frontmatter incl. keywords)
+  #   - <stem>.pdf-preview.md  — for PDF preview (keywords stripped; see
+  #                              render_pdf_preview for the lualatex/xmp
+  #                              rationale)
+  #
+  # Body assembly is identical for both; the abstract source is also shared.
+  # An abstract row in the manifest (slug == "abstract") is *lifted* into the
+  # YAML `abstract:` field rather than concatenated into the body — without
+  # this we double-render (meta.md placeholder body + the lifted file). See
+  # lift_abstract for the convention.
+  #
+  # Bibliography rows are absorbed by `--citeproc` (rendered after a
+  # `# References {-}` heading we append below).
+  def assemble_markdown(meta, manifest)
+    abstract_text = lift_abstract(manifest) || meta.abstract.to_s.gsub(/\s+/, " ").strip
+    body = build_body(manifest)
+
+    docx_md = write_intermediate("#{@manifest_stem}.md",             meta, abstract_text, body, omit_keywords: false)
+    pdf_md  = write_intermediate("#{@manifest_stem}.pdf-preview.md", meta, abstract_text, body, omit_keywords: true)
+    [docx_md, pdf_md]
+  end
+
+  def write_intermediate(filename, meta, abstract_text, body, omit_keywords:)
+    path = @build_dir / filename
+    md = +""
+    md << render_yaml_frontmatter(meta, abstract_text, omit_keywords: omit_keywords)
+    md << "\n\n"
+    md << body
+    path.write(md)
+    path
+  end
+
+  def build_body(manifest)
+    body = +""
+    manifest.rows.each do |row|
+      next if skip_in_body?(row)
+      body << render_segment(row) << "\n\n"
+    end
+    body << "\n# References {-}\n\n" if manifest.rows.any? { |r| r.type == "bibliography" }
+    body
+  end
+
+  # Rows the body skips: bibliography (citeproc handles), checklist (NeurIPS-
+  # only), and the abstract row (lifted into the YAML `abstract:` field by
+  # lift_abstract; concatenating it as well would double-render).
+  def skip_in_body?(row)
+    return true if row.type == "bibliography"
+    return true if row.type == "checklist"
+    return true if abstract_row?(row)
+
+    false
+  end
+
+  def abstract_row?(row)
+    row.slug.to_s.downcase == "abstract"
+  end
+
+  # Read the abstract row's source file and use its prose as the YAML abstract,
+  # overriding whatever placeholder lives in meta.md. Convention: the file may
+  # carry a leading H1 (structural) and italic-bracketed drafter notes
+  # (workflow); both are stripped, and the remaining paragraphs become the
+  # abstract metadata. Citations inside the abstract (`[-@key]`, `@key`) are
+  # processed by pandoc citeproc when rendered from a metadata field, so this
+  # path keeps the abstract's bibliography integrated.
+  #
+  # Returns nil if no abstract row is declared, the file is missing, or the
+  # file collapses to empty after stripping — in any of those cases the caller
+  # falls back to meta.md's body.
+  def lift_abstract(manifest)
+    row = manifest.rows.find { |r| abstract_row?(r) }
+    return nil unless row
+
+    src = @paper_dir / row.path
+    return nil unless src.exist?
+
+    text = src.read
+    lint_anonymisation(text, row.path)
+
+    paragraphs = text.split(/\n\s*\n/)
+    paragraphs = paragraphs.drop_while { |p| abstract_preamble?(p) }
+    cleaned = paragraphs.join("\n\n").strip.gsub(/\s+/, " ")
+    cleaned.empty? ? nil : cleaned
+  end
+
+  def abstract_preamble?(paragraph)
+    s = paragraph.strip
+    return true if s.empty?
+    return true if s.start_with?("#")                                          # H1/H2/etc. heading
+    return true if s.start_with?("*") && s.end_with?("*") && !s.start_with?("**") && s.length > 2  # italic-only drafter note
+
+    false
+  end
+
+  def render_yaml_frontmatter(meta, abstract_text, omit_keywords:)
+    fm = {
+      "title"    => meta.title,
+      "abstract" => abstract_text,
+      "lang"     => meta.data["lang"] || "en-GB",     # British English per T&F style
+      # pandoc's docx writer respects these; PDF writer uses them too
+      "reference-section-title" => "References"
+    }
+    fm["keywords"] = meta.keywords if !omit_keywords && meta.keywords.any?
+    fm["author"]   = meta.authors.map { |a| a.is_a?(Hash) ? a["name"] : a.to_s } if meta.authors.any?
+    "---\n#{YAML.dump(fm).sub(/\A---\n/, '')}---"
+  end
+
+  def render_segment(row)
+    src_path = @paper_dir / row.path
+    raise "segment not found: #{src_path}" unless src_path.exist?
+
+    content = src_path.read
+    lint_anonymisation(content, row.path)
+    content
+  end
+
+  def render_docx(md_path, bib_path)
+    out = @build_dir / "#{@manifest_stem}.docx"
+    cmd = pandoc_cmd_base(md_path, bib_path) + ["--output", out.to_s]
+    run_pandoc(cmd, "pandoc → docx")
+    out
+  end
+
+  # PDF preview via pandoc + lualatex. T&F doesn't ship a class for Inquiry,
+  # so this is *not* a submission artifact — it's a self-review preview only.
+  # Submission goes via the DOCX. If lualatex isn't available, the PDF target
+  # is skipped (warning, not failure) — DOCX alone is enough for submission.
+  #
+  # NB: this consumes the `*.pdf-preview.md` intermediate (built without a
+  # `keywords:` YAML field), not the `*.md` intermediate. An earlier attempt
+  # to override keywords with `--metadata=keywords:` on the CLI silently
+  # failed: pandoc accepts the override but the YAML list still flows into
+  # the LaTeX template's `$for(keywords)$\xmpquote{...}$endfor$` block via
+  # the hyperxmp package, fatalling lualatex on the first run. Stripping the
+  # field at YAML-assembly time is the actual fix; the DOCX writer still
+  # gets keywords through its own intermediate.
+  def render_pdf_preview(md_path, bib_path)
+    out = @build_dir / "#{@manifest_stem}.pdf"
+    cmd = pandoc_cmd_base(md_path, bib_path) + [
+      "--pdf-engine=lualatex",
+      "-V", "geometry:margin=1in",
+      "-V", "fontsize=11pt",
+      "-V", "linestretch=1.5",
+      "-V", "documentclass=article",
+      "--output", out.to_s
+    ]
+    begin
+      run_pandoc(cmd, "pandoc → pdf preview")
+      out
+    rescue StandardError => e
+      warn "pdf preview skipped: #{e.message.lines.first&.strip}"
+      nil
+    end
+  end
+
+  def pandoc_cmd_base(md_path, bib_path)
+    cmd = [
+      "pandoc",
+      md_path.to_s,
+      "--from=markdown+yaml_metadata_block+citations+smart",
+      "--bibliography=#{bib_path}",
+      "--citeproc",
+      "--metadata=link-citations:true"
+    ]
+    cmd += ["--csl", csl_path] if csl_path
+    cmd
+  end
+
+  def run_pandoc(cmd, label)
+    out, status = Open3.capture2e(*cmd)
+    return if status.success?
+
+    raise "#{label} failed:\n#{out.lines.last(40).join}"
+  end
+
+  def publish(docx_path, pdf_path)
+    FileUtils.cp(docx_path, @paper_dir / docx_path.basename) if docx_path&.exist?
+    FileUtils.cp(pdf_path, @paper_dir / pdf_path.basename) if pdf_path&.exist?
+  end
+
+  def report_success(docx_path, pdf_path)
+    [docx_path, pdf_path].compact.each do |p|
+      rel = (@paper_dir / p.basename).relative_path_from(ROOT)
+      puts "✓ #{rel}"
+    end
+  end
+
+  # Build-time anonymisation scan. Mirrors the NeurIPS pipeline's
+  # `lint_anonymization` (NeurIPS bin/build §lint_anonymization). Reads
+  # refs/deny-list.yml and surfaces any deny-listed term, DOI, or author
+  # surname appearing in a manifest-included segment. Non-fatal —
+  # `bin/refs lint` is the hard gate; this is the early-warning at draft
+  # time so an agent doesn't accumulate violations across hours of drafting.
+  def lint_anonymisation(text, source_path)
+    @deny_list ||= load_deny_list
+    return unless @deny_list
+
+    Array(@deny_list["dois"]).each do |doi|
+      @lint_findings << "#{source_path}: deny-listed DOI present: #{doi}" if text.include?(doi)
+    end
+    Array(@deny_list["authors"]).each do |surname|
+      @lint_findings << "#{source_path}: self-cite-flag surname '#{surname}' present (verify third-person framing)" if text.match?(/\b#{Regexp.escape(surname)}\b/)
+    end
+    Array(@deny_list["proper_nouns"]).each do |name|
+      @lint_findings << "#{source_path}: anonymisation vocab '#{name}' present (must not appear in submitted file)" if text.match?(/\b#{Regexp.escape(name)}\b/)
+    end
+  end
+
+  def load_deny_list
+    path = ROOT / "refs" / "deny-list.yml"
+    return nil unless path.exist?
+
+    YAML.safe_load_file(path)
+  end
+
+  def report_lint
+    return if @lint_findings.empty?
+
+    warn "── Lint findings (#{@lint_findings.size}) — non-fatal; `bin/refs lint` is the hard gate ──"
+    @lint_findings.each { |f| warn "  #{f}" }
+  end
+end
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CLI dispatcher — same shape as ~/src/neurips/bin/build's CLI for muscle-
+# memory carry-over. Heuristic for paper-dir detection: directory has both a
+# meta.md and at least one OUT.*.md.
+# ─────────────────────────────────────────────────────────────────────────────
+
+class CLI
+  USAGE = <<~USAGE.freeze
+    bin/build — assemble a paper from an OUT.*.md manifest into DOCX (T&F primary) + PDF preview.
+
+    Usage:
+      bin/build                                # cwd-aware default (cwd must be a paper-dir)
+      bin/build <paper-dir>                    # all OUT.*.md manifests in <paper-dir>
+      bin/build <paper-dir> <manifest-stem>    # specific manifest
+      bin/build <manifest-stem>                # specific manifest in cwd
+
+    Output: <paper-dir>/<stem>.docx (submission) and <paper-dir>/<stem>.pdf (preview).
+  USAGE
+
+  def self.run(argv) = new.dispatch(argv)
+
+  def dispatch(argv)
+    pairs =
+      case argv.length
+      when 0 then resolve_no_args
+      when 1 then resolve_one_arg(argv[0])
+      when 2 then [[resolve_paper_dir(argv[0]), argv[1]]]
+      else        usage_and_exit("too many arguments")
+      end
+
+    abort_with_usage("no manifests resolved") if pairs.empty?
+    run_pairs(pairs)
+  end
+
+  private
+
+  def paper_dir?(path)
+    return false unless path&.directory?
+
+    (path / "meta.md").exist? && !path.glob("OUT.*.md").empty?
+  end
+
+  def manifests_in(paper_dir)
+    paper_dir.glob("OUT.*.md").sort.map { |p| p.basename.to_s.delete_prefix("OUT.").delete_suffix(".md") }
+  end
+
+  def resolve_no_args
+    cwd = Pathname.pwd.expand_path
+    return manifests_in(cwd).map { |s| [cwd, s] } if paper_dir?(cwd)
+
+    candidates = ROOT.glob("0?-*").select { |p| paper_dir?(p) }.sort
+    listing    = candidates.map { |c| c.relative_path_from(ROOT) }.join("\n  ")
+    abort_with_usage("cwd is not a paper-dir (no meta.md / OUT.*.md). Candidate paper-dirs:\n  #{listing}")
+  end
+
+  def resolve_one_arg(arg)
+    candidate_dir = Pathname.new(arg).expand_path
+    candidate_dir = ROOT / arg unless candidate_dir.directory?
+    return manifests_in(candidate_dir).map { |s| [candidate_dir, s] } if paper_dir?(candidate_dir)
+
+    cwd = Pathname.pwd.expand_path
+    if paper_dir?(cwd) && (cwd / "OUT.#{arg}.md").exist?
+      [[cwd, arg]]
+    else
+      abort_with_usage("`#{arg}` is neither a paper-dir nor a manifest stem in cwd #{cwd.relative_path_from(ROOT)}")
+    end
+  end
+
+  def resolve_paper_dir(arg)
+    candidate = Pathname.new(arg).expand_path
+    candidate = ROOT / arg unless candidate.directory?
+    abort_with_usage("not a paper-dir: #{arg}") unless paper_dir?(candidate)
+
+    candidate
+  end
+
+  def run_pairs(pairs)
+    isolate   = pairs.size > 1
+    successes = []
+    failures  = []
+
+    pairs.each do |paper_dir, stem|
+      label = "#{paper_dir.relative_path_from(ROOT)}/#{stem}"
+      if isolate
+        begin
+          Builder.new(paper_dir, stem).call
+          successes << label
+        rescue StandardError => e
+          warn "✗ #{label}: #{e.message.lines.first&.strip}"
+          failures << [label, e]
+        end
+      else
+        Builder.new(paper_dir, stem).call
+        successes << label
+      end
+    end
+
+    print_summary(successes, failures) if isolate
+    exit 1 if failures.any?
+  end
+
+  def print_summary(successes, failures)
+    puts
+    puts "── Build summary ──"
+    successes.each { |s| puts "  ✓ #{s}" }
+    failures.each  { |label, e| puts "  ✗ #{label}: #{e.message.lines.first&.strip}" }
+    puts "  (#{successes.size} passed, #{failures.size} failed)"
+  end
+
+  def usage_and_exit(msg = nil)
+    warn msg if msg
+    warn USAGE
+    exit 1
+  end
+
+  def abort_with_usage(msg)
+    warn msg
+    warn
+    warn USAGE
+    exit 1
+  end
+end
+
+CLI.run(ARGV) if $PROGRAM_NAME == __FILE__

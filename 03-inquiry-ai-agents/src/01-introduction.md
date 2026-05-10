@@ -1,0 +1,3 @@
+# 1. The agency question for AI systems
+
+*Stub. The introduction will name four positions on agency-extension to AI systems — pure realism, pure stipulation, pure tool-framing, pure ascription — and introduce a fifth: structurally-grounded extension. The methodological register is conceptual engineering in the sense of Cappelen (2018) and the inferentialist refinement developed by Jorem and Löhr (2022). The 'compact' terminology is used in the social-contract sense (Locke, Rousseau, Rawls, Korsgaard's Kingdom of Ends, Scanlon's contractualism), not in the contract-law sense — a distinction the paper makes explicit in §4 when engaging Linarelli (2022) on shared intentionality and AI contract formation.*
