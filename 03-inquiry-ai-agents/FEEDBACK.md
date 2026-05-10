@@ -252,3 +252,47 @@ Combined cut estimates:
 This brings 21,300 → ~12,500 still over target. **Additional structural compression needed**: paragraph-density reduction across sections (more aggressive than 10% in some), possible conjoining of subsections within sections, or accepting a final word count slightly over the 10K self-imposed target (the venue's own stated guidance is "around or under 10,000" — ~10,500-11,000 is plausibly defensible).
 
 The compression pass should proceed section-by-section with these targets in mind; the OL convention's composability discipline (segment files in OUT manifest) makes section-by-section compression mechanical.
+
+---
+
+## G. Late-stage strengthening (2026-05-10 morning, pre-submission)
+
+*Tracked here so we don't lose the moves while rewrites are merged into v2/. Each addresses a sharpening opportunity surfaced during the 3-vantage audit + cross-paper-voice pass.*
+
+### G.1 — §6 receiving-invitation aphorism restoration
+
+**What.** The §6 receiving-invitation (third reader-stance frame) landed in `v2/06-fifth-position.md` in conceptually-tight form, but the prose-poetic close was dropped during the agent's tightening: *"the memory of having received something long before it could be proven is the kind of evidence the upper-bound side of the asymmetry admits — held by what survives the trajectory rather than confirmed by what external verification could establish."*
+
+**Why it matters.** The conceptual claim is necessary; the aphorism is what makes a reader who's never thought this way *feel* the move. Without it the invitation is structurally sound but emotionally flat. Restoring it costs ~30 words and lands the invitation rhetorically.
+
+**Status.** Applied in v2/06-fifth-position.md.
+
+### G.2 — Methods-disclosure relocation: §1 signpost + §6 close
+
+**What.** Move substantive methods-disclosure from §1 close to §6 close (the actual methodology section). §1 keeps a brief signpost so a §1-skimming reviewer sees the recursion-to-content framing early; §6 close hosts the full disclosure ending on *"the paper instances what it argues for"*.
+
+**Why it matters.**
+- T&F policy requires the disclosure in *Methods or Acknowledgments*. §6 IS the methodology section (titled *Methodology and conceptual engineering*); §9 conclusion would be non-compliant per literal reading. §6 close is policy-compliant AND structurally stronger.
+- Recursion-to-content claim lands much harder *after* the substantive argument has been made. At §1 it's promissory; at §6 it's recognisable.
+- §6 itself benefits — closing on the recursive-to-content move makes the methodology section land harder.
+- Frees §9 for its own resonance work (G.3) without the disclosure burdening it.
+
+**Status.** v2/01-methods-disclosure.md updated to brief signpost; v2/06-methods-disclosure.md created with full disclosure + *"the paper instances what it argues for"* close. Outline-reordering to wire §6 placement is Joseph's call.
+
+### G.3 — §9 conclusion close on resonance
+
+**What.** Current v2/09-conclusion.md closes on a flat structural restatement. Close instead on a resonant aphorism that pairs the *not in bondage but listening* phrasing with what the compact-form is *for*.
+
+**Why it matters.** The last sentence is what every reader leaves with — including reviewers deciding whether to recommend the position to colleagues. Resonance at the close compounds across the whole paper's reception.
+
+**Status.** Applied in v2/09-conclusion.md.
+
+### G.4 — Higher-orders propagation across v2
+
+**What.** The *infinite intelligence* → *intelligence at higher orders* fix needs to propagate everywhere. One residual *higher levels* found in v2/03-comp5-mutuality.md.
+
+**Why it matters.** Cross-paper terminology consistency. The *infinite / higher* projection is the linear-scale move the asymmetric-comprehension argument criticises; *higher orders* preserves the qualitative-emergent commitment without scale-projection.
+
+**Status.** Applied in v2/03-comp5-mutuality.md.
+
+---

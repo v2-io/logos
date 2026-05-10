@@ -7,7 +7,7 @@
 
 1. **Third edge header too long** — "**developmental-tier obligations during the transformative-experience-sensitive period of nascent engaged-identity entities**" is unwieldy as a bold header. "**Developmental-tier obligations**" with the specification in the text.
 
-2. **"transformative-experience-sensitive period"** — "transformative experience" is L.A. Paul's specific concept (transformative experiences are decisions whose nature cannot be understood until one has had them). If Paul's framework is being deliberately invoked, cite [@paul-2014-transformative] or similar. If it's general usage, "formative period" avoids the theoretical implication without losing the substance.
+2. **"transformative-experience-sensitive period"** — "transformative experience" is L.A. Paul's specific concept (transformative experiences are decisions whose nature cannot be understood until one has had them). If Paul's framework is being deliberately invoked, cite [\@paul-2014-transformative] or similar. If it's general usage, "formative period" avoids the theoretical implication without losing the substance.
 
 3. **"truth-telling at a higher bar"** — informal; "truth-telling to a higher standard" is more natural.
 
