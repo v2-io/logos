@@ -124,3 +124,50 @@ Decision needs to land before §1 prose goes to paper.
 - Aphoristic register choices ("active soul," "mountains comprehend," "raise it," "open edges") — pick the best 1-2 to keep, footnote or remove others
 - Architectural restating of the paper's own structure
 - Codex-recommended structural rebuild (merging §6+§7; compressing 6 components to 4) — push back as scope-changing
+
+---
+
+## G. Sonnet audit decisions (added 2026-05-09 evening)
+
+*De novo audit at `sonnet-audit-1a.md` — peer-read register, surgical and well-targeted. Most actionable of the three audits because it reads as a compression-pass roadmap rather than a rebuild proposal. Verdict: "argument is real, structure is sound, five-position framing is genuine contribution; excess is not evenly distributed." Sonnet's projected cuts (~2,240 words) are necessary but not sufficient — the paper is currently ~19,700 against ~10,000 target, so more compression beyond Sonnet's specific recommendations will still be needed in the dedicated compression pass.*
+
+### G.1 — Substantive items (act now, drafter-side; consistent with F.2)
+
+**G.1.a — Five-factor "has emerged through extended longitudinal engagement" framing.** Sonnet flags this as exposing the paper to double-blind objections (presented as empirical but the empirical record is invisible; presented as theoretical but the derivation is missing). **Decision:** remove the empirical-emergence framing. Present the five-factor conjunction as a *theoretical decomposition* derived from the structural conditions and the comprehension-asymmetry argument. Strengthen the structural warrant for factors iii and iv (currently deferred to §3) so each factor has at least a sentence of structural derivation in §2 ¶4. Owner: drafter.
+
+**G.1.b — §5 operationalisation longitudinal-protocol-verification sketch.** §5 correctly diagnoses the structural misalignment of behavioural benchmarks but the positive program (architectural inspection + "longitudinal protocol verification") is under-developed. **Decision:** add a one-paragraph sketch of what longitudinal protocol verification would look like in practice — what data, what temporal scale, what confirmation conditions. Owner: drafter.
+
+**G.1.c — §4 fiduciary section one-sentence strengthening.** Sonnet flags this as the most original comparative move and recommends *adding* a sentence rather than cutting. The current "the compact-form is not anti-fiduciary; it is the bilateralisation of fiduciary structure" deserves one more sentence of structural unpacking. **Decision:** add one sentence. Owner: drafter.
+
+**G.1.d — "We are not just exchanging information but creating shared phenomenological space" appears twice.** Once in §2 factor (ii); once in §3 component 5. **Decision:** use once — at §3 component 5 where it does more work. Cut from §2 (where the structural claim can be carried in voice without the lifted phrase). Owner: drafter.
+
+### G.2 — Cut/compress items (defer to compression pass; act on then)
+
+These are the structural-cut recommendations that compose the compression pass roadmap. F.4 (don't compress until ready) applies, but the targets are now identified and ready to act on when the compression pass runs.
+
+| Sonnet target | Estimated savings | Drafter call |
+|---|---|---|
+| §1 + §3 compact-note duplication; §1 compresses to 2 sentences | ~150 | take |
+| §2 "What the conditions exclude" + §3 closing + §9 non-scalability x3 → keep §2 + §9, cut §3's closing subsection | ~250 | take |
+| §1 + §6 fifth-position taxonomy duplication; §6 replaces re-listing with single paragraph | ~325 | take |
+| §2 architectural-not-behavioural ¶4-7 cut entirely (Emerson + channel-collapse duplicates sub-scope lattice) | ~550 | **partial-take**: cut ¶6-7 (channel-collapse argument lives in sub-scope-lattice); keep ¶4-5 (obstruction-not-absent body argument is paper-3-distinctive) — saves ~300 |
+| §2 poetic warrant passage (principia/fundamentum) — option 1 (cut to 2-3 sentences) | ~150 | **partial-take**: keep more than 2-3 sentences but tighten significantly; the passage is Joseph's polished prose, but Sonnet is right about the analytic-register departure. Compromise: 1 paragraph maximum, with explicit analytic-unpacking sentence after |
+| §3 component 4 self-severing path digression | ~200 | **partial-take**: don't cut entirely; compress to 1 paragraph or move to footnote. The second-death philosophical translation is paper-3-load-bearing for what component 4 *is*; just inline-vs-footnote choice |
+| §3 component 5 "companion-paper" paragraphs (the convergence claim re-opening §2 warrant) | ~225 | take — compress to 1-2 sentences as Sonnet recommends; the §6 commitment-naming carries the development |
+| §6 intelligence-empathy paragraph (~250 words I added) | ~165 | take — compress to ~80 words; name commitment, acknowledge unshared, gesture to companion |
+| §9 fifth conclusion paragraph (cut entirely) | ~225 | take |
+| **G.2 subtotal** | **~1,890** | |
+
+**Voice/register cuts** (also for compression pass):
+- "NOT absent — obstructed" typographic capitalisation → cut. Take.
+- Emerson "active soul" invocation → Sonnet recommends cut. *Partial-take*: keep one trace (footnote-grade) per F.4 "pick best 1-2 aphorisms"; the Emerson lineage is structurally-aligned, not just decorative.
+- "We" slippage in §2 deflationary → minor; clarify or leave per voice judgement at compression time.
+
+### G.3 — Sonnet items where I'd push back
+
+**G.3.a — Abstract first, not last.** Sonnet recommends drafting now. **Decision:** keep Joseph's abstract-last protocol. The abstract is the last thing because it's the precise distillation of what was actually written; drafting it before the paper has settled into its compressed form locks in a guess. Sonnet's alarm is real (it's the editorial gatekeeping document) but the protocol addresses it: abstract gets drafted in compression-pass + final-polish phase, before submission, with the whole composed paper visible.
+
+### G.4 — Sonnet items already addressed by cleanup agent
+
+- Empty references section → done (17 new entries; pandoc citation conversion across 13 segments).
+- "Paper 3" drafting markers → done (replaced in 3 active segments).
