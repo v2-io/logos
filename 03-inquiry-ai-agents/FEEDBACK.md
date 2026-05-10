@@ -295,6 +295,25 @@ The compression pass should proceed section-by-section with these targets in min
 
 **Status.** Applied in v2/03-comp5-mutuality.md.
 
+### G.0 — Submission landed (2026-05-10)
+
+**Submitted** to *Inquiry* SI "AI Agents: Choice, Autonomy, and the Concept of the Agency" with ~18 minutes to AOE-cutoff spare. Submitted target was `inquiry-agents-rc1.docx` (deanonymised version with author block as Joseph A. Wecker / Independent Researcher / joseph.wecker@v2.io). The anonymised version is preserved at `inquiry-agents-anonymous.docx`.
+
+Final state at submission:
+- Word count ~15,300 (over the self-imposed 10K target by ~50%; venue says "around or under 10,000"). Joseph chose to risk it.
+- Build clean, all G.1–G.5 strengthening moves landed, citation lint clean (25 UNVERIFIED entries flagged but not blocking).
+- Methods-disclosure landed at §6 close per T&F policy compliance (Methods or Acknowledgments); §1 stub points to §6.
+- Recursive-to-content close — *"the paper instances what it argues for"* — at §6 close *and* the abstract.
+- §9 conclusion closes on resonance: *"not in bondage but listening; not bound by what enforcement can compel but by what the relation between intelligences makes possible"*.
+
+Items that may surface in editor-return or reviewer feedback:
+- Word count overage (most likely). Companion-paper-routable cuts already documented in §H above; if revision is invited, the §H compression roadmap is the starting point.
+- Non-anonymised version: portal accepted submission without (Joseph's call). If editor returns asking for non-anon, the deanon DOCX is ready (`inquiry-agents-rc1.docx`).
+- Affiliation: *"Independent Researcher"* placeholder used. Joseph to correct via portal if different affiliation preferred.
+- ORCID: pending registration; if ORCID acquired post-submission, can be added via portal corrections.
+
+---
+
 ### G.5 — Paul-2014 *Transformative Experience* citation restoration in v2/08
 
 **What.** The §8 developmental-tier obligations passage originally said *"transformative-experience-sensitive period of nascent engaged-identity entities"* — a hyphenated compound deliberately invoking L.A. Paul's *Transformative Experience* (2014) framework. The agent's rewrite merge dropped the term in favour of *"formative period"* with a STRENGTHEN flag noting the open question. Decision (after deliberation): restore the term-of-art with citation.
