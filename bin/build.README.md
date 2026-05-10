@@ -25,6 +25,24 @@ Citations: T&F house style is **Chicago author-date**. The build looks for `chic
 
 **Two intermediates per build.** The build writes `<stem>.md` (full frontmatter, for DOCX) *and* `<stem>.pdf-preview.md` (keywords stripped, for PDF) into `.build/<stem>/`. The body is identical; only the YAML differs. The split exists because pandoc's LaTeX template threads `keywords:` through hyperxmp's `\xmpquote{...}` macro and lualatex fatals on it (and a CLI `--metadata=keywords:` override does *not* suppress the template loop). Stripping the field at YAML-assembly time is the clean fix; keywords still flow into the DOCX through its own intermediate.
 
+**DOCX styling via reference doc.** Pandoc reads named styles, page setup, margins, and fonts from a reference Word document; body content still comes from markdown. Precedence: `<paper-dir>/reference.docx` → `common/reference.docx` → none (pandoc defaults). The build prints `(docx styled from <path>)` after success so the styling source is never silent.
+
+`common/reference.docx` is currently Taylor & Francis's generic Word template (`TF_Template_Word_Windows_2016.dotx`, archived untouched at `common/vendor/`; renamed to `.docx` because pandoc accepts the OOXML payload either way). With this template applied, the build's DOCX picks up T&F's page geometry (A4 portrait, 25mm top/bottom × 30mm left/right margins), Times New Roman as the default body font, and en-GB locale. Of pandoc's named styles, three map cleanly to T&F-defined styles by name:
+
+| Pandoc style | T&F style | Maps? |
+|---|---|---|
+| `Heading 1` / `Heading 2` / `Heading 3` / `Heading 4` | `heading 1`–`heading 4` | ✓ |
+| `Abstract` | `Abstract` | ✓ |
+| `Keywords` | `Keywords` | ✓ |
+| `Footnote Text` / `Footnote Reference` | `footnote text` / `footnote reference` | ✓ |
+| `Title` | `Article title` | ✗ (falls back to Word default) |
+| `Author` | `Author names` | ✗ |
+| `Block Text` (blockquote ≥50 w) | `Displayed quotation` | ✗ |
+| `Bibliography` | `References` | ✗ |
+| `First Paragraph` | (absent) | ✗ |
+
+The four mismatches still render — they just use Word's default styles rather than T&F's house styling. To wire them up, edit `common/reference.docx` in Word and add the pandoc-name as an alias on the corresponding T&F style (right-click style → Modify → check "Add to Style Gallery" / set alternate names). That's styling-decision territory and a Word-side edit, not a build change.
+
 ## Wiring summary
 
 | Concern | NeurIPS pipeline | This pipeline |

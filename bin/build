@@ -316,8 +316,38 @@ class Builder
   def render_docx(md_path, bib_path)
     out = @build_dir / "#{@manifest_stem}.docx"
     cmd = pandoc_cmd_base(md_path, bib_path) + ["--output", out.to_s]
+    if (ref = reference_doc_path)
+      cmd += ["--reference-doc", ref.to_s]
+      @reference_doc_used = ref
+    end
     run_pandoc(cmd, "pandoc → docx")
     out
+  end
+
+  # Reference doc for DOCX styling. Pandoc reads named styles, page setup,
+  # margins, and fonts from this file (body content is generated from
+  # markdown). Precedence: per-paper override → portfolio default → none
+  # (pandoc's built-in defaults). Per-paper override exists so a venue-
+  # specific template (e.g. a future Synthese / Springer Word file at
+  # `01-synthese-asymmetric-comprehension/reference.docx`) can sit alongside
+  # the portfolio default at `common/reference.docx`.
+  #
+  # The currently-staged `common/reference.docx` is Taylor & Francis's
+  # generic Word template (`TF_Template_Word_Windows_2016.dotx`, archived
+  # untouched at `common/vendor/`); the .dotx was renamed to .docx because
+  # pandoc accepts the OOXML payload either way and the .docx extension keeps
+  # the convention boring.
+  #
+  # Style-name caveat: the T&F template uses some non-pandoc style names
+  # (`Article title` vs pandoc's `Title`; `Author names` vs `Author`;
+  # `Displayed quotation` vs `Block Text`; `References` vs `Bibliography`).
+  # Those four don't auto-map; everything pandoc does map by name (Normal /
+  # Heading 1–4 / Abstract / Keywords / Footnote Text / etc.) flows through
+  # cleanly. To get the unmapped four, edit `common/reference.docx` in Word
+  # and add the pandoc-name as an alias on the matching T&F style — that is
+  # styling-decision territory, not a pipeline change.
+  def reference_doc_path
+    [@paper_dir / "reference.docx", ROOT / "common" / "reference.docx"].find(&:exist?)
   end
 
   # PDF preview via pandoc + lualatex. T&F doesn't ship a class for Inquiry,
@@ -381,6 +411,9 @@ class Builder
     [docx_path, pdf_path].compact.each do |p|
       rel = (@paper_dir / p.basename).relative_path_from(ROOT)
       puts "✓ #{rel}"
+    end
+    if @reference_doc_used
+      puts "  (docx styled from #{@reference_doc_used.relative_path_from(ROOT)})"
     end
   end
 
