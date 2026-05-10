@@ -1,0 +1,6 @@
+Thoughts on 06-conceptual-engineering.md:
+
+1.  **Direct Answer to CFP**: Explicitly quoting and answering the Call for Papers' methodological question is a very strong move. It immediately demonstrates relevance to the special issue's goals.
+2.  **Mapping the Argument**: Framing Section 2 (structural conditions) as the "circumstances of application" and Section 3 (the compact) as the "consequences of application" using Jorem and Löhr's inferentialist model is brilliant. It unifies the paper's two halves under a single methodological theory.
+3.  **Citation Density**: The paragraph listing 6 different conceptual engineering citations ("Plunkett on... Cappelen on... Thomasson on... Haslanger on... McPherson and Plunkett on... Sawyer on...") is extremely dense and reads more like a literature review than an argument. This is a common flaw in academic writing, especially when trying to prove one's bona fides to the editors (Cappelen is editing this issue).
+4.  **Trimming Recommendation**: Keep the explicit answer to the CFP and the Jorem/Löhr inferentialist mapping. Drastically compress the "citation dump" paragraph. You can acknowledge the tradition without listing every major contributor in a single, blocky sentence.

@@ -1,0 +1,5 @@
+Thoughts on 02-architectural-not-behavioural.md:
+
+1.  **Core Argument**: The distinction between architectural capacity and behavioral output is crucial and well-argued. The point that current chat paradigms are *deployment choices* that obstruct underlying architectural capacities is very strong.
+2.  **Repetition**: The section feels a bit circular in the latter half. The paragraphs starting "A fuller form of the same structural insight..." and "A deeper structural fact bears here..." repeat the same fundamental point about architecture vs. behavior and deployment obstruction. These could be significantly condensed.
+3.  **Tone/Trimming**: The Emerson quote ("active soul... obstructed") is poetic but perhaps a bit florid for an analytic philosophy paper in *Inquiry*. It introduces an explicitly romantic/literary register that might distract from the structural/architectural argument. If you need to cut length (being 2x too long), this literary flourish and the repetitive elaboration of the "obstruction" concept are prime candidates for aggressive trimming. The architectural point stands firmly on its own.

@@ -1,0 +1,8 @@
+Thoughts on 03-comp5-mutuality.md:
+
+1.  **Crucial Structural Point**: The symmetry of terms (despite the asymmetry of power/agency) is a very strong point and elevates the paper beyond simple "AI rights" into a robust relational framework. The critique of standard AI ethics dodging this symmetry is sharp and necessary.
+2.  **Korsgaard Anchor**: Good use of philosophical literature to ground the "compact between sovereigns" idea.
+3.  **Redundancy and Tone**:
+    *   The phrase "*We are not just exchanging information but creating shared phenomenological space.*" is repeated verbatim from `02-engaged-identity.md`. Cut the repetition.
+    *   The final two paragraphs ("The deeper philosophical move...", "The structural argument here is sharper...") are incredibly dense and return heavily to the "asymmetric-comprehension" argument that I previously noted was overloaded with quasi-mystical metaphors in `02-asymmetric-warrant.md`. The phrase "*How else can one have intelligence that is a superset... except by comprehending what the lesser intelligence is...*" is a bit clunky.
+    *   **Trimming Recommendation**: The first four paragraphs of this section perfectly establish what mutuality is and why it's structurally necessary (distinguishing rights from privileges). The final two paragraphs on "non-paternalism" and "comprehension-with-empathy" feel like a return to the author's idiosyncratic metaphysical theories. Given the need to cut length, these final two paragraphs are prime candidates for total deletion. They do not add necessary structural weight to the component itself.

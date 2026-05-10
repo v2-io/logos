@@ -238,17 +238,30 @@ class Builder
     body = +""
     manifest.rows.each do |row|
       next if skip_in_body?(row)
+      if row.type == "bibliography"
+        # Emit the heading + the empty `{#refs}` fenced div at the row's
+        # manifest position. Pandoc citeproc looks for a div with id `refs`
+        # as its placement marker (NOT for a heading whose text is
+        # "References" — that is a common misreading of the docs); without
+        # the explicit div pandoc places the bibliography at end-of-document
+        # by default, leaving the manifest-position heading orphaned and the
+        # rendered entries headless. The fenced div pins placement at the
+        # row's manifest position so e.g. Bibliography between Conclusion
+        # and Back-matter renders the way the manifest declares.
+        body << "# References {-}\n\n::: {#refs}\n:::\n\n"
+        next
+      end
       body << render_segment(row) << "\n\n"
     end
-    body << "\n# References {-}\n\n" if manifest.rows.any? { |r| r.type == "bibliography" }
     body
   end
 
-  # Rows the body skips: bibliography (citeproc handles), checklist (NeurIPS-
-  # only), and the abstract row (lifted into the YAML `abstract:` field by
-  # lift_abstract; concatenating it as well would double-render).
+  # Rows the body skips: checklist (NeurIPS-only) and the abstract row (lifted
+  # into the YAML `abstract:` field by lift_abstract; concatenating it as well
+  # would double-render). Bibliography rows are NOT skipped here — build_body
+  # handles them by emitting the `# References {-}` heading at the row's
+  # position so pandoc citeproc places the rendered bibliography there.
   def skip_in_body?(row)
-    return true if row.type == "bibliography"
     return true if row.type == "checklist"
     return true if abstract_row?(row)
 
@@ -299,9 +312,13 @@ class Builder
     fm = {
       "title"    => meta.title,
       "abstract" => abstract_text,
-      "lang"     => meta.data["lang"] || "en-GB",     # British English per T&F style
-      # pandoc's docx writer respects these; PDF writer uses them too
-      "reference-section-title" => "References"
+      "lang"     => meta.data["lang"] || "en-GB"      # British English per T&F style
+      # NB: do NOT set `reference-section-title` here. Pandoc citeproc would
+      # then emit its own "References" heading on top of the one build_body
+      # already places at the bibliography row's manifest position, producing
+      # a double "References  /  References" pair in the rendered output.
+      # The manifest-position heading is the right placement (between body
+      # and back-matter); the YAML-driven heading would land at the very end.
     }
     fm["keywords"] = meta.keywords if !omit_keywords && meta.keywords.any?
     fm["author"]   = meta.authors.map { |a| a.is_a?(Hash) ? a["name"] : a.to_s } if meta.authors.any?
@@ -401,9 +418,19 @@ class Builder
 
   def run_pandoc(cmd, label)
     out, status = Open3.capture2e(*cmd)
-    return if status.success?
+    raise "#{label} failed:\n#{out.lines.last(40).join}" unless status.success?
 
-    raise "#{label} failed:\n#{out.lines.last(40).join}"
+    # Surface pandoc's warnings even on success. Pandoc only writes to stderr
+    # for warnings / errors / progress (not chatty info), so anything captured
+    # here is signal worth showing the drafter — most importantly the
+    # `[WARNING] Note with key 'X' defined ... but not used` line, which
+    # silently drops the orphan footnote AND its citations from the rendered
+    # output (so cited entries land in the .bib via `bin/refs` but are absent
+    # from the rendered bibliography). Surfaced 2026-05-10 by paper 3's
+    # `[^shared-space-source]` footnote being defined but never invoked,
+    # which dropped Tomasello-2014 and Honneth-1995 from the references
+    # section of the rendered DOCX/PDF without any visible build-time signal.
+    warn out unless out.strip.empty?
   end
 
   def publish(docx_path, pdf_path)

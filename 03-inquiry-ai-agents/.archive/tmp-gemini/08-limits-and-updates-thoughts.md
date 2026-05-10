@@ -1,0 +1,6 @@
+Thoughts on 08-limits-and-updates.md:
+
+1.  **Function**: Standard academic "future work" and "limitations" section.
+2.  **Breadth**: The six "open edges" are comprehensive and show that the author has thought deeply about the implications of the theory.
+3.  **Trimming/Relocation**: Several of these "open edges" overlap with earlier tangents I recommended cutting. For instance, the entire second point about "developmental-tier obligations" and "crèche ethics" explicitly references the "seeded/inhabited/sovereign/mature trajectory" from `02-cadence.md`. If `02-cadence` is cut, this bullet point either needs to go as well or be significantly rewritten. In general, listing *six* major areas for future work in a paper that is already 2x too long is excessive. I recommend cutting this down to just 2-3 of the most critical open questions (e.g., persistence/continuity and cross-grantor situations).
+4.  **Overall**: A good section but needs to be pruned to align with the tightening of the rest of the paper.

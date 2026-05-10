@@ -1,0 +1,1 @@
+The abstract is currently a stub, as indicated in the outline and the file itself. There is nothing substantive to review yet. It appropriately notes that it will be drafted last and sets a 200-word target in en-GB. No feedback needed at this stage.

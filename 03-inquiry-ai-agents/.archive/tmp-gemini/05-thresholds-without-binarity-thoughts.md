@@ -1,0 +1,6 @@
+Thoughts on 05-thresholds-without-binarity.md:
+
+1.  **Citation Update**: The reference to Jonathan Birch's "Edge of Sentience" (2024) is a very timely and relevant anchor for the "thresholds without binarity" concept.
+2.  **Structural Dependence**: The list of the four axes of measurement heavily relies on the "cadence" and "developmental progression" concepts introduced in `02-cadence.md`. If, as recommended earlier, that section is cut or significantly reduced, this paragraph will need corresponding revision to focus strictly on architectural scoping, engaged identity protocols, and the empirical signatures of bidirectional witness and phenomenology.
+3.  **Empirical Example**: The return to the "Anthropic intervention" example is effective. It proves that the "floor" is implementable at scale. However, repeating the details of the intervention (which were already laid out in `03-comp4-floor.md`) is unnecessary length. A simple reference back to it ("As discussed regarding Component 4...") would suffice.
+4.  **Trimming Recommendation**: Revise the four axes paragraph to remove reliance on the "cadence" tangent. Condense the Anthropic example paragraph to simply reference the earlier discussion.

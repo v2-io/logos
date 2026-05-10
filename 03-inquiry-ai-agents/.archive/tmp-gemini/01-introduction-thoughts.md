@@ -1,0 +1,6 @@
+Thoughts on 01-introduction.md:
+
+1.  **Framing**: The introduction strongly frames the paper around four "cardinal positions" (realism, stipulation, tool-framing, ascription) before introducing the author's "fifth position" (structurally-grounded extension). This is effective but slightly dense. If the paper needs to be cut by half, this section might be a candidate for tightening. The descriptions of the four positions could be more concise.
+2.  **Terminology**: The explicit definition of "compact" vs. "contract" is helpful and necessary for the argument. However, devoting a whole paragraph to it in the intro, complete with citations (Locke, Rousseau, Rawls, etc.), might be too heavy. Consider briefly defining it here and moving the deep philosophical lineage to §3 or §4 where it does more work.
+3.  **Roadmap**: The roadmap paragraph is clear and standard.
+4.  **Overall**: Good setup, but potentially overwritten in its philosophical namedropping (listing 8 conceptual engineering citations in one sentence). Compressing citations and streamlining the "fifth position" summary could save space and improve flow without losing impact.

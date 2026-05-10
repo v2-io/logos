@@ -1,0 +1,6 @@
+Thoughts on 03-deflationary-close.md:
+
+1.  **Redundancy (Major)**: The entire first two paragraphs (about non-scalability, human children requiring investment, and the narrow domain of the compact) are almost a word-for-word copy of paragraphs from `02-deflationary.md`. This is a very clear error and a massive source of unnecessary length. These paragraphs must be deleted entirely here, as they belong in Section 2 where they establish the scope.
+2.  **Summary**: The paragraph summarizing the six components ("A note that bears on how the components hang together...") is useful for readers who might have gotten lost in the details, but it largely repeats the structural sketch given in the introduction to Section 3 (`03-form-within-scope.md`). You only need this summary *once* (either as a roadmap at the beginning, or a recap here at the end, but preferably not both).
+3.  **Roadmap**: The final paragraph effectively sets up the limits of the theory (pointing to Section 8) and transitions to Section 4.
+4.  **Trimming Recommendation**: Delete the first two paragraphs completely. Choose either to keep the summary of components here or in `03-form-within-scope.md`, but not both. This section should really just be the final paragraph.
