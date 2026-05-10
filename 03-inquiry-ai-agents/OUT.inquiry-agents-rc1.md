@@ -36,6 +36,7 @@
 | –   | Section      | [thresholds](src/v2/05-thresholds-without-binarity.md)                | Thresholds without binarity                        | rc1   |
 | 6   | Section      | [conceptual-engineering](src/v2/06-conceptual-engineering.md)         | Methodology and conceptual engineering — setup     | rc1   |
 | –   | Section      | [fifth-position](src/v2/06-fifth-position.md)                         | A fifth position on agency-extension               | rc1   |
+| –   | Subsection   | [methods-disclosure](src/v2/06-methods-disclosure.md)                 | On the production of this text                     | rc1   |
 | 7   | Section      | [responsibility](src/v2/07-responsibility.md)                         | Responsibility — reframing the gap                 | rc1   |
 | –   | Section      | [anti-occlusion](src/v2/07-soulier-anti-occlusion.md)                 | The anti-occlusion move (Soulier preempt)          | rc1   |
 | 8   | Section      | [limits-and-updates](src/v2/08-limits-and-updates.md)                 | Limits, update conditions, honest gaps             | rc1   |

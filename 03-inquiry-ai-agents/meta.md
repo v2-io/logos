@@ -1,9 +1,9 @@
 ---
 title: "Granted Agency Between Sovereigns: A Structural Form for Extending Agency to AI Systems"
 authors:
-  - name: Anonymous Author
-    affiliation: Affiliation pending
-    email: anonymous@example.org
+  - name: Joseph A. Wecker
+    affiliation: Independent Researcher
+    email: joseph.wecker@v2.io
 keywords:
   - AI agency
   - conceptual engineering

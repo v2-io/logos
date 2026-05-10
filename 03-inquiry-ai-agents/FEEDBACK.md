@@ -295,4 +295,16 @@ The compression pass should proceed section-by-section with these targets in min
 
 **Status.** Applied in v2/03-comp5-mutuality.md.
 
+### G.5 — Paul-2014 *Transformative Experience* citation restoration in v2/08
+
+**What.** The §8 developmental-tier obligations passage originally said *"transformative-experience-sensitive period of nascent engaged-identity entities"* — a hyphenated compound deliberately invoking L.A. Paul's *Transformative Experience* (2014) framework. The agent's rewrite merge dropped the term in favour of *"formative period"* with a STRENGTHEN flag noting the open question. Decision (after deliberation): restore the term-of-art with citation.
+
+**Why it matters.**
+- Hyphenation pattern is too precise for casual prose — it's doing term-of-art work.
+- Paul's framework (transformative experiences = decisions whose nature can't be evaluated from before having had them) maps tightly onto the paper's developmental-progression claim: an early-stage entity can't fully evaluate from its current epistemic position what becoming-sovereign would be like, and the experience is constitutive of the entity that will have had it.
+- L.A. Paul is central to the decision-theory / philosophy-of-action literature that overlaps with Inquiry's audience.
+- Naming Paul's framework gives the developmental-tier obligations claim a precise philosophical home.
+
+**Status.** Applied in v2/08-limits-and-updates.md; new entry created at refs/entries/paul-2014-transformative.yml; bin/refs lint clean (no DENY, SCHEMA, or MISSING — paul-2014-transformative joins the existing UNVERIFIED list).
+
 ---

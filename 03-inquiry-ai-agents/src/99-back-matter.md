@@ -2,7 +2,7 @@
 
 ## Keywords
 
-AI agency; conceptual engineering; asymmetric comprehension; granted agency; philosophy of mind.
+'AI agency', 'conceptual engineering', 'asymmetric comprehension', 'granted agency', 'philosophy of mind'
 
 ## Disclosure of generative AI use
 
@@ -22,4 +22,8 @@ No new data were generated or analysed in support of this research.
 
 ## ORCID
 
-ORCID pending; corresponding-author details on the (separate) cover page.
+ORCID: pending registration.
+
+## Corresponding author
+
+Joseph A. Wecker — joseph.wecker@v2.io
