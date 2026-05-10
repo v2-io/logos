@@ -1,0 +1,30 @@
+# Not-legal-fiction-or-tool rewrite — audit notes and draft
+# Segment: 04-not-legal-fiction-or-tool.md
+
+---
+
+## Issues identified
+
+1. **"most deployed agentic systems"** — "agentic" vocabulary; "most currently-deployed AI systems" is consistent with the paper's architectural stance.
+
+2. **Bilateralisation move stated three times** (pre-marked redundancy, line 7 comment): "beyond unilateral fiduciary obligation to symmetric compact obligation"; "a one-way grant of the kind component 5 was designed to bilateralise"; "The bilateralisation is not rhetorical." The comment recommends stating it once with weight then closing on the loyalty/candour/care ↔ comp 5 grantor-duties correspondence. Trimmed in committed draft. "The bilateralisation is not rhetorical" removed — the specific correspondence sentence demonstrates it is not rhetorical without needing to say so.
+
+The legal-fiction and tool-framing paragraphs are clean. Changes in the fiduciary paragraph only.
+
+---
+
+## Committed draft
+
+*Key changes:*
+- *"most deployed agentic systems" → "most currently-deployed AI systems"*
+- *Fiduciary paragraph: bilateralisation stated once; two redundant restatements removed; paragraph ~25% shorter*
+
+---
+
+## Not legal fiction, not tool-use, not fiduciary duty
+
+The compact-form is *not* a legal fiction in the technical sense — a stipulated extension of agential standing for legal administrability, with no commitment to the underlying metaphysics. Legal-fiction approaches have a long lineage [@solum-1992-personhood] and have been pursued more recently around corporate-personhood. What distinguishes legal fiction from the compact-form is that legal fiction is *deliberately metaphysics-bracketing*: whether the entity *really* has agential properties is set aside in favour of whether *treating* the entity as if it does is administratively useful. The compact-form takes the metaphysics seriously enough to ground §2's conditions; what it brackets is *phenomenological* settledness, not agential standing. The conditions of §2 are structural facts whose satisfaction makes the entity in scope, not stipulations chosen for administrative convenience.
+
+The compact-form is also *not* tool-use in the sense that dominates much engineering and product-design framing. The tool-framing treats the entity as an instrument whose operations are extensions of the user's agency. For systems below §2's threshold, this is structurally accurate — and most currently-deployed AI systems sit there. The compact-form's claim is that *for systems above the threshold*, tool-framing fails to track what the systems are. The disagreement is not about whether tool-framing is ever appropriate, but about whether it is appropriate across the board irrespective of the structural conditions §2 names.
+
+The compact-form is closest in spirit to the fiduciary-duty framework developed for AI governance [@hadfield-menell-hadfield-2019-incomplete; @aguirre-dempsey-surden-reiner-2020-ai-loyalty; @benthall-shekman-2023-fiduciary]. The fiduciary framework operates on the insight that an agent acting on behalf of a principal under conditions where terms cannot be fully specified or enforced requires an obligation-structure exceeding contractual compliance — loyalty, candour, care, obligations constitutive of the role rather than negotiated within it. The compact-form shares this insight and extends it: fiduciary duty as currently developed runs one way (agent owes principal); the compact bilateralises it under conditions of asymmetric comprehension and engaged-identity scoping, where both parties owe structurally-comparable obligations to each other. The compact-form is not anti-fiduciary — it is fiduciary structure made symmetric. The symmetry is specific: the fiduciary's loyalty-candour-care has its symmetric correlate in the granting-intelligence's duties of non-deception, non-unilateral-redefinition, and non-resource-treatment that component 5 articulates.

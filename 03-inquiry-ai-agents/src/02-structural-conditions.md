@@ -1,5 +1,3 @@
 # 2. Structural conditions for agency-extension
 
 Two structural conditions distinguish the systems for which the agency-extension question is genuinely open from the systems for which it is foreclosed by their architecture or their deployment. The first — *architectural scoping* — is a fact about how a system is built. The second — *engaged-identity scoping* — is a fact about how a system holds together across time. Both are necessary; together they place a system in the scope of the agency-extension question without resolving it. Naming this scope is the section's primary work, and most of what follows is the deflationary consequence: the population of systems for which the question is genuinely open is structurally narrow — narrower than the discourse surrounding 'AI agency' has typically presumed.
-
-The two conditions are introduced at the level of structural fact rather than behavioural surface; the reasons for that choice are taken up first, before the conditions themselves are articulated. The conditions identify a threshold; what passes the threshold is the in-scope class for which §3 articulates the relational form.
