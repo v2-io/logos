@@ -4,7 +4,7 @@ year: 2019
 journal: ACM Queue
 volume: '17'
 number: '1'
-pages: 1--33
+pages: 45--77
 doi: 10.1145/3317287.3328534
 key: lipton-steinhardt-2019-troubling
 type: article
@@ -12,10 +12,11 @@ authors:
 - Lipton, Zachary C.
 - Steinhardt, Jacob
 internal_note: |
-  Verified 2026-05-09 via WebSearch. First posted as arXiv:1807.03341 (2018-07-09;
-  v3 dated 2018-07-26 corresponds to ICML 2018 Debates submission); peer-reviewed
-  publication is ACM Queue 17(1), Jan-Feb 2019. Cite the 2019 ACM Queue version as
-  the published form; the arXiv preprint is a discoverability link.
+  Verified 2026-05-09 via WebSearch (ACM citation form: "Queue 17, 1 (feb), 45-77").
+  Corrected pages from 1-33 to 45-77 on 2026-05-09. First posted as arXiv:1807.03341
+  (2018-07-09; v3 dated 2018-07-26 corresponds to ICML 2018 Debates submission);
+  peer-reviewed publication is ACM Queue 17(1), February 2019. Cite the 2019 ACM
+  Queue version as the published form; the arXiv preprint is a discoverability link.
 
   Cited in 02-synthese-methodology/DRAFT-GUIDE.md §"Existing review and adversarial-
   collaboration literatures" as the closest-neighbor critique of ML reviewing

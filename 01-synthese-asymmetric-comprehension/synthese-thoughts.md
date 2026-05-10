@@ -150,7 +150,7 @@ Word targets sum to ~10K. Each section names the core argument, the key moves to
 - Scope is not a yielding-of-commitments — it's a clarification of where the commitments apply.
 
 **Citations to engage:**
-- Bruineberg, Dolega, Dewhurst & Baltieri 2022 *The Emperor's New Markov Blankets* (BBS 45:e69) — Pearl-blanket vs Friston-blanket distinction. The Class 1/2/3 partition is a Pearl-blanket move with explicit scope honesty.
+- Bruineberg, Dolega, Dewhurst & Baltieri 2022 *The Emperor's New Markov Blankets* (BBS 45:e183) — Pearl-blanket vs Friston-blanket distinction. The Class 1/2/3 partition is a Pearl-blanket move with explicit scope honesty.
 - Friston 2013, 2019 on Markov blankets — adjacent literature.
 - Possibly Parr-Da Costa-Friston 2019 on statistical / thermodynamic system boundaries.
 - The directed-separation classification from agentic-systems framework (cite as a separate ASF segment, anonymized as "the directed-separation architectural classification developed in companion work" or similar).

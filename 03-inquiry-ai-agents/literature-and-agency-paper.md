@@ -1,4 +1,8 @@
-Cheat-sheet, mapped to the §-structure in `inquiry-ai-agents-may10.md`. Tight per-framework; this is location-and-purpose, not summary, since you know the literature. Section numbers refer to the proposed paper, not the dossier.
+*Hold paper 3's objectives in view while reading this — the **goal-test** (does this finding bear on fifth-position recognizability / CE-register fit / compact-distinction-from-cousins?) is in [DRAFT-GUIDE.md §"Objectives"](DRAFT-GUIDE.md). The cheat-sheet supports section-level engagement; the objectives govern which engagements are worth deepening.*
+
+---
+
+Cheat-sheet, mapped to the §-structure in [DRAFT-GUIDE.md](DRAFT-GUIDE.md). Tight per-framework; this is location-and-purpose, not summary, since you know the literature. Section numbers refer to the proposed paper, not the dossier.
 
 **Intentional-action theory (Anscombe, Davidson).** §2 *Structural conditions* and §5 *Operationalization*. Two argumentative jobs: (a) the action-vs-behavior distinction grounds *why architectural scoping matters at all* — Class 1 systems exhibit behavior under a description; Class 2/3 exhibit action under intention only if the architectural conditions for intention-bearing obtain (Anscombe's "under a description" + AAD's #scope-agency together). (b) §5 uses Davidson's reasons-as-causes against the operationalization-of-agency claim that behavioral benchmarks alone can settle the question — they probe what an action looks like from outside, but the rationalization-from-inside requires architectural verification. Substantive engagement with Anscombe (one paragraph in §2 plus footnote in §5); Davidson lighter (one paragraph in §5 plus citation in §1).
 

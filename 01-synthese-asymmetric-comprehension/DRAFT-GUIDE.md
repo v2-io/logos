@@ -264,7 +264,7 @@ Reviewers will look for visible engagement with the following — not just citat
 - **McMahan** on infant ethics — for the parallel argument in fetal/infant moral status debates.
 
 **Architectural-scoping (§4 / boundary discussion):**
-- **Bruineberg, Dolega, Dewhurst & Baltieri 2022 "The Emperor's New Markov Blankets"** (BBS 45:e69) — Pearl-blanket vs. Friston-blanket distinction. The Class 1/2/3 architectural partition is a Pearl-blanket move with explicit scope honesty. *Single most useful citation for the architectural-scoping condition.*
+- **Bruineberg, Dolega, Dewhurst & Baltieri 2022 "The Emperor's New Markov Blankets"** (BBS 45:e183) — Pearl-blanket vs. Friston-blanket distinction. The Class 1/2/3 architectural partition is a Pearl-blanket move with explicit scope honesty. *Single most useful citation for the architectural-scoping condition.*
 - **Friston 2013, 2019** on Markov blankets — adjacent literature; light reference.
 - **Pearl** on causation — for the architectural-scoping argument; cite [Author, in review] for the formal κ × 𝒜 version.
 

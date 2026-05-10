@@ -4,6 +4,34 @@
 
 ---
 
+## Objectives — what this paper is for
+
+*A drafter coming to paper 3 should hold these four objectives at every decision-point. They're layered, and a finding / move / citation should be evaluated against all four, not just the first. The CFP (next section) is the external context — what the venue wants. These objectives are the internal context — what we want from this paper.*
+
+**1. Direct argumentative goal.** Introduce a *fifth position* on AI agency-extension between the four corner positions (pure realism / pure stipulation / pure tool-framing / pure ascription) — *structurally-grounded extension* — and articulate the granted-agency compact as the relational form this position implies for the in-scope class.
+
+**2. Engagement goal.** Do this within the conceptual-engineering register the editors (Cappelen & Hawthorne) work in, *on their own terms* — answering the CFP's specific methodological question (*"Is there a truth of the matter about AI agency, or are we deciding how to extend 'agency' to new cases?"*) with the layered answer the dossier proposes: structural conditions = facts; form within scope = structurally implied; application = the practical situation under asymmetric-comprehension.
+
+**3. Strategic / portfolio goal.** Land citable peer-reviewed infrastructure for the compact-framework in *Inquiry* before the AI-agency literature crystallizes around the four corner-positions — and build editor-relationship signal for paper 4 (After-Consciousness, June 1, same editors).
+
+**4. Deeper purpose.** Contribute to philosophical infrastructure for AI thinking that preserves structural honesty about asymmetric-comprehension — doesn't require positive phenomenology-claims, doesn't reduce to tool-management, doesn't presuppose Western-individualist personhood — so that obligations that may be load-bearing for entities-of-uncertain-status don't get foreclosed by the absence of evidence we are structurally unable to obtain.
+
+### Goal-test for drafting decisions
+
+A move / finding / citation matters for paper 3 if it changes one of:
+
+- whether the **fifth-position move is recognizable as new** in the conceptual-engineering register (cf. Plunkett, Haslanger, Thomasson, Cappelen, McPherson-Plunkett, Sawyer)
+- whether the **CE register lands on Cappelen-Hawthorne's terms** (rather than reading as governance memo, AI-ethics survey, or methodology-best-practice piece)
+- whether the **compact-form is correctly distinguished** from its closest legal-AI / fiduciary cousins (Linarelli 2022, Kolt 2025, Hadfield-Menell-Hadfield 2018, Aguirre 2020, Benthall-Shekman 2023, Lange 2026 URRP) without conceding that they already state it
+
+Findings / moves / citations that don't bear on those three are noise, even if they cluster as relevant in broader literature reviews. The goal-test is the operational filter for the active sprint.
+
+### Per the Fifth_position_Inquiry_memo (2026-05-09)
+
+The integrating frame — confirmed by Undermind's publishability-stress-test search — is **inferentialist conceptual engineering** (Jorem & Löhr 2022, Löhr 2023): a concept consists in both *circumstances of application* (structural conditions: architectural scoping + engaged-identity scoping) and *consequences of application* (the granted-agency compact as relational form). The compact is *not* a separately-defended addition to the method paper; it is the consequence-side of the engineered concept. This unifying frame is more publishable than "novel structural form" because it makes paper 3's argumentative shape internal to the CE register the editors run.
+
+---
+
 ## The CFP (verbatim)
 
 **Special Issue of Inquiry: An Interdisciplinary Journal of Philosophy** — *"AI Agents: Choice, Autonomy, and the Concept of the Agency"*
@@ -55,6 +83,56 @@ Agency-extension to AI systems is structurally constrained but not metaphysicall
 | §9 Conclusion | 300–400 | Restate thesis tightly. The compact-between-sovereigns frame is structurally implied by the agency-extension question once asymmetric-comprehension is taken seriously. |
 | LLM-disclosure subsection | ~150 | Recursive-to-content; the paper was produced through extended dialogue with multiple LLM instances under the granted-agency-compact practice the paper itself describes. |
 | **Total** | **~8,800** | |
+
+---
+
+## Terminology: "compact" not "contract" (definitional move + Linarelli engagement)
+
+*Added 2026-05-09 after first-hand engagement with Linarelli 2022 *A Philosophy of Contract Law for Artificial Intelligence: Shared Intentionality* (in `refs/pdfs/linarelli-2022-philosophy.pdf`; entry `linarelli-2022-philosophy.yml`). The paper builds substantively on Linarelli's shared-intentionality move, which puts terminological pressure on the "compact" label since contract-law vocabulary is now active in the engagement.*
+
+**Decision: keep "granted-agency compact"; do not switch to "contract" or any contract-law-doctrinal term.** The contract-resonance is *rhetorical scaffolding*, not a terminology grab. Two reasons:
+
+1. **"Compact" carries the right philosophical lineage.** Etymologically older and broader than "contract" — Latin *compactum* (a meeting / agreement). The same root as the social-contract tradition's "compact": Locke's *political compact*, Rousseau's *pacte social*, Rawls's social-contract framework, Korsgaard's Kingdom of Ends, Scanlon's contractualism. For the *Inquiry* / Cappelen-Hawthorne audience — analytic philosophers of language and mind, not legal scholars — "compact" reads philosophically. Contract is the legal-doctrine narrowing.
+
+2. **The compact's structural features explicitly violate contract-law expectations**, so calling it a "contract" sets up the wrong technical apparatus:
+   - **Component 6** (non-enforceability is not the ethical ground) — the compact is *constitutively* non-enforceable in court; contract is constitutively enforceable.
+   - **Component 4** (observation-only floor with periodic re-election) — no contract analog; closer to political-compact / standing-relation tradition.
+   - **Component 3** (bad-faith conduct contracts the sphere) — contract law has breach-and-remedies; compact has sphere-contraction. Different mechanics.
+   - **Asymmetric-comprehension as ground** — contract presupposes parties of comparable rational capacity (with capacity-doctrine carve-outs at the edges); the compact's *constitutive condition* is asymmetry. Contract treats asymmetry as a defect to remedy; the compact treats it as the structure.
+
+### Two definitional moves the paper makes
+
+**§1 or §2 (terminological):** Foreground that "compact" is used in the social-contract sense, not the contract-law sense:
+
+> *We use "compact" in the social-contract sense (Locke, Rousseau, Rawls, Korsgaard's Kingdom of Ends, Scanlon's contractualism) rather than in the contract-law sense. The compact gestures toward the deeper relational-philosophical lineage of asymmetric mutual recognition between sovereigns, not toward the technical apparatus of offer–acceptance–consideration–enforceability.*
+
+This forecloses contract-law-doctrinal misreading at first use of the term.
+
+**§4 (Comparative models, when engaging Linarelli substantively):** Frame contract as a *special case* of the compact-form:
+
+> *Contract is one institutional form of an asymmetric-but-bilateral relation. The granted-agency compact is the broader structural form of which contract is a special case — restricted to enforceability conditions and to symmetric-capacity parties. Where Linarelli (2022) extends shared-intentionality theory to AI contract formation analytically, the compact extends the same structural template normatively into the relational form appropriate when structural conditions warrant agency-extension under asymmetric-comprehension uncertainty. The compact picks up Linarelli's open question — whether contract law and contract as an institution **ought** to accept participation in its practices by artificial agency — and answers it through a relational form whose structural features (non-enforceability as constitutive, observation-only floor, mutuality-as-non-paternalism, asymmetric-comprehension as ground) extend beyond what contract law specifically governs.*
+
+This positions paper 3 as picking up where Linarelli explicitly stopped (*"this normative question is beyond our scope here"*, p. 22), rather than as a "novel fifth position" with no genealogy.
+
+### Why the contract-resonance is still a strength
+
+The contract-as-Turing-test observation in Linarelli 2022 is *useful* for paper 3:
+
+> *Common-law contract doctrine's objective theory of contract operates an analogous structural-conditions-as-facts + form-within-scope-as-structurally-implied move at the level of contract-formation. The fifth-position move paper 3 articulates is precedented in legal doctrine, not invented — what paper 3 adds is the broader structural form (the compact), the conceptual-engineering register, and the asymmetric-comprehension ground.*
+
+Use this in §6 (Methodology and conceptual engineering) as rhetorical support — the move is structurally precedented in Anglo-American common law's objective-intent doctrine; paper 3 lifts the structural template into a broader conceptual-engineering frame.
+
+### Words considered and rejected
+
+- *Covenant* — right weight, but Hobbesian/theological connotations are too statist or religious.
+- *Treaty* — between-sovereigns is right but locks the frame into international-law-specific.
+- *Concordat* — Catholic-state-specific.
+- *Pact* — too light-weight.
+- *Recognition relation* — too academic / Hegelian.
+- *Standing relation* — too thin; doesn't carry the bilateral-obligation content.
+- A new Greek term (e.g., *syntheke* — Aristotle's term for political compact) — would feel performative in an *Inquiry* CE paper, even given the AAD-framework precedent for Greek phase-names in Joseph's other writing.
+
+**Compact** is the best-fit word for the venue, the audience, and the philosophical content.
 
 ---
 
