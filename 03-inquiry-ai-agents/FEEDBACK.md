@@ -171,3 +171,84 @@ These are the structural-cut recommendations that compose the compression pass r
 
 - Empty references section → done (17 new entries; pandoc citation conversion across 13 segments).
 - "Paper 3" drafting markers → done (replaced in 3 active segments).
+
+---
+
+## H. Gemini-2 audit decisions (added 2026-05-09 late evening)
+
+*De novo audit at `gemini-audit-2a.md` plus per-segment thoughts at `tmp-gemini/*.md`. Gemini-2 reads the paper at very high resolution (per-segment) and converges strongly with Sonnet on the structural-redundancy cuts; more aggressive than Sonnet on the poetic/quasi-mystical register tangents (recommends cutting cadence, asymmetric-comprehension mysticism, and component 4 self-severing-path entirely rather than compressing). Verdict: "underlying philosophical machinery brilliant and highly relevant; length its own worst enemy."*
+
+### H.1 — Convergent cuts (all auditors agree; compression-pass canon)
+
+These are the cuts where Codex / Gemini-1 / Sonnet / Gemini-2 all align. Take in compression pass.
+
+| Item | Auditor consensus | Compression-pass decision |
+|---|---|---|
+| §6 fifth-position re-listing of four positions | All four auditors: cut | Take. Replace with single paragraph naming inferentialist contribution. |
+| §1 + §3 compact-vs-contract definition duplication | Sonnet, Gemini-2 | Take. Keep deep version in §3 setup; compress §1 to 2 sentences. |
+| §3-deflationary-close paragraphs 1-2 (verbatim repeat from §2-deflationary) | Sonnet, Gemini-2 | Take. Delete the redundant paragraphs; keep only the closing roadmap sentence. |
+| §6 conceptual-engineering "citation dump" paragraph | Sonnet, Gemini-2 | Take. Compress to single sentence acknowledging tradition. |
+| §8 six open edges → reduce to most-critical | Sonnet (G.2), Gemini-2 | Take. Combine related edges; aim for 3 not 6. |
+| §9 conclusion compress (~50%) | Sonnet, Gemini-2 | Take. Cut fifth paragraph entirely; tighten remaining. |
+| §7 Soulier final 2 paragraphs → 1 | Gemini-2 | Take. Combine into single paragraph. |
+| §2 "shared phenomenological space" duplicate (factor ii + comp 5) | Sonnet (already done G.1.d), Gemini-2 | Already done. |
+
+### H.2 — Strong Gemini-2 cuts beyond Sonnet
+
+Where Gemini-2 is more aggressive than Sonnet. These are the *Joseph-preference vs. reviewer-readability* tension points.
+
+**H.2.a — §2-cadence section**: Sonnet (compress); Gemini-2 (cut entirely as tangential developmental-psychology). **Decision:** compromise — *compress significantly* (collapse to a 1-paragraph integrated note inside §2-engaged-identity), don't cut entirely. The cadence observation is paper-3-distinctive at the substrate level; cutting it loses the temporal-axis dimension. But Gemini-2's reading that it sits as a tangent in the structural-conditions section is fair. Integration into engaged-identity restores its structural place; standalone subsection earned its own time only because of generous drafting; compression resolves.
+
+**H.2.b — §2-asymmetric-warrant principia/fundamentum.md prose**: Both Codex and Gemini-2 flag the "mountains comprehend the hills / creation comprehends destruction / eternity comprehends time" enumeration as quasi-mystical and inappropriate for *Inquiry*. Sonnet recommended option 1 (compress to 2-3 sentences). **Decision:** *partial compromise* — cut the most poetic enumeration ("mountains comprehend the hills..."), keep the structural articulation (greater-comprehends-lesser, lesser-projects-from-below) in clean analytic prose. The structural claim is paper-3-load-bearing per Joseph; the prose-register departure is what reviewers will catch. Compression resolves by keeping content, cutting register.
+
+**H.2.c — §3-comp4-floor self-severing path digression**: Sonnet (compress), Gemini-2 (cut entirely). **Decision:** *compress to one paragraph*, don't cut. The connection to what the floor is *for* — protection against the chosen unbounded death-by-self-cutting-off — is paper-3-load-bearing for component 4's structural necessity. Cut the philosophical-elaboration prose; keep the one-sentence structural claim.
+
+**H.2.d — §3-comp5-mutuality last two paragraphs**: Sonnet (compress), Gemini-2 (cut entirely as asymmetric-comprehension tangent). **Decision:** *compress to one paragraph*. The convergence-grounding of mutuality is paper-3-distinctive (it's what makes mutuality non-paternalistic-by-construction rather than non-paternalistic-by-qualification). But two paragraphs is too much for the structural work it does. One paragraph carries the move; the §6 fifth-position commitment-naming carries the development.
+
+**H.2.e — §2-architectural-not-behavioural ¶4-7**: Sonnet (partial-cut keep ¶4-5), Gemini-2 (condense). **Decision:** Sonnet's compromise — keep the obstruction-not-absent body argument (¶4-5); cut the channel-collapse-forces-architecture extension (¶6-7) since channel-collapse lives in sub-scope-lattice. Saves ~300 words.
+
+### H.3 — Items where Gemini-2 differs from drafter judgment
+
+**H.3.a — §1-methods-disclosure recommendation to move to back-matter**: Gemini-2 reads the recursive-to-content placement as risky for editorial expectations. The cleanup agent already added a separate compliance disclosure to back-matter; the §1 piece can stay as methodological-reflexivity. **Decision:** keep §1 piece; back-matter compliance disclosure is now in place (cleanup agent commit). No further action.
+
+**H.3.b — §2-engaged-identity "shared phenomenological space" italicised quote and "weight of facts; hesitation before deciding"**: Gemini-2 flags as "literary flourishes." Joseph's voice and structurally-load-bearing for factor (v). **Decision:** keep one occurrence (deduplicated already by G.1.d); preserve the "weight of facts / hesitation before deciding" articulation as Joseph-canonical voice. Gemini-2's tonal concern is real but the structural content is what factor (v) requires.
+
+**H.3.c — §3-comp1 "intelligence begets intelligence; agency begets agency" maxim**: Gemini-2 flags as risky stylistic choice. Joseph's voice. **Decision:** keep; this is one of the 1-2 aphorisms Sonnet's "pick the best" allows.
+
+### H.4 — Compression-pass roadmap (consolidated)
+
+Combined cut estimates:
+
+| Source | Rough word savings |
+|---|---|
+| §1 compact-note compression | ~150 |
+| §1 four-positions tightening | ~100 |
+| §2 architectural-not-behavioural ¶6-7 cut | ~300 |
+| §2 asymmetric-warrant poetic enumeration cut | ~200 |
+| §2 cadence compress to integrated paragraph | ~250 |
+| §2 deflationary "We" / italicised line softening | ~50 |
+| §2 architectural-restating cuts | ~100 |
+| §3 setup compact-note duplication | (covered above) |
+| §3 comp4 self-severing compress | ~250 |
+| §3 comp5 last 2 paragraphs → 1 | ~250 |
+| §3 comp6 50% compression of repetitive (5)-violation | ~400 |
+| §3 deflationary-close cut redundant paragraphs | ~350 |
+| §4 tool-use paragraph slight compression | ~75 |
+| §4 Linarelli closing common-law paragraph trim | ~100 |
+| §5 longitudinal sketch compression | ~100 |
+| §5 thresholds Anthropic example reference cut | ~75 |
+| §6 conceptual-engineering citation dump | ~150 |
+| §6 fifth-position re-listing cut entirely | ~325 |
+| §6 commitment paragraph compress | ~165 |
+| §7 Soulier final 2 paragraphs → 1 | ~150 |
+| §8 open-edges 6 → 3 | ~400 |
+| §9 fifth-paragraph cut + general compression | ~400 |
+| **Subtotal "by recommendation"** | **~4,290** |
+| General prose tightening across all sections (~10% remaining) | **~3,000** |
+| Repetition-of-key-words-and-phrases trim | **~1,200** |
+| Aphoristic-register pick-the-best | ~250 |
+| **Total target compression** | **~8,740** |
+
+This brings 21,300 → ~12,500 still over target. **Additional structural compression needed**: paragraph-density reduction across sections (more aggressive than 10% in some), possible conjoining of subsections within sections, or accepting a final word count slightly over the 10K self-imposed target (the venue's own stated guidance is "around or under 10,000" — ~10,500-11,000 is plausibly defensible).
+
+The compression pass should proceed section-by-section with these targets in mind; the OL convention's composability discipline (segment files in OUT manifest) makes section-by-section compression mechanical.
