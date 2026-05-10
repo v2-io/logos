@@ -28,10 +28,14 @@
 #   <manifest-stem>  reads OUT.<stem>.md (e.g., `inquiry-ai-agents-2026`).
 #
 # Output layout (per (paper, manifest) pair):
-#   <paper>/.build/<stem>/<stem>.md           concatenated markdown (intermediate)
-#   <paper>/.build/<stem>/<stem>.references.bib  auto-emitted by `bin/refs emit`
-#   <paper>/<stem>.docx                       primary submission artifact (Word)
-#   <paper>/<stem>.pdf                        preview PDF (for self-review)
+#   <paper>/.build/<stem>/<stem>.md             DOCX-intent markdown (intermediate)
+#   <paper>/.build/<stem>/<stem>.pdf-preview.md PDF-intent markdown (intermediate; keywords stripped)
+#   <paper>/.build/<stem>/<stem>.references.bib auto-emitted by `bin/refs emit`
+#   <paper>/<stem>.docx                         primary submission artifact (Word)
+#   <paper>/<stem>.pdf                          preview PDF (for self-review)
+#   <paper>/<stem>.md                           assembled markdown (readable form of the
+#                                                final paper; carries a banner identifying
+#                                                it as a build output — sources live in src/)
 #
 # Conventions:
 #   - meta.md in <paper-dir> root carries YAML frontmatter (title, authors,
@@ -405,12 +409,60 @@ class Builder
   def publish(docx_path, pdf_path)
     FileUtils.cp(docx_path, @paper_dir / docx_path.basename) if docx_path&.exist?
     FileUtils.cp(pdf_path, @paper_dir / pdf_path.basename) if pdf_path&.exist?
+    publish_assembled_markdown
+  end
+
+  # Publish the DOCX-intent assembled markdown alongside the .docx / .pdf so a
+  # human (or future agent) can read the whole paper in one place without
+  # digging into `.build/` or extracting prose from a Word file. Also useful
+  # for grep, diff, share-with-colleagues, and quick word-counts. We publish
+  # the DOCX-intent intermediate (the one with full frontmatter incl.
+  # keywords); the PDF-intent variant differs only by the stripped keywords
+  # field, and one published copy is enough.
+  #
+  # A banner comment was previously injected after the YAML frontmatter to
+  # mark the file as a build output; it surfaced as a submission-time
+  # artefact on de-novo audits (reviewers reading the assembled .md saw it as
+  # a stray "internal build comment" near the top of the manuscript). The
+  # banner has been moved into the YAML frontmatter as a `_build:` field —
+  # invisible in any rendered output (pandoc's docx/pdf writers ignore
+  # unknown YAML keys) and still discoverable by anyone opening the file.
+  def publish_assembled_markdown
+    src = @build_dir / "#{@manifest_stem}.md"
+    return unless src.exist?
+
+    dst = @paper_dir / "#{@manifest_stem}.md"
+    dst.write(with_build_banner(src.read))
+    @assembled_md_published = dst
+  end
+
+  def with_build_banner(content)
+    banner_value = "Built by bin/build from src/*.md per OUT.#{@manifest_stem}.md. " \
+                   "Source-of-truth lives in src/; edits to this file are overwritten on the next build."
+
+    # Inject `_build:` into the YAML frontmatter so the marker travels with
+    # the file but never surfaces in body text. If for any reason the file
+    # has no frontmatter, return the content unchanged.
+    if content.start_with?("---\n")
+      parts = content.split(/^---\n/, 3)
+      if parts.length >= 3
+        new_frontmatter = parts[1].sub(/\A/, "_build: #{banner_value.inspect}\n")
+        "---\n#{new_frontmatter}---\n\n#{parts[2].lstrip}"
+      else
+        content
+      end
+    else
+      content
+    end
   end
 
   def report_success(docx_path, pdf_path)
     [docx_path, pdf_path].compact.each do |p|
       rel = (@paper_dir / p.basename).relative_path_from(ROOT)
       puts "✓ #{rel}"
+    end
+    if @assembled_md_published
+      puts "✓ #{@assembled_md_published.relative_path_from(ROOT)}"
     end
     if @reference_doc_used
       puts "  (docx styled from #{@reference_doc_used.relative_path_from(ROOT)})"

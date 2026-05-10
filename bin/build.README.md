@@ -14,7 +14,9 @@ Produces:
 
 - `<paper-dir>/<stem>.docx` — **primary submission artifact** for Inquiry/T&F. Word format is what T&F prefers (no LaTeX class is provided for *Inquiry*).
 - `<paper-dir>/<stem>.pdf` — preview only (lualatex via pandoc). Not for submission; for the drafter's self-review.
-- `<paper-dir>/.build/<stem>/<stem>.md` — concatenated intermediate (debug).
+- `<paper-dir>/<stem>.md` — assembled markdown (the readable / greppable / shareable form of the final paper, with all segments concatenated in OUT-order, frontmatter from `meta.md`, and a banner comment identifying it as a build output). Useful when you want to review the whole paper without flipping through `src/*.md` segments or extracting prose from the .docx.
+- `<paper-dir>/.build/<stem>/<stem>.md` — DOCX-intent intermediate (debug).
+- `<paper-dir>/.build/<stem>/<stem>.pdf-preview.md` — PDF-intent intermediate (keywords stripped; debug).
 - `<paper-dir>/.build/<stem>/<stem>.references.bib` — emitted via `bin/refs emit`.
 
 Citations: T&F house style is **Chicago author-date**. The build looks for `chicago-author-date.csl` (system texlive copy on this machine) and passes it to pandoc's `--citeproc`. Falls back to pandoc's bundled default if not found. Both LaTeX-style (`\cite{key}`, `\citet{}`, …) and pandoc-native (`[@key]`, `[-@key]`, `[@k1; @k2, p. 5]`, bare in-text `@key`) citation forms are supported and pre-scanned by `bin/refs emit`; either may be used freely in segment source.

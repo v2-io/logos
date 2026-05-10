@@ -1,0 +1,19 @@
+---
+title: 'Going On, Not in the Same Way'
+year: 2020
+booktitle: 'Conceptual Engineering and Conceptual Ethics'
+editors:
+- Burgess, Alexis
+- Cappelen, Herman
+- Plunkett, David
+publisher: Oxford University Press
+pages: 230--260
+doi: 10.1093/oso/9780198801856.003.0012
+key: haslanger-2020-going
+type: incollection
+authors:
+- Haslanger, Sally
+internal_note: |
+  Added 2026-05-09 by cleanup agent. Cited in 01-introduction.md and
+  06-conceptual-engineering.md as the externalist-constraint anchor.
+  bib-fields: uncertain

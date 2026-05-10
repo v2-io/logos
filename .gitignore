@@ -13,3 +13,13 @@ refs/_emitted/
 0?-*/*.docx
 0?-*/*.pdf
 0?-*/refs.bib
+
+# Assembled-from-segments markdown is a build artifact (mirrors the .docx/.pdf).
+# Source of truth lives in src/*.md.
+0?-*/inquiry-ai-agents-*.md
+0?-*/synthese-asymmetric-*.md
+0?-*/synthese-methodology-*.md
+0?-*/inquiry-after-consciousness-*.md
+
+# Per-paper scratch / tmp dirs (e.g., per-segment review thoughts)
+0?-*/tmp-*/

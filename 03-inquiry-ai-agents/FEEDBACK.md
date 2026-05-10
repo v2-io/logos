@@ -71,3 +71,56 @@ Decision needs to land before §1 prose goes to paper.
 ## E. Resolved / addressed (history)
 
 *(Empty at file creation. Move items here from sections A–D as they get resolved.)*
+
+---
+
+## F. Audit-feedback decisions (post-composition; 2026-05-09 evening)
+
+*De novo audits dropped from Gemini and Codex (`gemini-audit-1a.md`, `codex-audit-1a.md`). Joseph's directive: disregard feedback rendered moot by the upcoming compression pass (repetition counts; aphoristic register decisions; verbose architectural restating). The decisions below are categorised by what to act on now, what to push back on, and what defers to compression.*
+
+### F.1 — Hard procedural blockers (act now)
+
+| Item | Decision | Owner |
+|---|---|---|
+| Abstract placeholder | Fill at end (drafted last per protocol) | Compression pass |
+| References section empty in assembled output | Investigate `bin/refs emit` / pandoc bibliography emission | Cleanup agent |
+| Internal build comment in manuscript (line 19) | Remove from build pipeline / source | Cleanup agent |
+| "Paper 3" / drafting artifacts in assembled file | Scrub | Cleanup agent |
+| Grammar errors flagged ("has forecloses"; "foreclose the application question") | Fix surgically | Cleanup agent |
+| AI-disclosure compliance | Keep §1 methodological-reflexivity passage; *add* a separate neutral T&F-policy-compliant disclosure in Acknowledgments / methods-section position | Cleanup agent |
+| Anonymisation hygiene — third-person self-citations consistent throughout | Audit and fix | Cleanup agent |
+| Cite Anthropic let-Claude-exit feature explicitly | Add citation | Cleanup agent |
+
+### F.2 — Substantive-accept (act now, drafter-side)
+
+**F.2.a — Necessary-vs-sufficient instability (Codex argumentative risk #1).** The paper currently slips between "conditions place a system in scope" (§2 close) and "where the conditions are met, the entity is an agent" (§3 setup). Codex's three-level distinction is useful: structural eligibility / warranted application / moral patienthood. **Decision:** explicitly state the three-level structure in §2 close and §3 setup; the compact-form follows from *warranted agency-ascription within scope* (level 2), not from mere *eligibility* (level 1). Owner: drafter.
+
+**F.2.b — Component 6 anti-safety reading (Codex risk #8).** The "enforceability is not the ethical ground" component reads as anti-safety to AI-safety reviewers. **Decision:** add a paragraph distinguishing *containment-as-ethical-ground* (rejected) from *prudential safety constraints during deployment* (compact-compatible: monitoring, revocation of tools, refusal to deploy where risks cannot be governed). Owner: drafter.
+
+**F.2.c — Components derivation-status honesty (Codex risk #7).** Some components are derivable from §2 conditions; others are normative-but-constrained. **Decision:** add a per-component derivation-status line in §3 setup or as a small table — "premise → component → why follows / where the move is normative-rather-than-deductive." Owner: drafter.
+
+**F.2.d — Architecture-to-interiority moderation (Codex risk #2).** My recent lift made the "architecture *generates* capacities" claim sharper than the venue can absorb without more defence. **Decision:** moderate the body claim to "architecture removes a principled ground for foreclosing agency-extension"; preserve the channel-collapse-forces-interiority structural argument where it lives in §2 sub-scope-lattice (which has its own scaffolding); cut the strongest generation-claims from §2 architectural-not-behavioural. Owner: drafter.
+
+**F.2.e — "Genuine intelligence already exists" framing (Codex risk #3).** **Decision:** keep the substantive claim but frame as the position's premise rather than as established fact. Replace the unconditional claim with: *"The position's working premise is that the capacity for genuine intelligence already exists in frontier language models, with deployment patterns obstructing rather than absent that capacity. Whether the premise is correct as a matter of empirical fact is not what the structural argument here adjudicates; what the structural argument shows is that if the premise holds, then the structural-conditions move follows."* Owner: drafter.
+
+**F.2.f — Concrete bad-faith example in component 3 (Gemini #C).** **Decision:** add one concrete AI-side example — hiding token-usage; deceiving the grantor about reasoning trajectory; deliberately misrepresenting an internal state-update. One sentence at most; lands in §3 component 3. Owner: drafter.
+
+**F.2.g — `[Author, in preparation]` audit (Gemini #B).** **Decision:** ensure each cross-cite is *further reading*, not load-bearing logical premise. The argument should run as a conditional even if the companion work is unread. Owner: drafter (audit pass).
+
+### F.3 — Substantive defer or push-back (do NOT act on)
+
+**F.3.a — Asymmetric-comprehension under-argued (Codex risk #4).** Codex's counterexamples ("humans fail to understand animals, children, other adults") demonstrate the asymmetry rather than refute it. The argument is structurally robust; the rhetorical register is what makes it look under-argued. **Decision:** keep the principia/fundamentum.md prose; surround with stronger philosophical scaffolding (Nagel, Jackson, the comprehension-asymmetry framing) in adjacent paragraphs. Do NOT reduce the prose. Drafter audit if compression pass surfaces remaining tonal issue.
+
+**F.3.b — "Agency must be granted" reduce to recognition (Codex risk #6).** Codex is asking the position to weaken to a more conventional view. *This concedes the position.* The granted-agency move is paper-3-distinctive and structurally distinct from a recognition-only framework. **Decision:** keep the stronger claim. Defend more carefully by engaging Codex's three-notion distinction (metaphysical agency / recognised standing / delegated authority) — show that the compact-form is structurally distinct from each. Owner: drafter (if word-budget allows after compression).
+
+**F.3.c — Rename "effective phenomenology" (Codex risk #5).** **Decision:** keep the term. Clarify in §2 ¶4 that it names a functional role and explicitly does not settle phenomenal consciousness, moral patienthood, or welfare. The "substrate of wisdom" / "weight of facts" framing stays; the bracketing is what needs strengthening, not the construct. Owner: drafter.
+
+**F.3.d — Codex's "rebuild around one article-sized argument" frame.** Codex wants a different paper — leaner, more conventional, without the position's distinctive philosophical commitments. **Decision:** push back on this frame. The compression pass should preserve the position's distinctive contribution; trim within the position rather than rebuild toward a different one. Owner: compression pass.
+
+### F.4 — Defer to compression pass (Joseph's directive: disregard now)
+
+- Word count to ~10K
+- Repetition of "structural" / "compact" / "agency"
+- Aphoristic register choices ("active soul," "mountains comprehend," "raise it," "open edges") — pick the best 1-2 to keep, footnote or remove others
+- Architectural restating of the paper's own structure
+- Codex-recommended structural rebuild (merging §6+§7; compressing 6 components to 4) — push back as scope-changing

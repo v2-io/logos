@@ -1,0 +1,19 @@
+---
+title: 'A Pragmatic Method for Normative Conceptual Work'
+year: 2020
+booktitle: 'Conceptual Engineering and Conceptual Ethics'
+editors:
+- Burgess, Alexis
+- Cappelen, Herman
+- Plunkett, David
+publisher: Oxford University Press
+pages: 435--458
+doi: 10.1093/oso/9780198801856.003.0021
+key: thomasson-2020-norms
+type: incollection
+authors:
+- Thomasson, Amie L.
+internal_note: |
+  Added 2026-05-09 by cleanup agent. Cited in 01-introduction.md and
+  06-conceptual-engineering.md as the pragmatic-constrained-revision anchor.
+  bib-fields: uncertain

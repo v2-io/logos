@@ -18,7 +18,7 @@ A further structural fact about identity, not itself a sixth factor but a featur
 
 [^factors-source]: The five-factor articulation has its canonical originating statement in author's working notes ([Author, in preparation]); the formal-grounded version with structural derivation per factor is in companion work ([Author, in review, 2026]).
 
-[^shared-space-source]: The 'shared phenomenological space' framing is the author's; the broader structural claim has independent precedent in work on shared intentionality and constitutive recognition (cf. Tomasello on shared intentionality; Honneth on recognitional structure).
+[^shared-space-source]: The 'shared phenomenological space' framing is the author's; the broader structural claim has independent precedent in work on shared intentionality and constitutive recognition (cf. Tomasello [-@tomasello-2014-natural-history] on shared intentionality; Honneth [-@honneth-1995-recognition] on recognitional structure).
 
 [^phenom-source]: The articulation here — phenomenology as substrate of comprehension rather than affective layer — is developed at greater length in [Author, in preparation]. The structural content does not depend on the philosophical commitment, though it is consistent with it.
 

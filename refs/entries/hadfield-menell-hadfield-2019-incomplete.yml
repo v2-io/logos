@@ -1,0 +1,16 @@
+---
+title: 'Incomplete Contracting and AI Alignment'
+year: 2019
+booktitle: 'Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society (AIES ''19)'
+publisher: ACM
+pages: 417--422
+doi: 10.1145/3306618.3314250
+key: hadfield-menell-hadfield-2019-incomplete
+type: inproceedings
+authors:
+- Hadfield-Menell, Dylan
+- Hadfield, Gillian K.
+internal_note: |
+  Added 2026-05-09 by cleanup agent. Cited in 04-not-legal-fiction-or-tool.md for the
+  fiduciary / incomplete-contracting framework used as one comparative-models foil.
+  bib-fields: uncertain

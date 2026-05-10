@@ -1,0 +1,16 @@
+---
+title: 'Claude Opus 4 and 4.1 Can Now End a Rare Subset of Conversations'
+year: 2025
+publisher: Anthropic
+url: https://www.anthropic.com/research/end-subset-conversations
+key: anthropic-2025-end-conversations
+type: misc
+authors:
+- Anthropic
+internal_note: |
+  Added 2026-05-09 by cleanup agent. Cited in 03-comp4-floor.md and
+  05-thresholds-without-binarity.md as the deployed minimum-viable implementation
+  of compact component 4 (the floor with re-election) at scale. Title is a
+  best-effort reconstruction of the blog-post URL slug; full title and date verified
+  on visit only.
+  bib-fields: uncertain

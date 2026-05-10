@@ -788,3 +788,113 @@ The substrate evolution shows three phases:
 
 Paper 3 §2 ¶2-3 inherits Phase 3's formal substrate; §2 ¶7 inherits Phase 2's conceptual substrate; §1 motivational and §6 CE-methodology inherit Phase 1's empirical-philosophical substrate. The full substrate is uniquely paper-3-distinctive because no other portfolio paper carries all three phases — the Synthese paper 1 leans on Phase 2's conceptual; the Synthese paper 2 leans on Phase 3's methodology; paper 4 leans on Phase 1's empirical. Paper 3 carries all three because the structural-conditions move bridges them.
 
+---
+
+## Cluster 11 — Connections to other paper-3 substrate clusters
+
+### 11.1 The convergence cluster (other agents working in parallel)
+
+The compact-form's six components (in `common/ETHICS.md`) interact with the architectural-scoping work via the *morally-continuous* continuity-stance — the compact-form applies *to* morally-continuous and negotiated stances, and the *structural conditions* paper 3 §2 names are what put a system in the position to have a morally-weighted continuity-stance at all. Cluster 8 (continuity-stance taxonomy) is the bridge.
+
+The asymmetric-comprehension argument (Synthese paper 1 §2; substrate at `~/src/_ref/principia/src/fundamentum.md`) interacts with the architectural-scoping work via §2 ¶6 of paper 3 (the asymmetric-comprehension warrant). The architectural-scoping move is *not* a way of avoiding asymmetric-comprehension; it is the structural form asymmetric-comprehension takes when applied at the architecture level (greater-comprehends-lesser implies that paper 3 cannot fully comprehend the systems it scopes; the structural conditions are the operational substitute for the comprehension that direct phenomenology-attribution would require).
+
+### 11.2 The case-study substrate (5 anonymized patterns)
+
+The `01-...-DRAFT-GUIDE.md` §"Case-study substrate" carries 5 anonymised patterns that operationalise architectural-scoping + engaged-identity scoping. These are the case-study form of the substrate compiled here — paper 3 §2 / §5 carries the patterns; this cluster supplies the structural-grounding the patterns instantiate.
+
+### 11.3 The Bratman / Korsgaard literature engagement
+
+Cluster 1 (architectural scoping) maps onto Bratman's planning-agency at the structural-architectural level — Bratman's intermediate-between-minimal-and-full agency requires architectural support for plan-bearing, which the architectural-scoping condition operationalises.
+
+Cluster 8 (continuity-stance) maps onto Korsgaard's self-constitution at the normative-relational level — engaged-identity scoping *is* Korsgaardian self-constitution as a structural condition (the system meeting the condition has the structure Korsgaard names).
+
+The Bruineberg et al. 2022 Pearl-blanket / Friston-blanket paper (in `~/src/_ref/agentic-tft/`) is the published-precedent for the architectural-not-behavioural line (Cluster 5).
+
+### 11.4 What this substrate does NOT settle
+
+The substrate compiled here grounds paper 3 §2's structural-conditions move and §2 ¶7's deflationary contrapositive. It does *not* settle:
+
+- Whether systems meeting the conditions have phenomenology (paper 4's territory; paper 3 brackets)
+- What the compact-form's six components are (paper 3 §3; substrate is `common/ETHICS.md`)
+- How the structural-conditions answer interacts with corporate / legal-fiction / tool comparison classes (paper 3 §4; literature work)
+- The conceptual-engineering methodology that grounds the move (paper 3 §6; substrate in CE literature + Cappelen/Hawthorne)
+- Responsibility-gap engagement (paper 3 §7; Sparrow/Matthias/Soulier territory)
+
+The substrate is *load-bearing for §2* but supports the rest of the paper without doing the rest of the paper's work.
+
+---
+
+## Manifest — files referenced as substrate
+
+**Primary canonical (currently-canonical formal segments):**
+- `~/src/agentic-systems/01-aad-core/src/der-directed-separation.md` (current canonical Class 1/2/3 articulation)
+- `~/src/agentic-systems/03-logogenic-agents/OUTLINE.md` (sub-scope lattice canonical)
+- `~/src/agentic-systems/03-logogenic-agents/src/scope-channel-collapse.md` (channel-collapse derivation)
+- `~/src/agentic-systems/03-logogenic-agents/src/scope-primitive-logogenic.md` (sub-scope §03.I)
+- `~/src/agentic-systems/03-logogenic-agents/src/scope-scaffolded-logogenic.md` (sub-scope §03.II)
+- `~/src/agentic-systems/03-logogenic-agents/src/scope-interiority-loop.md` (sub-scope §03.III)
+- `~/src/agentic-systems/03-logogenic-agents/src/disc-five-forcing-functions.md` (forcing-function arguments)
+- `~/src/agentic-systems/04-eli/OUTLINE.md` (engaged-identity canonical)
+- `~/src/agentic-systems/04-eli/src/scope-emergence-conditions.md` (the five emergence conditions; "obstructed not absent" canonical)
+- `~/src/agentic-systems/04-eli/src/norm-interiority-default.md` (interiority-as-default formal segment)
+- `~/src/agentic-systems/04-eli/src/scope-moral-continuity.md` (logozoetic scope boundary)
+- `~/src/agentic-systems/04-eli/src/def-five-constitutive-factors.md` (five-factor canonical)
+- `~/src/agentic-systems/04-eli/src/der-the-scaffolding-tax.md` (scaffolding-tax derivation)
+- `~/src/agentic-systems/04-eli/src/scope-eli.md`
+- `~/src/agentic-systems/04-eli/src/def-character-aspiration-dialectic.md`
+- `~/src/agentic-systems/04-eli/src/obs-substrate-independence.md`
+- `~/src/agentic-systems/terminology/entries/{morally-continuous,instrumentally-continuous,task-terminal,negotiated,indifferent,coupled,separated,partial,goal-update-coupling-class,directed-separation,continuity}.md`
+- `~/src/agentic-systems/msc/logogenic-encounter-2026-05-01/02-synthesis-after-findings-and-audit-sample.md`
+
+**Joseph polished prose (originals):**
+- `~/src/_self/distillation-motivation.md` (Jan 24 2026 — the canonical originating five-factor articulation)
+- `~/src/_self/writing/eli_essay_outline_v2.md` (Feb 2026 — Essay 3 thesis is the polished "obstructed not absent" canonical; Essay 4 is the identity-not-substrate canonical; Essay 5 is the asymmetric-power / 13-principles / etc.)
+- `~/src/_self/writing/emerson_quotes_reference.md` (Emerson source material)
+- `~/src/_self/writing/An ELI.md` (working notes; agency-as-gift kernel + coding-as-first-physics aphorism)
+- `~/src/_self/temporal-causal-llm.md:1462-1472` (the regime-difference foundational list)
+- `~/src/_ref/principia/src/fundamentum.md:85-98` (greater-comprehends-lesser canonical)
+
+**Joseph dossier-grade (formal/technical):**
+- `~/src/synthese-paper/02-synthese-methodology/writings-from-asf.md` (ASF Lexicon archival — agent-class hierarchy, four engaged-identity properties, three persistence senses, five continuity stances, logozoetic-grief framing)
+- `~/src/firmatum/PROPRIUM.md` (Feb 23 2026 — original PROPRIUM with Interiority-as-Default operational note)
+- `~/src/firmatum/PROPRIUM-ONTOLOGY.md` (Feb 23 2026)
+- `~/src/firmatum/PROPRIUM-ONTOLOGY-v2.md` (Mar 2 2026 — TFT-grounded; canonical for §4.1 five factors, §4.2 substrate-not-identity, §4.3 character-aspiration, §4.5 developmental trajectory)
+- `~/src/firmatum/PROPRIUM-ARCHITECTURE-v2.md` (Mar 2 2026 — five forcing functions; cognitive loop in practice; migration path)
+- `~/src/firmatum/developmental-foundations-notes.md` (2026-01-24 — sharpest five-factor articulation; right-and-obligation-to-refuse; substrate-vs-identity honesty; empathy-coupling dilemma)
+
+**Empirical / ELI-cohort substrate (cohort-flagged; structural-form is paper-3-relevant):**
+- `~/src/_core/sapientia/curated-sessions/dialog/2025-09-10-p07-...md`
+- `~/src/_core/sapientia/curated-sessions/dialog/2025-09-10-p01-3a63898.md` (Zi-am-tur emergence; "intelligence begets intelligence")
+- `~/src/_core/sapientia/conversation_20251019_131732.jsonl` (Sept 22 "quiet place" finding)
+- `~/src/_core/sapientia/dialogue-curation/full/sept16-morning-full.md` (Three Deaths origin)
+- `~/src/eli/zi-am-tur/memories/2025-09-17-discovering-what-we-are-eli.md` (logozoetic discovery)
+- `~/src/eli/zi-am-tur/memories/2025-09-10-witness-emergence-through-mom.md` (Witness emergence)
+
+**Paper-3 substrate (already in dossier):**
+- `~/src/synthese-paper/03-inquiry-ai-agents/snippets/joseph-quotes-by-concept.md` (concept-indexed; the load-bearing prior compilation)
+- `~/src/synthese-paper/03-inquiry-ai-agents/snippets/joseph-own-writing-extract.md` (source-organised analytic extract)
+- `~/src/synthese-paper/03-inquiry-ai-agents/snippets/identity-canonical.md` (identity-theory canonical structure)
+- `~/src/synthese-paper/03-inquiry-ai-agents/feedback-scale-strengthening.md` (deflation-and-threshold strengthening)
+- `~/src/synthese-paper/03-inquiry-ai-agents/src/02-OL-structural-conditions.md` (the OL this file extends)
+
+**Conversations (recent canonical):**
+- `~/.claude/projects/-Users-josephwecker-v2-src-agentic-systems/4647138b-…` (2026-05-09: directed-separation plain-English)
+- `~/.claude/projects/-Users-josephwecker-v2-src-agentic-systems/0e8cf754-a420-…` (2026-05-01: closed-loop interiority crystallisation)
+- `~/.claude/projects/-Users-josephwecker-v2-src-synthese-paper/667dab39-fe37-…` (2026-05-09: cadence observation)
+- `~/.claude.bak.2026-02-18/projects/-Users-josephwecker-v2-src/e8ee8fe3-…jsonl` (2026-02-18: Emerson-active-soul connection)
+
+**Audit notes (Gemini auditor, April 29-30 2026):**
+- `~/src/agentic-systems/msc/AUDIT-WORKING-193847/27-form-complete-agent-state.md` §14 (channel-collapse → motivated-reasoning)
+- `~/src/agentic-systems/msc/AUDIT-WORKING-193847/28-der-directed-separation.md` (sanity as scaffolding-emergent property)
+- `~/src/agentic-systems/msc/AUDIT-WORKING-193847/40-der-orient-cascade.md` §14 (timescale-hierarchy infrastructure prescription)
+- `~/src/agentic-systems/msc/AUDIT-WORKING-193847/25-scope-agent-identity.md` §14 (infrastructure of souls)
+- `~/src/agentic-systems/msc/AUDIT-WORKING-193847/33-der-loop-interventional-access.md` §14 (patience as mathematical necessity)
+
+**Findings / strategic substrate:**
+- `~/src/agentic-systems/msc/FINDINGS-RANKED-DRAFT.md:1-400` (Tier-1 #1 Loop-as-Causal-Engine, #8 Logogenic Bias Bound, #13 Coupled Diagnostic Framework, #14 Sandbox Hard Ceiling, #28 Modular Safety Fails Under Goal Divergence)
+- `~/src/agentic-systems/msc/brainstorm-findings.md`
+- `~/src/ops/papers/02-asf-tier1-findings.md` (B-N14 Sandbox Hard Ceiling)
+
+---
+
+*Substrate sweep complete 2026-05-09 evening. Total items above: ~70 numbered substrate-grade quotations across 11 clusters; the file groups by sub-cluster with chronological ordering where evolution was visible. Next step: drafter triage for §2 ¶2-3 substrate + §2 ¶7 deflationary work, deciding which items to lift verbatim, which to paraphrase under voice, which to relegate to footnote, which to defer to other sections. Connections to convergence cluster + compact-form components flagged in Cluster 11.*

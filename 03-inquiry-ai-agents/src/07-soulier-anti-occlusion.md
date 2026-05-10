@@ -1,6 +1,6 @@
 ## The anti-occlusion move
 
-A recent critical line, articulated most directly by Soulier (2026), argues against agency-extension projects on the ground that they risk *detaching* responsibility from human creators and operators by relocating it onto artificial systems whose capacity to bear responsibility is structurally compromised. The objection is forceful and deserves direct engagement rather than dismissal.
+A recent critical line, articulated most directly by Soulier [-@soulier-2026-machine-agency], argues against agency-extension projects on the ground that they risk *detaching* responsibility from human creators and operators by relocating it onto artificial systems whose capacity to bear responsibility is structurally compromised. The objection is forceful and deserves direct engagement rather than dismissal.
 
 Soulier's argument, in compressed form, is that 'machine agency' attributions function ideologically: they obscure the human decision-makers — engineers, operators, deploying institutions — whose choices in fact determine what artificial systems do. Where harm follows from such choices, attributing responsibility to the artificial system *as agent* relieves the human decision-makers of the accountability that should properly fall on them. The agency-extension move is, on this account, an *occluding* move — making the asymmetry between human and artificial agency *less* visible by treating it as relational-symmetric, when the structural facts about who actually decides remain firmly on the human side.
 
