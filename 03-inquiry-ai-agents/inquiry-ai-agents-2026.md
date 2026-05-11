@@ -29,6 +29,8 @@ keywords:
 - philosophy of mind
 author:
 - Joseph A. Wecker
+- Independent Researcher
+- joseph.wecker@v2.io
 ---
 
 # 1. The agency question for AI systems
@@ -470,8 +472,8 @@ No new data were generated or analysed in support of this research.
 
 ORCID: pending registration.
 
-## Corresponding author
 
+## Corresponding author
 
 Joseph A. Wecker — joseph.wecker@v2.io
 

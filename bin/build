@@ -377,7 +377,16 @@ class Builder
       # and back-matter); the YAML-driven heading would land at the very end.
     }
     fm["keywords"] = meta.keywords if !omit_keywords && meta.keywords.any?
-    fm["author"]   = meta.authors.map { |a| a.is_a?(Hash) ? a["name"] : a.to_s } if meta.authors.any? && !@anon
+    # In non-anon mode emit author name, affiliation, and email as separate
+    # entries so each gets its own "Author"-styled paragraph on the title page.
+    # Affiliation and email are T&F front-page requirements; they're stripped
+    # in anon mode along with the author name.
+    if meta.authors.any? && !@anon
+      fm["author"] = meta.authors.flat_map do |a|
+        next [a.to_s] unless a.is_a?(Hash)
+        [a["name"], a["affiliation"], a["email"]].compact.reject(&:empty?)
+      end
+    end
     "---\n#{YAML.dump(fm).sub(/\A---\n/, '')}---"
   end
 
