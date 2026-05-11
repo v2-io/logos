@@ -8,7 +8,8 @@
 
 | §   | Type         | Slug                                                                  | Title                                              | Stage |
 |-----|--------------|-----------------------------------------------------------------------|----------------------------------------------------|-------|
-| –   | Front        | [abstract](src/00-abstract.md)                                     | Abstract (200 w)                                   | final |
+| –   | Front        | [author-details](src/00-author-details.md)                         | Author details (deanon only)                       | final |
+| –   | Front        | [abstract-body](src/00-abstract.md)                                | Abstract + keywords                                | final |
 | 1   | Section      | [introduction](src/01-introduction.md)                             | The agency question for AI systems                 | rc1   |
 | –   | Subsection   | [methods-disclosure](src/01-methods-disclosure.md)                 | On the production of this text                     | rc1   |
 | 2   | Section      | [structural-conditions](src/02-structural-conditions.md)           | Structural conditions — setup                      | rc1   |

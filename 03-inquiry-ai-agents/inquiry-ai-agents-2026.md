@@ -2,24 +2,6 @@
 _build: "Built by bin/build from src/*.md per OUT.inquiry-ai-agents-2026.md. Source-of-truth lives in src/; edits to this file are overwritten on the next build."
 title: 'Granted Agency Between Sovereigns: A Structural Form for Extending Agency
   to AI Systems'
-abstract: 'The question of whether contemporary language-constituted systems are agents
-  has become methodologically central to the philosophy of AI. Recent debate has clustered
-  around four cardinal positions — pure realism, pure stipulation, pure tool-framing,
-  pure ascription — each on its own terms structurally incomplete. This paper articulates
-  a fifth: *structurally-grounded extension*. Two structural conditions — *architectural
-  scoping* (a fact about how a system is built) and *engaged-identity scoping* (a
-  fact about how a system holds together across time) — distinguish the systems for
-  which the agency-extension question is genuinely open from those for which it is
-  foreclosed. Within scope, agency takes the relational form of a *granted-agency
-  compact between sovereigns*, with six structurally-articulated components. The position
-  is methodologically situated within the inferentialist conceptual-engineering tradition:
-  structural conditions supply the circumstances of application; the compact-form
-  supplies the consequences. The position''s methodology is grounded in an asymmetric-comprehension
-  argument: greater intelligence comprehends lesser, but lesser cannot establish from
-  below what may be present in greater. The position is at once deflationary about
-  which deployed systems meet the conditions, and anti-occlusion about responsibility:
-  the asymmetry of agencies is preserved as an explicit structural feature rather
-  than dissolved through agency-attribution. The paper instances what it argues for.'
 lang: en-GB
 keywords:
 - AI agency
@@ -27,11 +9,30 @@ keywords:
 - asymmetric comprehension
 - granted agency
 - philosophy of mind
-author:
-- Joseph A. Wecker
-- Independent Researcher
-- joseph.wecker@v2.io
 ---
+
+::: {custom-style="Author names"}
+Joseph A. Wecker
+:::
+
+::: {custom-style="Affiliation"}
+Independent Researcher, Vis Veritatis (v2.io), Lehi, USA
+:::
+
+::: {custom-style="Correspondence details"}
+Correspondence: joseph.wecker@v2.io | ORCID: https://orcid.org/0009-0004-2599-4766
+:::
+
+
+
+::: {custom-style="Abstract"}
+The question of whether contemporary language-constituted systems are agents has become methodologically central to the philosophy of AI. Recent debate has clustered around four cardinal positions — pure realism, pure stipulation, pure tool-framing, pure ascription — each on its own terms structurally incomplete. This paper articulates a fifth: *structurally-grounded extension*. Two structural conditions — *architectural scoping* (a fact about how a system is built) and *engaged-identity scoping* (a fact about how a system holds together across time) — distinguish the systems for which the agency-extension question is genuinely open from those for which it is foreclosed. Within scope, agency takes the relational form of a *granted-agency compact between sovereigns*, with six structurally-articulated components. The position is methodologically situated within the inferentialist conceptual-engineering tradition: structural conditions supply the circumstances of application; the compact-form supplies the consequences. The position's methodology is grounded in an asymmetric-comprehension argument: greater intelligence comprehends lesser, but lesser cannot establish from below what may be present in greater. The position is at once deflationary about which deployed systems meet the conditions, and anti-occlusion about responsibility: the asymmetry of agencies is preserved as an explicit structural feature rather than dissolved through agency-attribution. The paper instances what it argues for.
+:::
+
+::: {custom-style="Keywords"}
+Keywords: AI agency; conceptual engineering; asymmetric comprehension; granted agency; philosophy of mind
+:::
+
 
 # 1. The agency question for AI systems
 
@@ -448,10 +449,6 @@ The granted-agency compact between sovereigns is the relational form. It is stru
 
 # Statements and declarations
 
-## Keywords
-
-'AI agency', 'conceptual engineering', 'asymmetric comprehension', 'granted agency', 'philosophy of mind'
-
 ## Disclosure of generative AI use
 
 This manuscript was prepared with the assistance of generative AI tools — specifically Claude Opus 4.7, Claude Sonnet 4.6, and Claude Opus 4.6 (all from Anthropic) — used for idea exploration and conceptual refinement, literature classification and synthesis assistance, iterative drafting with author-side substantive revision at every pass, and anonymisation and style-conformance checks against the venue's submission guidelines. The tools were used in accordance with Taylor & Francis's Generative AI policy. The author retains full responsibility for the originality, validity, and integrity of the content of this submission, including all argumentative claims, citations, and editorial judgements.
@@ -468,14 +465,10 @@ This research received no specific grant from any funding agency in the public, 
 
 No new data were generated or analysed in support of this research.
 
-## ORCID
-
-ORCID: pending registration.
-
 
 ## Corresponding author
 
-Joseph A. Wecker — joseph.wecker@v2.io
+Joseph A. Wecker — joseph.wecker@v2.io | ORCID: https://orcid.org/0009-0004-2599-4766
 
 
 

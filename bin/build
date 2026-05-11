@@ -364,29 +364,23 @@ class Builder
     false
   end
 
-  def render_yaml_frontmatter(meta, abstract_text, omit_keywords:)
+  def render_yaml_frontmatter(meta, _abstract_text, omit_keywords:)
     fm = {
-      "title"    => meta.title,
-      "abstract" => abstract_text,
-      "lang"     => meta.data["lang"] || "en-GB"      # British English per T&F style
-      # NB: do NOT set `reference-section-title` here. Pandoc citeproc would
-      # then emit its own "References" heading on top of the one build_body
-      # already places at the bibliography row's manifest position, producing
-      # a double "References  /  References" pair in the rendered output.
-      # The manifest-position heading is the right placement (between body
-      # and back-matter); the YAML-driven heading would land at the very end.
+      "title" => meta.title,
+      "lang"  => meta.data["lang"] || "en-GB"      # British English per T&F style
+      # NB: do NOT set `reference-section-title` here — see build_body comment.
     }
+    # keywords: kept in YAML for DOCX document-property metadata only; they are
+    # NOT rendered as visible body text by pandoc's DOCX writer. Visible keywords
+    # appear in src/00-abstract.md using {custom-style="Keywords"}.
     fm["keywords"] = meta.keywords if !omit_keywords && meta.keywords.any?
-    # In non-anon mode emit author name, affiliation, and email as separate
-    # entries so each gets its own "Author"-styled paragraph on the title page.
-    # Affiliation and email are T&F front-page requirements; they're stripped
-    # in anon mode along with the author name.
-    if meta.authors.any? && !@anon
-      fm["author"] = meta.authors.flat_map do |a|
-        next [a.to_s] unless a.is_a?(Hash)
-        [a["name"], a["affiliation"], a["email"]].compact.reject(&:empty?)
-      end
-    end
+    # abstract and author details are rendered as body content via
+    # src/00-abstract.md and src/00-author-details.md using custom-style fenced
+    # divs, so pandoc lays them out in correct T&F order:
+    #   [deanon: Author names → Affiliation → Correspondence]
+    #   Abstract (Abstract style) → Keywords → §1 body
+    # Removing them from YAML also removes pandoc's automatic "Abstract" heading
+    # and the fixed author→abstract ordering that YAML metadata imposes.
     "---\n#{YAML.dump(fm).sub(/\A---\n/, '')}---"
   end
 
