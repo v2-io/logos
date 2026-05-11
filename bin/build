@@ -602,18 +602,23 @@ class CLI
   USAGE = <<~USAGE.freeze
     bin/build — assemble a paper from an OUT.*.md manifest into DOCX (T&F primary) + PDF preview.
 
+    By default both the standard and anonymised builds are produced together.
+
     Usage:
-      bin/build [--anon] <paper-dir> <manifest-stem>    # specific manifest
-      bin/build [--anon] <paper-dir>                    # all OUT.*.md manifests in <paper-dir>
-      bin/build [--anon] <manifest-stem>                # specific manifest in cwd
-      bin/build [--anon]                                # cwd-aware default (cwd must be a paper-dir)
+      bin/build [flags] <paper-dir> <manifest-stem>    # specific manifest
+      bin/build [flags] <paper-dir>                    # all OUT.*.md manifests in <paper-dir>
+      bin/build [flags] <manifest-stem>                # specific manifest in cwd
+      bin/build [flags]                                # cwd-aware default (cwd must be a paper-dir)
 
     Flags:
-      --anon   Produce anonymised output: author field stripped from frontmatter,
-               self-citations replaced via refs/deny-list.yml `substitutions:`, and
-               <!--ANON:-->  /  <!--DEANON_ONLY--> inline markers applied.
-               Output files are named <stem>-anon.{docx,pdf,md} and coexist
-               alongside the non-anon build.
+      (default)    Build both standard and anonymised versions.
+      --no-anon    Build standard version only.
+      --anon       Build anonymised version only (alias: --just-anon).
+      --just-anon  Build anonymised version only.
+
+    Anonymised output strips author identity (frontmatter, self-citations,
+    ANON/DEANON_ONLY markers per refs/deny-list.yml) and is named
+    <stem>-anon.{docx,pdf,md}.
 
     Output: <paper-dir>/<stem>.docx (submission) and <paper-dir>/<stem>.pdf (preview).
   USAGE
@@ -621,7 +626,10 @@ class CLI
   def self.run(argv) = new.dispatch(argv)
 
   def dispatch(argv)
-    @anon = !!argv.delete("--anon")
+    no_anon   = !!argv.delete("--no-anon")
+    just_anon = !!(argv.delete("--just-anon") || argv.delete("--anon"))
+    @build_mode = no_anon ? :deanon_only : (just_anon ? :anon_only : :both)
+
     pairs =
       case argv.length
       when 0 then resolve_no_args
@@ -677,23 +685,33 @@ class CLI
   end
 
   def run_pairs(pairs)
-    isolate   = pairs.size > 1
+    anon_modes = case @build_mode
+                 when :deanon_only then [false]
+                 when :anon_only   then [true]
+                 when :both        then [false, true]
+                 end
+
+    # Isolate errors when there are multiple builds (multiple pairs or both modes)
+    # so one failure doesn't abort the rest.
+    isolate   = pairs.size > 1 || @build_mode == :both
     successes = []
     failures  = []
 
     pairs.each do |paper_dir, stem|
-      label = "#{paper_dir.relative_path_from(ROOT)}/#{stem}#{@anon ? " (anon)" : ""}"
-      if isolate
-        begin
-          Builder.new(paper_dir, stem, anon: @anon).call
+      anon_modes.each do |anon|
+        label = "#{paper_dir.relative_path_from(ROOT)}/#{stem}#{anon ? " (anon)" : ""}"
+        if isolate
+          begin
+            Builder.new(paper_dir, stem, anon: anon).call
+            successes << label
+          rescue StandardError => e
+            warn "✗ #{label}: #{e.message.lines.first&.strip}"
+            failures << [label, e]
+          end
+        else
+          Builder.new(paper_dir, stem, anon: anon).call
           successes << label
-        rescue StandardError => e
-          warn "✗ #{label}: #{e.message.lines.first&.strip}"
-          failures << [label, e]
         end
-      else
-        Builder.new(paper_dir, stem, anon: @anon).call
-        successes << label
       end
     end
 
