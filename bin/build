@@ -173,8 +173,14 @@ end
 # ─────────────────────────────────────────────────────────────────────────────
 
 module AnonymizationFilter
-  INLINE_RE = /<!--ANON:\s*(.*?)\s*-->(.*?)<!--\/ANON-->/m
-  BLOCK_RE  = /<!--DEANON_ONLY-->(.*?)<!--\/DEANON_ONLY-->/m
+  INLINE_RE    = /<!--ANON:\s*(.*?)\s*-->(.*?)<!--\/ANON-->/m
+  BLOCK_RE     = /<!--DEANON_ONLY-->(.*?)<!--\/DEANON_ONLY-->/m
+  # Format markers are applied per-output-format in write_intermediate, after
+  # the anon pass. They control content that should appear only in the PDF
+  # preview or only in the DOCX submission — e.g. \newpage / review notices
+  # in PDF, raw OpenXML page breaks and Article title restatement in DOCX.
+  PDF_ONLY_RE  = /<!--PDF_ONLY-->(.*?)<!--\/PDF_ONLY-->/m
+  DOCX_ONLY_RE = /<!--DOCX_ONLY-->(.*?)<!--\/DOCX_ONLY-->/m
 
   def self.call(text, substitutions, anon:)
     if anon
@@ -184,6 +190,17 @@ module AnonymizationFilter
     else
       text = text.gsub(INLINE_RE) { Regexp.last_match(2) }
       text = text.gsub(BLOCK_RE)  { Regexp.last_match(1) }
+    end
+    text
+  end
+
+  def self.apply_format_markers(text, pdf_preview:)
+    if pdf_preview
+      text = text.gsub(PDF_ONLY_RE)  { Regexp.last_match(1) }
+      text = text.gsub(DOCX_ONLY_RE, "")
+    else
+      text = text.gsub(PDF_ONLY_RE, "")
+      text = text.gsub(DOCX_ONLY_RE) { Regexp.last_match(1) }
     end
     text
   end
@@ -275,13 +292,14 @@ class Builder
     abstract_text = lift_abstract(manifest) || meta.abstract.to_s.gsub(/\s+/, " ").strip
     body = build_body(manifest)
 
-    docx_md = write_intermediate("#{@manifest_stem}.md",             meta, abstract_text, body, omit_keywords: false)
-    pdf_md  = write_intermediate("#{@manifest_stem}.pdf-preview.md", meta, abstract_text, body, omit_keywords: true)
+    docx_md = write_intermediate("#{@manifest_stem}.md",             meta, abstract_text, body, omit_keywords: false, pdf_preview: false)
+    pdf_md  = write_intermediate("#{@manifest_stem}.pdf-preview.md", meta, abstract_text, body, omit_keywords: true,  pdf_preview: true)
     [docx_md, pdf_md]
   end
 
-  def write_intermediate(filename, meta, abstract_text, body, omit_keywords:)
+  def write_intermediate(filename, meta, abstract_text, body, omit_keywords:, pdf_preview:)
     path = @build_dir / filename
+    body = AnonymizationFilter.apply_format_markers(body, pdf_preview: pdf_preview)
     md = +""
     md << render_yaml_frontmatter(meta, abstract_text, omit_keywords: omit_keywords)
     md << "\n\n"
@@ -447,10 +465,18 @@ class Builder
     out = @build_dir / "#{output_stem}.pdf"
     cmd = pandoc_cmd_base(md_path, bib_path) + [
       "--pdf-engine=lualatex",
-      "-V", "geometry:margin=1in",
+      # Camera-ready-style typesetting for the preview PDF. The submission
+      # target is always DOCX; this PDF is for self-review and reading.
+      "-V", "geometry:margin=1.25in",
       "-V", "fontsize=11pt",
-      "-V", "linestretch=1.5",
+      "-V", "linestretch=1.1",       # near single-spaced; readable without review bloat
       "-V", "documentclass=article",
+      "-V", "indent=true",           # journal-style paragraph indentation
+      "-V", "colorlinks=true",
+      "-V", "linkcolor=NavyBlue",
+      "-V", "urlcolor=NavyBlue",
+      "-V", "citecolor=NavyBlue",
+      "-V", "mainfont=TeX Gyre Pagella",   # Palatino-style; falls back to LM if absent
       "--output", out.to_s
     ]
     begin

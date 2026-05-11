@@ -13,6 +13,17 @@ Correspondence: joseph.wecker@v2.io
 ORCID: https://orcid.org/0009-0004-2599-4766
 :::
 
+<!--PDF_ONLY-->
+```{=latex}
+\vspace{2em}
+\begin{center}
+\small\textit{Under review with \textup{Inquiry}. Do not distribute.}
+\end{center}
+\newpage
+```
+<!--/PDF_ONLY-->
+
+<!--DOCX_ONLY-->
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
@@ -20,4 +31,5 @@ ORCID: https://orcid.org/0009-0004-2599-4766
 ::: {custom-style="Article title"}
 Granted Agency Between Sovereigns: A Structural Form for Extending Agency to AI Systems
 :::
+<!--/DOCX_ONLY-->
 <!--/DEANON_ONLY-->

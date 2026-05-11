@@ -20,6 +20,11 @@ Keywords: AI agency; conceptual engineering; asymmetric comprehension; granted a
 :::
 
 
+
+
+
+
+
 # 1. The agency question for AI systems
 
 Notwithstanding the avalanche of agent-centric language, the question of whether contemporary AI systems — language-constituted at the level of representation, not merely at the level of interface — are genuinely agents, and what would settle the question, stands at the methodological center of the philosophy of AI. Recent debate has clustered around four cardinal positions, each consequential, each—on its own terms—structurally incomplete.
