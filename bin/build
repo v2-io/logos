@@ -154,13 +154,56 @@ class Meta
 end
 
 # ─────────────────────────────────────────────────────────────────────────────
+# AnonymizationFilter — pre-processes segment text before assembly.
+#
+# Two marker types (both pass through pandoc harmlessly as HTML comments when
+# the filter hasn't been applied, so sources read cleanly either way):
+#
+#   Inline swap: <!--ANON: anon-text -->deanon-text<!--/ANON-->
+#     Anon mode:    → anon-text
+#     Non-anon mode:→ deanon-text (markers stripped)
+#
+#   Block exclusion: <!--DEANON_ONLY-->...<!--/DEANON_ONLY-->
+#     Anon mode:    → "" (entire block removed)
+#     Non-anon mode:→ content (markers stripped)
+#
+# Global substitutions from refs/deny-list.yml `substitutions:` key are
+# applied first in anon mode — they handle the bulk of author-name swaps
+# (self-citations, email address) without requiring inline markers in source.
+# ─────────────────────────────────────────────────────────────────────────────
+
+module AnonymizationFilter
+  INLINE_RE = /<!--ANON:\s*(.*?)\s*-->(.*?)<!--\/ANON-->/m
+  BLOCK_RE  = /<!--DEANON_ONLY-->(.*?)<!--\/DEANON_ONLY-->/m
+
+  def self.call(text, substitutions, anon:)
+    if anon
+      text = apply_substitutions(text, substitutions)
+      text = text.gsub(INLINE_RE) { Regexp.last_match(1) }
+      text = text.gsub(BLOCK_RE, "")
+    else
+      text = text.gsub(INLINE_RE) { Regexp.last_match(2) }
+      text = text.gsub(BLOCK_RE)  { Regexp.last_match(1) }
+    end
+    text
+  end
+
+  def self.apply_substitutions(text, substitutions)
+    Array(substitutions).each { |s| text = text.gsub(s["from"], s["to"]) }
+    text
+  end
+  private_class_method :apply_substitutions
+end
+
+# ─────────────────────────────────────────────────────────────────────────────
 # Builder — orchestrates concat + refs emit + pandoc DOCX + pandoc PDF.
 # ─────────────────────────────────────────────────────────────────────────────
 
 class Builder
-  def initialize(paper_dir, manifest_stem)
+  def initialize(paper_dir, manifest_stem, anon: false)
     @paper_dir     = paper_dir.is_a?(Pathname) ? paper_dir.expand_path : (ROOT / paper_dir).expand_path
     @manifest_stem = manifest_stem
+    @anon          = anon
     @build_dir     = @paper_dir / ".build" / @manifest_stem
     @lint_findings = []
   end
@@ -184,6 +227,19 @@ class Builder
   end
 
   private
+
+  # Output stem for published files. Appends "-anon" in anonymised mode so
+  # anon and non-anon builds coexist without overwriting each other.
+  def output_stem
+    @anon ? "#{@manifest_stem}-anon" : @manifest_stem
+  end
+
+  # Substitution pairs from refs/deny-list.yml `substitutions:` key.
+  # Loaded lazily alongside the deny-list; shares the @deny_list cache.
+  def anon_substitutions
+    @deny_list ||= load_deny_list
+    Array(@deny_list&.dig("substitutions"))
+  end
 
   # `bin/refs emit` is the contract. Lands the bib in our build dir; pandoc
   # consumes it via --bibliography. Same atomicity discipline as the NeurIPS
@@ -290,7 +346,7 @@ class Builder
     src = @paper_dir / row.path
     return nil unless src.exist?
 
-    text = src.read
+    text = AnonymizationFilter.call(src.read, anon_substitutions, anon: @anon)
     lint_anonymisation(text, row.path)
 
     paragraphs = text.split(/\n\s*\n/)
@@ -321,7 +377,7 @@ class Builder
       # and back-matter); the YAML-driven heading would land at the very end.
     }
     fm["keywords"] = meta.keywords if !omit_keywords && meta.keywords.any?
-    fm["author"]   = meta.authors.map { |a| a.is_a?(Hash) ? a["name"] : a.to_s } if meta.authors.any?
+    fm["author"]   = meta.authors.map { |a| a.is_a?(Hash) ? a["name"] : a.to_s } if meta.authors.any? && !@anon
     "---\n#{YAML.dump(fm).sub(/\A---\n/, '')}---"
   end
 
@@ -329,13 +385,13 @@ class Builder
     src_path = @paper_dir / row.path
     raise "segment not found: #{src_path}" unless src_path.exist?
 
-    content = src_path.read
+    content = AnonymizationFilter.call(src_path.read, anon_substitutions, anon: @anon)
     lint_anonymisation(content, row.path)
     content
   end
 
   def render_docx(md_path, bib_path)
-    out = @build_dir / "#{@manifest_stem}.docx"
+    out = @build_dir / "#{output_stem}.docx"
     cmd = pandoc_cmd_base(md_path, bib_path) + ["--output", out.to_s]
     if (ref = reference_doc_path)
       cmd += ["--reference-doc", ref.to_s]
@@ -385,7 +441,7 @@ class Builder
   # field at YAML-assembly time is the actual fix; the DOCX writer still
   # gets keywords through its own intermediate.
   def render_pdf_preview(md_path, bib_path)
-    out = @build_dir / "#{@manifest_stem}.pdf"
+    out = @build_dir / "#{output_stem}.pdf"
     cmd = pandoc_cmd_base(md_path, bib_path) + [
       "--pdf-engine=lualatex",
       "-V", "geometry:margin=1in",
@@ -458,13 +514,14 @@ class Builder
     src = @build_dir / "#{@manifest_stem}.md"
     return unless src.exist?
 
-    dst = @paper_dir / "#{@manifest_stem}.md"
+    dst = @paper_dir / "#{output_stem}.md"
     dst.write(with_build_banner(src.read))
     @assembled_md_published = dst
   end
 
   def with_build_banner(content)
-    banner_value = "Built by bin/build from src/*.md per OUT.#{@manifest_stem}.md. " \
+    anon_note    = @anon ? " ANONYMISED build — author identity stripped." : ""
+    banner_value = "Built by bin/build from src/*.md per OUT.#{@manifest_stem}.md.#{anon_note} " \
                    "Source-of-truth lives in src/; edits to this file are overwritten on the next build."
 
     # Inject `_build:` into the YAML frontmatter so the marker travels with
@@ -543,10 +600,17 @@ class CLI
     bin/build — assemble a paper from an OUT.*.md manifest into DOCX (T&F primary) + PDF preview.
 
     Usage:
-      bin/build                                # cwd-aware default (cwd must be a paper-dir)
-      bin/build <paper-dir>                    # all OUT.*.md manifests in <paper-dir>
-      bin/build <paper-dir> <manifest-stem>    # specific manifest
-      bin/build <manifest-stem>                # specific manifest in cwd
+      bin/build [--anon] <paper-dir> <manifest-stem>    # specific manifest
+      bin/build [--anon] <paper-dir>                    # all OUT.*.md manifests in <paper-dir>
+      bin/build [--anon] <manifest-stem>                # specific manifest in cwd
+      bin/build [--anon]                                # cwd-aware default (cwd must be a paper-dir)
+
+    Flags:
+      --anon   Produce anonymised output: author field stripped from frontmatter,
+               self-citations replaced via refs/deny-list.yml `substitutions:`, and
+               <!--ANON:-->  /  <!--DEANON_ONLY--> inline markers applied.
+               Output files are named <stem>-anon.{docx,pdf,md} and coexist
+               alongside the non-anon build.
 
     Output: <paper-dir>/<stem>.docx (submission) and <paper-dir>/<stem>.pdf (preview).
   USAGE
@@ -554,6 +618,7 @@ class CLI
   def self.run(argv) = new.dispatch(argv)
 
   def dispatch(argv)
+    @anon = !!argv.delete("--anon")
     pairs =
       case argv.length
       when 0 then resolve_no_args
@@ -614,17 +679,17 @@ class CLI
     failures  = []
 
     pairs.each do |paper_dir, stem|
-      label = "#{paper_dir.relative_path_from(ROOT)}/#{stem}"
+      label = "#{paper_dir.relative_path_from(ROOT)}/#{stem}#{@anon ? " (anon)" : ""}"
       if isolate
         begin
-          Builder.new(paper_dir, stem).call
+          Builder.new(paper_dir, stem, anon: @anon).call
           successes << label
         rescue StandardError => e
           warn "✗ #{label}: #{e.message.lines.first&.strip}"
           failures << [label, e]
         end
       else
-        Builder.new(paper_dir, stem).call
+        Builder.new(paper_dir, stem, anon: @anon).call
         successes << label
       end
     end

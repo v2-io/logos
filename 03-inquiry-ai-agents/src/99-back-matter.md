@@ -24,6 +24,8 @@ No new data were generated or analysed in support of this research.
 
 ORCID: pending registration.
 
+<!--DEANON_ONLY-->
 ## Corresponding author
 
 Joseph A. Wecker — joseph.wecker@v2.io
+<!--/DEANON_ONLY-->

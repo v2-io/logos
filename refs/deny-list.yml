@@ -51,3 +51,18 @@ proper_nouns:
   - "Katan"
   - "Synesis"
   - "Proto-Architectus"
+
+# Plain-text substitutions applied by `bin/build --anon` via AnonymizationFilter.
+# These handle the bulk of anonymisation mechanically — author name in self-citations,
+# contact details in back-matter. Complement inline <!--ANON:--> markers in source
+# files for structural/block-level changes that can't be expressed as a global swap.
+#
+# Format: `from` is matched by String#gsub (literal, not regex); `to` is the
+# replacement. Order matters — more specific patterns before more general ones.
+substitutions:
+  - from: "Wecker, in preparation"
+    to:   "Author, in preparation"
+  - from: "Wecker, in review, 2026"
+    to:   "Author, in review, 2026"
+  - from: "joseph.wecker@v2.io"
+    to:   "[email withheld for review]"
