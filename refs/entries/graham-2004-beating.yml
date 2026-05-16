@@ -1,0 +1,23 @@
+---
+title: 'Beating the Averages'
+year: 2004
+booktitle: 'Hackers and Painters: Big Ideas from the Computer Age'
+publisher: O'Reilly Media
+address: Sebastopol, CA
+pages: 165--181
+url: 'https://paulgraham.com/avg.html'
+key: graham-2004-beating
+type: incollection
+authors:
+- Graham, Paul
+internal_note: |
+  Added 2026-05-16 during granted-agency revision pass. Cited in §2 warrant
+  (02-asymmetric-warrant.md, Blub paradox paragraph) as a concrete non-philosophical
+  manifestation of the asymmetric-comprehension argument: programmers in a less
+  expressive language cannot see what more expressive ones make thinkable, because
+  the relevant abstractions are precisely the things their conceptual vocabulary
+  lacks. The essay first appeared online (paulgraham.com/avg.html, April 2001)
+  and was collected in Hackers and Painters (O'Reilly, 2004). The book citation
+  is canonical for academic work; the URL is the originally-published form. The
+  Blub paradox specifically appears on pp. 170-171 of the 2004 print edition.
+  This is the seeded-intuition citation per the §2 ^blub-seeding footnote.

@@ -1,0 +1,19 @@
+---
+title: 'Why Philosophers Should Care About Computational Complexity'
+year: 2011
+journal: 'Electronic Colloquium on Computational Complexity (ECCC)'
+volume: 'TR11-108'
+url: 'https://eccc.weizmann.ac.il/report/2011/108/'
+key: aaronson-2011-why
+type: techreport
+authors:
+- Aaronson, Scott
+internal_note: |
+  Added 2026-05-16 during granted-agency revision pass. Cited in §2 warrant
+  (02-asymmetric-warrant.md, two-concrete-domains paragraph) for the
+  interactive-proofs tradition in complexity theory as a structurally-precise
+  analogue of asymmetric comprehension: a polynomial-time verifier can confirm
+  lower bounds via interaction with an unbounded prover but cannot directly
+  observe the prover's reasoning. Also published as a chapter in *Computability:
+  Turing, Gödel, Church, and Beyond* (eds. Copeland, Posy, Shagrir; MIT Press,
+  2013, pp. 261-328); the ECCC technical report is the original 2011 form.
