@@ -64,6 +64,8 @@
 require "yaml"
 require "fileutils"
 require "securerandom"
+require "pathname"
+require "date"
 
 ROOT          = Pathname.new(__dir__).parent.expand_path
 REFS_DIR      = ROOT / "refs"
