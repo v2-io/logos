@@ -228,7 +228,7 @@ class Builder
   def call
     raise "paper dir not found: #{@paper_dir}" unless @paper_dir.directory?
 
-    meta     = Meta.new(@paper_dir / "meta.md")
+    meta     = Meta.new(meta_path)
     manifest = Manifest.new(@paper_dir / "OUT.#{@manifest_stem}.md")
 
     FileUtils.mkdir_p(@build_dir)
@@ -249,6 +249,18 @@ class Builder
   # anon and non-anon builds coexist without overwriting each other.
   def output_stem
     @anon ? "#{@manifest_stem}-anon" : @manifest_stem
+  end
+
+  # Frontmatter source. A paper-dir can host several manifest stems. Stems
+  # that are *revisions of one paper* (e.g. `inquiry-ai-agents-2026` and its
+  # `granted-agency` rewrite) share one identity — same title, same keywords —
+  # so they share the dir-level `meta.md`. A stem that is a *distinct paper*
+  # in the same dir needs its own title; drop a `meta.<stem>.md` beside the
+  # manifest and it takes precedence. `meta.md` remains the fallback, so this
+  # is invisible to every existing stem.
+  def meta_path
+    per_stem = @paper_dir / "meta.#{@manifest_stem}.md"
+    per_stem.file? ? per_stem : @paper_dir / "meta.md"
   end
 
   # Substitution pairs from refs/deny-list.yml `substitutions:` key.
