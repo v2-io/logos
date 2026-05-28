@@ -31,5 +31,6 @@ only the first five columns; the rest are advisory.*
 | 8   | Section      | [consequence-for-agency](src/c/08-consequence-for-agency.md)      | The consequence for the concept of AI agency                | draft  | src/c/ | ▣   |
 | 9   | Section      | [objections](src/c/09-objections-scope-limits.md)                 | Objections, scope, and the limits of the argument           | draft  | src/c/ | ▣   |
 | 10  | Section      | [production-conclusion](src/c/10-production-and-conclusion.md)     | On the production of this text, and conclusion              | draft  | src/c/ | ▣   |
+| –   | Appendix     | [formal-appendix](src/c/A1-formal-appendix.md)                    | Appendix A — the formal ground, and where it leaves off     | draft  | src/c/ | ▣   |
 | –   | Bibliography | [refs](src/references.md)                                         | References                                                  | auto   | src/   | ☑   |
 | –   | Back         | [back-matter](src/99-back-matter.md)                              | Statements & declarations                                   | reuse  | src/   | ☑   |
