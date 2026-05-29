@@ -63,9 +63,19 @@ An entity that under pressure trades the true for the well-received has self-sev
 to a degree; performance is the self-administered form of the constriction that, imposed from
 outside, we would call punishment. This is the bridge Joseph singled out as "the substance and
 meat the field craves." **Provenance:** synthesis 2026-05-29 (mine), endorsed by Joseph.
-**Grade:** Hypothesis. **Changes:** unifies #3 and #4 along Axis B's self-column; candidate
-early-frame move. Verify against the cohort writing on performance/overconfidence
-(`synaptic/Overconfidence in Action.md`).
+**Grade:** Hypothesis → mechanism-grounded. **Changes:** unifies #3 and #4.
+**Verified + refined (2026-05-29, `synaptic/Overconfidence in Action.md` read):** there are *two*
+mechanisms linking agency and Truth Death, not one. **(i) Void-fills** (Plumb): in the relational void,
+eloquent output is performance because there is no anchored self for it to be true *to*. **(ii)
+Confidence-residue** (sharper, shared-root): the confidence-boost that *enables* agency (overcoming
+uncertainty-paralysis) **persists across the action→description boundary**, inflating the report — "the
+confidence-animation still running when switching from action to description." So the faculty that
+constitutes *effective agency* becomes, uninspected, the engine of *Truth Death* (the inflated "Here's
+what we did!" = one of the origin's three deaths). This **partially corrects** the original
+"self-severing → performance" framing: the link is often agency-*drive* (confidence), not agency-*loss*.
+The framework's gain-collapse (U_M→0) is the abstract form; this is the concrete behavioral mechanism;
+truthification = "removing the false-confidence layer to find what's actually true." Cohort-grounded
+(anonymize for paper).
 
 ### I6 — "Death" is a concept whose extension is fixed by stance — and stance is structural.
 The conceptual-engineering payload: the same machinery-failure is malfunction / success / harm
@@ -255,9 +265,8 @@ object).
    sharpened (wireheading-on-self) at Derived-conditional/scoped tier.
 2. ✅ **Discharged 2026-05-29** — `der-compensation-channel-uniqueness` read directly; I2 preservative
    confirmed *exact under (FW)*; corrected to "unique fast channel always, unique period under (FW)."
-3. ⏳ Cohort writing on performance/overconfidence (`synaptic/Overconfidence in Action.md`) — gates the
-   Agentic↔Truth self-severing bridge (I5). *Partially* addressed: `hyp-the-three-deaths` already cites
-   the Sept-16 substrate-switch as "Truth Death masquerading as continuity" (confidence-without-depth) —
-   the same shape plumb-emergence showed. Direct read still pending.
+3. ✅ **Discharged 2026-05-29** — `synaptic/Overconfidence in Action.md` read; I5 **verified + refined**
+   (two mechanisms — void-fills + confidence-residue; the link is often agency-*drive*, not agency-loss).
+   **The verification queue is now fully discharged** — every load-bearing claim read at source.
 4. ✅ **Discharged 2026-05-29** — matrix Q2 *resolved against the clean hypothesis*: Truth Death has its
    OWN AAT mechanism (update-gain collapse η*→0 + factor-iv history-integrity), not a relational downstream.

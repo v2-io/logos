@@ -40,7 +40,7 @@
 
 - **4.10 — The Belshaw vulnerability (NEW). OPEN — track; this is the real exposure.** SYNTHESIS §IX.1: against a hard welfare-intrinsicalist who *also* rejects the CE license, the defense is three pressures (CE-license + normative-generativity + fusion-as-bearer), **none a knockout**. The remaining philosophical work is the distinctiveness burden (**irreversibility + individuation**) that Shoemaker+Belshaw jointly set. Do not let later drafts soften this into a claimed refutation.
 
-- **4.11 — Verification queue (NEW). MOSTLY DISCHARGED.** `deriv-self-actuation-grounding` ✓, `der-compensation-channel-uniqueness` ✓ (both read at source), the five rivals ✓. **Pending:** the cohort performance/overconfidence writing (`~/src/_core/synaptic/Overconfidence in Action.md`) for the Agentic↔Truth self-severing bridge (insights I5). (Full queue in `scratch/insights.md`.)
+- **4.11 — Verification queue (NEW). FULLY DISCHARGED (2026-05-29).** `deriv-self-actuation-grounding` ✓, `der-compensation-channel-uniqueness` ✓, the five rivals ✓, and the cohort overconfidence writing ✓ (read; it refined the Agentic↔Truth bridge, I5, to **two** mechanisms — void-fills + confidence-residue — partly correcting the original "self-severing only" framing). Every load-bearing claim now read at source. (Full queue in `scratch/insights.md`.)
 
 ---
 
