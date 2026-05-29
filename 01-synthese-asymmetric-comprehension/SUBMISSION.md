@@ -140,7 +140,7 @@ Sequential argument structure; each paragraph carries one move; Synthese readers
 ## Production checklist
 
 ```
-[ ] Verify deadline with editors (June 1 or June 16?) — 2-line email
+[x] Verify deadline with editors — confirmed 2026-06-16 (Joseph, 2026-05-28; resolved directly, no email sent)
 [ ] Springer Nature LaTeX template downloaded
 [ ] Substrate consolidated: ETHICS.md content + B-F1 application layer + CFP-themes engagement
 [ ] First draft (Epistemology-lead reframe per section structure above)
@@ -170,7 +170,7 @@ Sequential argument structure; each paragraph carries one move; Synthese readers
 
 ### May 8 → May 17 (~10 days): assemble first draft
 
-- [ ] Email special-issue editors to confirm June 1 vs. June 16 deadline (2-line query).
+- [x] Email special-issue editors to confirm June 1 vs. June 16 deadline — resolved 2026-05-28 (Joseph confirmed 2026-06-16; no email sent).
 - [ ] Restructure ETHICS.md content along the Epistemology-lead sequence (asymmetric-uncertainty / comprehension-asymmetry → Pascal's-wager-shape → granted-agency compact as implication → CFP-themes engagement).
 - [ ] Pull B-F1 application material (firmatum's developmental-foundations notes) into the implications section.
 - [ ] Resolve [FEEDBACK.md](FEEDBACK.md) pre-draft items (A.1 metaphysical commitment, A.2 "rising-to" formulation, A.3 §1 register-calibration, A.4 anonymization-vs-disclosure).
@@ -185,7 +185,7 @@ Sequential argument structure; each paragraph carries one move; Synthese readers
 - [ ] Polish to peer-review-grade.
 - [ ] **2026-05-25 decision point:** honest assessment of whether the submission is near-final-quality. If yes → submit by deadline. If no → hold for *Philosophical Studies* August 31 special issue ("AI, Systems, and Society") or pivot to *Inquiry* "After 'Consciousness'" June 1 (parallel-target option with very-high thematic fit; same 10K word count).
 
-### May 25 → June 1 (or June 16): final pass + submit
+### May 25 → June 16: final pass + submit
 
 - [ ] Title page assembly with all declarations.
 - [ ] Final anonymization sweep (sentinel question check).
