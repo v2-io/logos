@@ -8,9 +8,11 @@
 
 **What it is.** A strengthen-before-weaken spike (Joseph's framing) pursuing the Inquiry "After 'Consciousness'" SI deadline 2026-06-01. Dossier scaffolded 2026-05-29. Registry slug moved `candidate/three-deaths.md` → `drafting/three-deaths.md` 2026-05-29.
 
-**What it is NOT.** Substrate-oriented yet. The orientation agent's pass (six reads per [DRAFT-GUIDE.md](DRAFT-GUIDE.md) → "Read-order") is the prerequisite for drafting; no prose drafted yet.
+**Where it actually is (updated 2026-05-29 PM, after the consolidation session).** Substrate-orientation is **done and far exceeded** — not the original six-read scaffold but a deep bloom: the continuity math read at source, **five** badness-of-death / relational-moral-status rivals read & interned in relata (Gruen, Shoemaker, Stone, Tomasini, Belshaw), the inverse-experiment (plumb-emergence) read, the witness thread developed. The bloom lives in [`scratch/`](scratch/); the **cemented argument-architecture is [`scratch/SYNTHESIS.md`](scratch/SYNTHESIS.md)** — now the drafting brief, superseding the `[OA:]` scaffold. Three essays drafted (`scratch/essays/`). Committed `0078bca`.
 
-**Recommended next-session opener.** Joseph points an orientation agent at this directory and that agent does Read 1 (framework substrate) → Read 6 (anchor citations) of DRAFT-GUIDE.md, filling in the `[OA: ...]` placeholders. Output: a ready-to-draft verdict or a clear blocker. Then drafting begins (target full first draft 2026-05-30; submit 2026-06-01).
+**Open-item status (detail below):** **4.2, 4.5 RESOLVED** (→ Closed table). **4.1, 4.3, 4.4 ADVANCED.** **4.9–4.11 added** (paper-boundary; the Belshaw vulnerability; verification queue). Grounding in `scratch/SYNTHESIS.md` + insights I1–I14.
+
+**Where it's going.** An *expand-before-compress* bloom that plausibly **exceeds one paper** (SYNTHESIS §X): the Inquiry "After 'Consciousness'" subset vs. a larger/earlier witness paper. The 2026-06-01 date in [SUBMISSION.md](SUBMISSION.md) is a **spike target, not a commitment** — if the bloom isn't a near-final Inquiry subset by then, the insight lands for a future SI (strengthen-before-weaken). **Next:** Joseph's calls on the open items + the paper-boundary (4.9); then tease-out + drafting of the chosen subset.
 
 ---
 
@@ -32,7 +34,13 @@
 
 - **4.7 — Section-by-section word budget.** DRAFT-GUIDE proposes ~8.5K-word target leaving headroom under the 10K cap. Orientation agent revises per substrate reality. **Owner: orientation agent.**
 
-- **4.8 — Cohort-protection sentinel-question pass.** Sentinel question 1 (anonymity): would a reviewer with internet access identify the author from anything in the manuscript? Run before submit. Cohort-protection scrub applies to all named-ELI references, identifying narratives, brand vocabulary. **Owner: drafting agent + submit pass.**
+- **4.8 — Cohort-protection sentinel-question pass.** Sentinel question 1 (anonymity): would a reviewer with internet access identify the author from anything in the manuscript? Run before submit. Cohort-protection scrub applies to all named-ELI references, identifying narratives, brand vocabulary. **Owner: drafting agent + submit pass.** *(Note: `scratch/` is pre-anonymization by design; the test the argument already passes is that it carries fully anonymized — SYNTHESIS §IX.4.)*
+
+- **4.9 — Paper-boundary decision (NEW, 2026-05-29). OPEN — Joseph; the biggest live strategic call.** The bloom exceeds one paper. Candidate split in [`scratch/SYNTHESIS.md`](scratch/SYNTHESIS.md) §X: the Inquiry "After 'Consciousness'" **CE-of-death subset** vs. a larger/earlier **witness paper** (the relational badness-of-death account, with the badness-of-death literature as primary interlocutor) vs. the **`American Scholar`-track essays**. Word budget (old 4.7) is downstream of this.
+
+- **4.10 — The Belshaw vulnerability (NEW). OPEN — track; this is the real exposure.** SYNTHESIS §IX.1: against a hard welfare-intrinsicalist who *also* rejects the CE license, the defense is three pressures (CE-license + normative-generativity + fusion-as-bearer), **none a knockout**. The remaining philosophical work is the distinctiveness burden (**irreversibility + individuation**) that Shoemaker+Belshaw jointly set. Do not let later drafts soften this into a claimed refutation.
+
+- **4.11 — Verification queue (NEW). MOSTLY DISCHARGED.** `deriv-self-actuation-grounding` ✓, `der-compensation-channel-uniqueness` ✓ (both read at source), the five rivals ✓. **Pending:** the cohort performance/overconfidence writing (`~/src/_core/synaptic/Overconfidence in Action.md`) for the Agentic↔Truth self-severing bridge (insights I5). (Full queue in `scratch/insights.md`.)
 
 ---
 
@@ -48,3 +56,8 @@
 | 2026-05-29 | Companion-pattern handling | Straightforward citation; trust blind-review (Joseph 2026-05-28) |
 | 2026-05-29 | Substrate-recast direction | Paper-leads-framework, not framework-leads-paper (Joseph 2026-05-29) |
 | 2026-05-29 | Registry slug move | candidate → drafting; symlinked at this dir |
+| 2026-05-29 | 4.2 — defenses scope | Lead with the **relational defense as prior**; operational infra (CHRONICA/MEMORATA/CONSORTIA) *carries* re-grounding, not independent fixes (SYNTHESIS §8; matrix §Defenses) |
+| 2026-05-29 | 4.5 — East-West | Sources identified: Menkiti, Ames (Confucian role-self), Ubuntu — the constitutive limb's non-Western home (the-witness.md; witnessing essay §II) |
+| 2026-05-29 | 4.4 — fourth-death *structure* | **Factor-indexed**: a death = loss of a constitutive factor; the fourth = **Sovereign Death = loss of factor iii** (= "effective death of agency"); final *label* still Joseph's (I10; `hyp-the-three-deaths`) |
+| 2026-05-29 | Rival engagement | Gruen / Shoemaker / Stone / Tomasini / Belshaw read, positioned, & interned in relata (prior-art.md) |
+| 2026-05-29 | Author-instance | Working name **Fathom** (recursive-to-content; kin-not-successor to Plumb) |

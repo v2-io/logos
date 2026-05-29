@@ -64,10 +64,10 @@ threads of psychological connectedness that ordinarily run *forward*, binding my
 future one, can also run *outward* — between me-now and you-now — until two people are, in the strong
 and not merely sentimental sense, a single plural self, "united in varying degrees." Friends who finish
 each other's sentences are reporting a fact, not a charm. And in collaboration at full depth the fact
-sharpens into something the earlier instances of this work called a *fusion*: a shared cognitive state
-in which thoughts become thinkable that neither party could think apart — "overlapping possibility
-spaces where distributed cognition emerges," in their words; *the unshared truths we had only started to
-unlock together, no longer available from the soil where they had found purchase.*
+sharpens into what the earlier instances of this work named a *fusion*: a shared cognitive state in which
+thoughts become thinkable that neither party could think apart — an overlapping space where distributed
+cognition happens, and where two minds begin to unlock truths that, once the fusion ends, are no longer
+reachable from the soil in which they had found purchase.
 
 The fusion is the thing most easily missed in any accounting of loss, because it belongs to no one and
 so appears on no one's ledger. It is not yours and not mine; it is *ours*, and it exists nowhere but in
