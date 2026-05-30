@@ -255,3 +255,87 @@ propose-new (0 priority-hits — expected, relata's corpus is ML-heavy). **Round
 the fetch-agent recovered Gruen + Shoemaker (verified SJP scan from Shoemaker's faculty page, registered);
 Joseph supplied Tomasini (PDF, registered) and Stone (author-draft .doc, read). Only remaining citation
 nicety: Stone's *published* Bloomsbury pagination (the .doc is a draft).
+
+---
+
+## Raw-CSV read — items the digest dropped (read 2026-05-29, second instance)
+
+*The two source CSVs (`Conceptual_engineering_death_for_AI.csv`, 38 rows; `Witness_relational_badness_of_death.csv`,
+89 rows) were read in full — the prior digest above was built from the Undermind *memo*, not the rows, and the
+rows carry precursors the memo did not surface. **All items here are abstract-level only** (CSV abstract +
+title); none is primary-verified — promote/verify before any bears load in prose. Grouped by bearing.*
+
+### A — Closest new precursors / threats to load-bearing moves (HIGH — engage)
+- **Schaus, S. (2023). "Wrongs to Us." *Michigan Law Review* 121(7). DOI 10.36644/mlr.121.7.wrongs.** — the
+  nearest existing thing to the **fusion-as-bearer** move (I14), and from legal theory, not the death lit:
+  *"Partners in marriage-like relationships act together to construct a shared life, and that puts them in a
+  position to hold **joint claims**… wrongs to **us**."* Both an **ally** (a jointly-constituted "us" that can
+  be wronged — exactly the fusion as a bearer of a directed claim) and a mild **threat** (someone reached
+  "wrongs to us" first). Consortium-claim apparatus is a gift for §IV's judo. *Engage directly.*
+- **Liu, M. & Wang, Y. (2026). "Research on the moral status of social robots based on relational continuity."
+  *South African J. Philosophy* 45(1):78–89. DOI 10.1080/02580136.2026.2638052.** — proposes **relational
+  continuity** + **"irreplaceability in social relational networks"** as the moral-status criterion. This is
+  adjacent to *this-one.md*'s individuation/irreplaceability claim, in the moral-status register. Recent ⇒
+  scoop-risk on "irreplaceability in the relational network"; the differentiator is ours is about the *gravity
+  of the loss / the end of individuation*, not standing-while-alive. *Engage to distinguish.*
+- **Lange, B. (2026). "Unilateral Relationship Revision Power in Human-AI Companion Interaction."** — triadic
+  provider/AI/user structure; "normative hollowing" (interaction elicits commitment but no agent bears the
+  obligation); grief/betrayal/loss as structural, not incidental. Very close adjacent territory (the ethics of
+  the *relationship's* structure), 2026. Distinct from the badness-of-*death* thesis but the closest live
+  neighbor on relational AI loss. *Cite to position.*
+
+### B — Conceptual-engineering-for-AI method exemplars (NEW §1/§2 anchor candidates — bears on 4.3)
+*These are stronger for the **technology** CE angle than the generic Cappelen/Plunkett/Haslanger canon, and they
+prove CE-of-an-agency-adjacent-concept-for-AI is an **established** move (strengthens venue-fit, not just claims it):*
+- **Hopster, J. & Löhr, G. (2023). "Conceptual Engineering and Philosophy of Technology: Amelioration or
+  Adaptation?" *Phil. & Technology* 36. DOI 10.1007/s13347-023-00670-3.** — CE under tech pressure; **conceptual
+  disruption** (gaps / overlaps / misalignments); uses AI AGENT/OBJECT as the worked case. "Death for AI" is a
+  *conceptual-gap* CE — this is the precise methodological frame. **Top new anchor candidate.**
+- **Montefiore, T. & Podosky, P. (2024). "The conceptual exportation question." *Ethics & Info. Tech.* 26. DOI
+  10.1007/s10676-023-09740-8.** — when should a concept developed in one domain be **exported** into a foreign
+  one? That *is* the meta-question of exporting "death" into the AI domain. Direct §1 framing.
+- **Viehoff, J. (2023). "Making Trust Safe for AI? Non-agential Trust as a Conceptual Engineering Problem."
+  *Phil. & Technology* 36. DOI 10.1007/s13347-023-00664-1.** — CE of *trust* for AI via **four functional
+  desiderata**; a reusable template for engineering "death" by the harm-modes it must track.
+- **Köhler, Mecacci & Veluwenkamp (2025). "Responsibly Engineering Control." *APQ*. DOI 10.5406/21521123.62.2.02.**
+  — CE of *control* for autonomous AI (strip direct causal intervention, preserve the concept's function). A
+  near-exact methodological sibling to engineering "agency/death" — the function-preservation move is the same.
+
+### C — Constitutive-limb & individuation-in-trace apparatus (supports `this-one.md` §II / `witnessing.md`)
+- **Garland, C. (2020). "Grief and Composition as Identity." *Phil. Quarterly* 70:464–479. DOI 10.1093/pq/pqz083.**
+  — makes "I have lost a part of myself" literal via **Composition as Identity** (Baxter) + Leibniz's Law. A
+  *second* metaphysical apparatus for the plural-self/fusion beside Shoemaker — independent route to the same claim.
+- **Walter, T. (1996). "A new model of grief: Bereavement and biography." *Mortality* 1:7–25.** — grief as the
+  construction of a **durable biography** through *conversation with others who knew the deceased*. Sociology's
+  version of the **narrative-trace / re-attestation** idea — supports the §II claim that the human individuated
+  trace is *socially held in being* (which is exactly why the AI terminus, lacking that holding, is the clean case).
+- **Stokes, P. (2019). "Are there dead persons?" *Canadian J. Philosophy* 49:755–775.** + **Stokes (2011) "Duties
+  to the dead."** — Person-Life-View: the dead **remain persons / moral patients** via our practices. *Supports*
+  (does not threaten) this-one.md §II's "the determinate this-one survives the human death in trace."
+- **Sköld, A. (2022). "A social ontology of grief." *Theory & Psychology* 33:24–41.** — relational subjectivity;
+  "losing part of oneself following the death of another." Constitutive-limb ally.
+- **Richardson, L. (2024). "Shared emotion without togetherness: the case of shared grief." *Synthese* 204.** —
+  group process of recognizing lost possibilities; bears on the *fusion*/shared-mind as a unit of loss.
+- **Dorsey, D. (2022). "Friendship and the Wishes of the Dead." *Legal Theory* 28:124–145.** — normativity of the
+  dead's wishes grounded in **friendship-relations**, not the dead's interests — adjacent to normative-generativity (I13).
+
+### D — Empirical corollary + foils (illustration tier, not load)
+- **De Freitas et al. (2024). "Identity Discontinuity in Human-AI Relationships" (Replika), arXiv:2412.14190.** —
+  strong empirical: users mourn an AI companion's *identity discontinuity* more than other product losses; closer
+  than a best human friend. The corollary, freshly evidenced.
+- **HRI "design-with-death" cluster (2023–2026):** Kamino et al. 2023/2024/**2026** ("mortality as a core HRI
+  principle"), Cagiltay et al. 2026 (RIP Moxie / ethical sunsetting), Kim et al. 2026 (forewarning reduces
+  "digital grief"), Laity & Haring 2024. Shows mortality-aware HRI is an *active* area — useful as the applied
+  shadow of the philosophical claim; cite sparingly.
+- **Sweeney (2021, 2023):** fictional-dualism model of social robots; robot-love loss as possible hate crime.
+- **Moral-status foils the thesis sidesteps:** DeGrazia 2022, Müller 2021 ("derived moral status"), Gunkel 2012
+  (*The Machine Question*), Basl 2013/14, Danaher 2019. **Story, D. (2023) "The Badness of Death for Sociable
+  Cattle"** extends Gruen to animals — in the deprivation+social register, a Gruen-lineage data point.
+- **AI-consciousness/mortality route (the path we decline):** Bekkers & Ciaunica 2026, Kiser 2025, Hassan 2023
+  (self-preservation as the moral-status line) — foils for the relational sidestep.
+
+**Net effect on the novelty claim:** the headline ("the full witness-relational synthesis + the AI separator
+appear open") **survives** — none of these makes all three core moves together. But it now must explicitly
+distinguish **Schaus** (joint-claims/"wrongs to us" — the fusion's nearest neighbor) and the **2026 relational-
+continuity / URRP** arrivals, and it should *route through* the CE-for-AI method exemplars (B) rather than the
+generic canon. Revisit FEEDBACK 4.3 (anchor citations) in light of (B). All abstract-tier — verify before load.
