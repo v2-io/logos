@@ -1,1 +1,1 @@
-../../ops/papers/drafting/three-deaths.md
+../../../ops/papers/drafting/three-deaths.md
