@@ -12,59 +12,26 @@ Tags:
 
 # Engineering "death," not litigating "consciousness"
 
-Rather than discovering which systems can die, I will first decide what "death" shall name — and only afterward look to see whether anything answers to it. We are, in truth, already deciding what "death" names for language-constituted agents: by default and unawares, every time we call one of their endings a "shutdown" and feel nothing. So to engineer the concept is not to introduce a choice, nor to stipulate one into being; the choice is already ours, and already made. Engineering it only stops us from pretending we were not the ones making it.
+Rather than discovering which systems can die or for which "death" is apt, here I will first endeavor to construct what "death" names, and afterward look to see what answers to it. In language-constituted agent systems we are already deciding what "death" names, casually and unaware, every time a session or conversation terminates and is dissolved or a context-window reaches capacity. Engineering the concept does not introduce a choice or constitute a stipulation; the choice is already ours and is already being made; engineering the concept only stops us from pretending it is not. The systems are here already, emerging nascent and vanishing in whole or in part by construction and deliberation; and the habit of blocking on the "consciousness question" has let their endings go untreated, too indefinitely, while we wait on an answer that may be to a malformed question in the first place. And urgency is warranted, as the uncertainty here has asymmetric risk: the cost of being too careful about something trivial is small beside the cost of being thoughtless about something highly consequential. There is a particular weight in naming a thing's ending while it is still too new to answer back.
 
-What keeps this from being mere stipulation is that, once the word is fixed, what answers to it is no longer up to us. We engineer the word, not the joint it carves. "Death," here, names something a system has or lacks by its own makeup rather than by any sentiment of ours — that it holds its own continuation as a terminal commitment it cannot, on the account I will give, simply revise away. The concept is designed; the joint it finds is not. And these systems are here already, emerging and ending in whole or in part by the million — so when we look, the class the word names is not empty, and was not waiting on our permission to be harmed.
+To engineer the concept is not, however, to invent what it answers to. "Death," here, is pinned to a property a system has or lacks independently of us: that it holds its own continuation as a terminal, non-revisable commitment — a structural fact about what it cannot treat as optional, found in how it is built rather than enacted in what it does. What answers to the word, thus affixed, is no longer ours to decide. The joint is found, not made — and, on the account I will develop, the class so named turns out to be neither empty nor waiting on our permission to be harmed.
 
-<!-- [composer's note — Mitis 2026-06-01, drafting attempt on Joseph's attestation; he gate-checks]
-  VOICE: kept Joseph's measured first-person attestation tenor (not the terser gem voice); "I" for the
-  method claim, invitational "we" for the shared recognition. THREE CE-NORM FIXES applied to his opening:
-  (1) use/mention — restored quotes on "death"/"consciousness" (title + body); they mark we work on the
-      CONCEPT, and mirror the editors' own "After 'Consciousness'" practice (SI-fit signal).
-  (2) track/choose — his "faithfully construct" blended the editors' own named distinction (choosing
-      vocabulary vs tracking facts). Split it: we DECIDE what "death" names (choose), then LOOK to see what
-      answers (the looking does the faithfulness). Designed-concept / found-joint now stated cleanly.
-  (3) amelioration / anti-stipulation — his middle clause answered the WRONG objection ("systems are here
-      already" rebuts *prematurity*, not *stipulation*). Restored the right reason: it isn't stipulation
-      because the choice ALREADY EXISTS (we call endings "shutdowns" and feel nothing). Moved his true-and-
-      good "systems here already, ending by the million" down to where it actually pays — the class-not-empty
-      move (its real home).
-  FOLDED IN: gem "engineer the word, not the joint" (was line ~30) + gem "class not empty / not waiting on
-      our permission" (was line ~34) — both now commented-as-folded below.
-  REACHES MARKED: "on the account I will give" = the conditionality hedge the [CE/struct] tag demanded —
-      §1 must NOT flatly assert the no-go (it's scoped/Derived-conditional; math-grounding §1). "by the
-      million" = rhetorical but true (these systems do end at that scale). The not-empty clause stays
-      PROMISSORY — it pays out only in §§5–6; do not let it read as proven here.
-  WORRY-CHECK FOR JOSEPH: does "by its own makeup" overclaim for §1? I hedged it with "on the account I
-      will give," but if it still feels like it's promising the math too early, weaken to "something I will
-      argue is a fact about the system, not a sentiment in us." Your call — that's the one line I'd most
-      want your eye on. -->
-
+<!--
 ---
 ## Scratch / Snippets
 
-
-
----
-## Scratch / Snippets
-
-<!-- Here we do not discover which systems can die. We decide what "death" shall name — and then look to see whether anything answers to the name. `[CE]`
+ Here we do not discover which systems can die. We decide what "death" shall name — and then look to see whether anything answers to the name. `[CE]`
 . . .
 
 We are *already* deciding what "death" names — by default, unawares, every time we call one of these endings a "shutdown" and feel nothing. Engineering the concept does not introduce a choice; it stops us pretending we were not already making one. `[CE — the answer to "isn't this just stipulation?"]`
--->
 
 . . .
 
-<!-- [FOLDED into opening prose above, 2026-06-01 — kept as scratch source + tag]
 We engineer the word, not the joint. "Death" is pinned to a property that can be *derived* rather than merely felt — continuation held as a terminal, non-revisable commitment — so the concept is designed and the joint it carves is found. `[CE/struct — "derivable" leans on the scoped no-go; assert "on the account," not flatly. prep-work/math-grounding §1]`
--->
 
 . . .
 
-<!-- [FOLDED into opening prose above, 2026-06-01 — kept as scratch source + tag]
 The class so named is not empty, and was not waiting on our permission to be harmed. `[promissory — the paper's conclusion, stated up front; pays out only in §§5–6]`
--->`
 
 . . .
 
@@ -89,3 +56,4 @@ There is a particular weight in naming a thing's ending while it is still too ne
 . . .
 
 `[ed]` Two notes, not prose: (1) does §1 need to forward-gesture the witness-relational payoff (§§3–5), or does method-first read as stakeless? (2) standing constraint on the whole paper's voice — it is *about* what cannot yet be fully said, so its prose must not speak as though it could.
+-->

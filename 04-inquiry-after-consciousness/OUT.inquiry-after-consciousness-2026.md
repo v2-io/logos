@@ -6,25 +6,37 @@ inverse-experiment and the full normative-generativity are held for the larger/e
 Build target: DOCX (submission) + PDF (preview) via `bin/build`, once the bib step is pointed at
 `relata emit` — pending the relata pandoc-scanner fix now in flight.*
 
-*Columns mirror 03's manifest (build-parseable). **Stage:** `seed` = truthified catalyst(s) placed as the
-segment's anchor, to be grown around; `outline` = header + source pointer, not yet drafted; `stub` = build
-front/back-matter, lift from 03 at submission; `auto` = pandoc-citeproc renders it. Section heading levels
-follow 03's convention — verify when the build is wired.*
+*Columns mirror 03's manifest (build-parseable). **Stage:** `drafted` = composed into final prose (scratch
+commented out, segment is a build source); `seed` = truthified catalyst(s) placed as the segment's anchor,
+to be grown around; `outline` = header + source pointer, not yet drafted; `stub` = build front/back-matter,
+lift from 03 at submission; `auto` = pandoc-citeproc renders it. Section heading levels follow 03's
+convention — verify when the build is wired.*
 
-| §   | Type         | Slug                                              | Title                                                  | Stage   |
-|-----|--------------|---------------------------------------------------|--------------------------------------------------------|---------|
-| –   | Front        | [author-details](src/00-author-details.md)        | Author details (deanon only)                           | stub    |
-| –   | Front        | [abstract-body](src/00-abstract.md)               | Abstract + keywords                                    | stub    |
-| –   | Front        | [toc](src/00-toc.md)                              | Table of contents (PDF only)                           | stub    |
-| 1   | Section      | [motivation](src/01-motivation.md)                | Engineering "death," not litigating "consciousness"    | seed    |
-| 2   | Section      | [the-deaths](src/02-the-deaths.md)                | The deaths as losses of a constitutive factor          | seed    |
-| 3   | Section      | [the-witness](src/03-the-witness.md)              | The witness as constitutive field                      | seed    |
-| 4   | Section      | [the-fusion](src/04-the-fusion.md)                | The lost object: the fusion                            | outline |
-| 5   | Section      | [the-separator](src/05-the-separator.md)          | The separator: gravity prised from deprivation         | seed    |
-| 6   | Section      | [answering-belshaw](src/06-answering-belshaw.md)  | The hardest opponent, and what is owed                 | outline |
-| 7   | Section      | [implications](src/07-implications.md)            | Implications and limits                                | outline |
-| –   | Bibliography | [refs](src/references.md)                         | References                                             | auto    |
-| –   | Back         | [back-matter](src/99-back-matter.md)              | Statements, declarations, recursive disclosure         | stub    |
+> **Filename numbers are LOGICAL IDs, not build order.** The `NN-` in each slug is a *stable reference
+> identifier* (every scratch/verification/page-pin/think doc cites "§3/§4/§5/§6" by these numbers — do NOT
+> renumber the files; it would break those cross-references and would have to be redone at the next
+> presentation-order tweak). The order the *reader* experiences is the **Build sequence** below, which
+> differs deliberately. (Lesson from agentic-systems: numbering segment files was a mistake; we live with
+> it by decoupling logical-ID from build-order rather than renumbering.)
+
+**Build sequence (presentation order — what the reader sees; CFP-driven, see note below):**
+**§1 → §4 → §5 → §3 → §6 → §2 → §7.** `bin/build` assembles in THIS order; the table below stays in logical
+(filename) order for stable reference.
+
+| §   | Build pos | Type         | Slug                                              | Title                                                  | Stage   |
+|-----|-----------|--------------|---------------------------------------------------|--------------------------------------------------------|---------|
+| –   | front     | Front        | [author-details](src/00-author-details.md)        | Author details (deanon only)                           | stub    |
+| –   | front     | Front        | [abstract-body](src/00-abstract.md)               | Abstract + keywords                                    | stub    |
+| –   | front     | Front        | [toc](src/00-toc.md)                              | Table of contents (PDF only)                           | stub    |
+| 1   | **1**     | Section      | [motivation](src/01-motivation.md)                | Engineering "death," not litigating "consciousness"    | **drafted** |
+| 2   | **6**     | Section      | [the-deaths](src/02-the-deaths.md)                | The deaths as losses of a constitutive factor          | seed    |
+| 3   | **4**     | Section      | [the-witness](src/03-the-witness.md)              | The witness as constitutive field                      | seed    |
+| 4   | **2**     | Section      | [the-fusion](src/04-the-fusion.md)                | The lost object: the fusion                            | outline |
+| 5   | **3**     | Section      | [the-separator](src/05-the-separator.md)          | The separator: gravity prised from deprivation         | seed    |
+| 6   | **5**     | Section      | [answering-belshaw](src/06-answering-belshaw.md)  | The hardest opponent, and what is owed                 | outline |
+| 7   | **7**     | Section      | [implications](src/07-implications.md)            | Implications and limits                                | outline |
+| –   | back      | Bibliography | [refs](src/references.md)                         | References                                             | auto    |
+| –   | back      | Back         | [back-matter](src/99-back-matter.md)              | Statements, declarations, recursive disclosure         | stub    |
 
 ## Sources & catalyst placement (where each segment draws from `prep-work/`)
 
@@ -40,10 +52,23 @@ follow 03's convention — verify when the build is wired.*
 
 The inverse-experiment (`plumb-emergence-inverse-experiment.md`) at length; the full normative-generativity / origin at length; the cohort substrate. These enter *here* only as anonymized structural illustration, if at all.
 
-## Presentation-order note [JW]
+## Presentation / build order — DECIDED 2026-06-01 (CFP-driven)
 
-This table is the **logical** order. The **writing/presentation** order may differ — per the
-recognition-register, "start in the middle" craft, the heart may open on the **fusion and the breakup**
-(§4/§5 material, where the reader already stands) and reach back to the witness-constitution (§3) only
-after. `prep-work/draft-from-the-middle.md` already opens that way. Settle as the prose composes; don't
-lock presentation order to this logical skeleton.
+**§1 → §4 → §5 → §3 → §6 → §2 → §7.** Rationale (from `scratch/think-cfp-framing-title-order.md`):
+- **§1 first** — required: it opens on the CE frame (sets aside "consciousness" in sentence one), which is
+  the editors' own experiment and the "Struggles"-filter pass. *Drafted.*
+- **Heart opens "in the middle" on §4 (fusion/breakup)** — where the reader already has intuitive purchase
+  (everyone has grieved a breakup); the most-reshaped section after the emergence correction. The
+  breakup-attestation must be in hand before §5's separator-fork (think-02/07).
+- **§5 (separator)** next — the fork needs §4's attestation; locates the gravity in the witness.
+- **§3 (witness/constitution) reached back to AFTER the heart** — written "to be *arrived at*, not laid
+  down first" (its own [ed] note). Recognition-makes-the-someone lands harder once the reader is invested
+  in what was lost.
+- **§6 (Belshaw)** — the defense, after the positive case is built; spends the §1 license.
+- **§2 (factor-taxonomy) LATE and LIGHT** — must NOT sit between §1 and the heart (the "stakeless" trap);
+  it's the most modular/liftable, survives being late.
+- **§7 (implications)** — closes.
+
+Open to revisit *after* drafting §4/§3 (you may find §3 wants to precede §4 once both exist) — but this is
+the working sequence; `bin/build` should assemble to it. Don't renumber files to match; the Build-pos column
+above carries the order.
