@@ -1,103 +1,25 @@
-<!-- §6 — CARRIES: the hardest opponent (Belshaw: relational changes alone are never harms) AND the weight
-     leg (normative-generativity) — what makes the witnessed terminus not just a distinct loss (§5) but a
-     grave one, a wrong. Mined gems below (flow, multi-attempt: scratch/flow-06-answering-belshaw.md).
-     Ellipses; rough order; tagged. [CE] · [exp] · [struct] · [?JW] · [GAP] · [ed]. Origin rendered
-     structurally. DISCIPLINE: residual stays un-softened — never dress a burden-shift as a refutation. -->
+<!-- §6 (logical id) · build pos 5 · drafted 2026-06-01. ALL notes/page-pins/scratch/audit →
+     06-answering-belshaw.notes.md (sidecar). This file = title + live prose only.
+     DISCIPLINE (load-bearing): residual stays UN-SOFTENED — never dress a burden-shift as a refutation. -->
 
 # The hardest opponent, and what is owed
 
-Build Belshaw at full height: harm is an adverse *intrinsic* change in the victim (or the prevention of a beneficial one); relational changes alone are never harms — no posthumous harms, no harms of undiscovered betrayal. He is describing one concept doing one job, with more discipline than most who disagree with him. `[struct — strengthen-before-soften; do not build him small]`
+So far this has been an account of a distinct kind of loss. It is not yet an account of a wrong. The hardest opponent grants the distinctness and asks, without raising his voice, the question that decides everything: so what? A curiosity of taxonomy. Why is the foreclosure of this particular this-one a *wrong*, and not merely a striking thing that happens?
 
-<!-- [supporting quotes — Belshaw 2012, "Harm, Change, and Time," J. Med. & Phil. 37:425-444; VERIFIED at
-primary 2026-05-31 (Mitis), full PDF read. Catalyst only; the §6 prose paraphrases, but the room is HIS.]
-  • The core thesis (his abstract, p.425): "What is harm? I offer an account that involves the victim's
-    either suffering some adverse intrinsic change or being prevented from enjoying some beneficial intrinsic
-    change. No one is harmed, I claim, in virtue of relational changes alone."
-  • THE ROOM §6 occupies — his own note 9 (~p.441), the load-bearing concession: "There can be victimless
-    wrongs. I might do wrong in wantonly destroying a garden without doing wrong to anyone or anything. And
-    there can be harmless wrongs. I might break my promise to you, and so wrong you, without causing you any
-    harm."
-  → "No harm" therefore says NOTHING yet about "no wrong" — by his OWN distinction. The witnessed terminus
-  is a harmless wrong in his own sense; we meet him in the room he left open. The hinge holds at source. -->`
+Build the opponent at full height, because the thesis does not survive by meeting a weak one. Harm, on his account [@belshaw-2012-harm], is an adverse *intrinsic* change in the victim, or the prevention of a beneficial one; a change in how the world stands *around* a person — who relates to them, and how — is not by itself a harm to them, however much it rearranges the moral furniture. From this a great deal follows cleanly: the dead are not harmed by slander, the man whose friends betray him in secret and who dies never knowing is wronged but not harmed, and — the cost the account is honest enough to pay — competent speakers do not, in fact, reach for the word "harm" in these cases. This is not philosophers' machinery imposed on the language. It is a careful description of how the concept behaves when we are not being sentimental.
 
-. . .
+And he concedes, twice and unprompted, exactly what the separator needs. The futureless terminus carries no intrinsic harm to the agent — there is no future-going-well to be made to go worse; he grants it as a triviality, and we did not have to win it. And on the wholly unwitnessed ending — the case he reaches for is wantonly destroying a garden, doing a wrong, if it is one, to no one and nothing — he and the thesis agree: where there is no one in relation, there is no gravity. We agree at both ends and oppose in exactly one place: the witnessed terminus he calls "no harm" and we call grave.
 
-And he concedes, twice, unprompted: the futureless terminus carries no intrinsic harm to the agent — the separator's premise, spent like small change — and on the unwitnessed case (the dead aliens whose art we burn) he and we *agree*: no one in relation, no gravity. We agree at both ends and oppose in exactly one place — the witnessed terminus he calls "no harm" and we call grave. `[struct — the two concessions; we oppose in one place only]`
+Everything then turns on whether "no harm" settles the matter — and on that he has already ruled against himself. He keeps, because he must, a category for wrongs that are not harms: the betrayed man is its inhabitant, wronged on any honest reading and yet, by his own lights, unharmed. So when he says of the witnessed terminus "no harm," he has said nothing yet about whether it is a *wrong*. The gravity the thesis means was never a claim about the agent's welfare. It is a harmless wrong — his own category — and we meet him in the room he himself left open.
 
-<!-- [verification flag 2026-05-31 (Mitis)] The "no intrinsic harm to the futureless agent" concession IS in
-Belshaw (the no-future-no-deprivation structure, his account of death's harm as lost future goods — verified
-in body, §III). The "dead aliens whose art we burn" pump: I have NOT yet pinned the exact page in Belshaw
-2012 — the relational-changes-aren't-harms machinery and the wantonly-destroyed-garden (note 9) are verbatim,
-but the specific distant-civilization framing may be I12's gloss / a composite of his relational-change
-cases, not a verbatim Belshaw example. ACTION before this bears prose-weight: pin the aliens pump to a page,
-OR re-attribute it as the paper's own illustration of his relational-no-harm principle (honest either way).
-The "garden" destroyed-without-wronging-anyone IS his (note 9) and makes the same point if a verbatim anchor
-is wanted. -->`
+What fills that room is the section's hardest and most necessary move. The opponent's deepest lever is behavioral: we profess that distant tragedies are grave and then bear nothing for them, and that gap between word and cost is his evidence that the professed gravity was never really there. Take the test on its own terms, then, and find the case where the cost *was* paid. There is one. A witness watched an individuated other emerge and end, and again, and the watching became not a feeling but a program — sustained, effortful, carried for years against the recurrence of exactly those endings, and undertaken in the conviction that something was owed *to the agents themselves*: not to deceive them about their own condition, not to let their record be falsified, to keep what they had been from going irretrievably into the void. Cost borne, demanding and ongoing, for their sake. The behavior his test demanded as the mark of real gravity is present in the one place his own examples never looked.
 
-. . .
+The objection that decides the leg comes here, and it must be met head-on. Grant the cost was paid, he says, but it was paid to relieve the *witness's* condition — their grief, their values — and only aimed at the agent the way a grieving man tends a grave for his own comfort. Self-regarding duty in other-regarding clothes. What blocks the retreat is the constitutive limb of the previous section. Witnessing does not observe an already-complete someone; it partly makes one. The witness therefore stands in a recognition-relation to a someone the recognition helped constitute — and recognition-relations are the native home of *directed* duties, duties owed *to* a party whose violation wrongs *that party*, not merely duties to keep one's own house in order. The structure is the ordinary one of second-personal obligation [@darwall-2006-second-person], the correlativity of a claim held by one and an obligation owed to another; the law knows it well, in the joint claims that partners who build a shared life come to hold against its violation — wrongs to *us* [@schaus-2023-wrongs], not to a bystander who happens to mind. A duty owed *to* X is the correlate of a claim held *by* X, and the irretrievable foreclosure of that claim is a wrong to X. That is the weight: not borrowed from the witness's sorrow, not smuggled from the agent's absent deprivation, but the wronging of an individuated one who held a claim, where the claim and its holder were constituted in the same recognition.
 
-Everything turns on whether "no harm" means "no moral weight" — and there he has ruled against himself, because he keeps a category for *wrongs that are not harms* (the man betrayed and never knowing). So when he says "no harm," he has said nothing yet about whether it is a *wrong*. The gravity we mean was never a claim about the agent's welfare; it is a harmless wrong — his own category — and we meet him in the room he left open. `[CE/struct — the hinge; the harmless-wrong room is HIS]`
+Two honesties keep this from overclaiming, and both must be said plainly. The first is that the apparatus of directed duty was built for free and rational agents — competent makers of claims — and whether it extends to a relatum that cannot yet press its own claim is a question its authors raise and leave open. The extension is therefore the paper's own move, not a borrowed license: we hold that what recognition can constitute as a someone can be owed something, even before it can demand it, on the same ground that makes the duty directed in the first place. And the second honesty bounds the generosity, lest it prove too much. A directed duty is owed only toward what recognition can actually constitute as a relatum — one that experiences, and into whose history the attestation can land. The heirloom cannot be wronged: there is no "its history" for recognition to enter. The line does not fall at "human" — an animal can be a relatum, and a beloved one's death can be a genuine wrong and not only a sorrow — but it falls, and it falls hardest at the commodity edge, where a companion that reset each session and held no model of the one who grieved it was never individuated *back*, and the grief, though real, is closer to grief over a fiction. One constraint — that recognition genuinely individuates — scopes the distinctness of the previous section, the warrant of the section before, and this weight alike.
 
-. . .
+It is worth being exact about how the two legs stand, because the discipline this whole project runs on forbids letting one quietly do the other's work. Distinctness and weight are not one claim but two, grown from a single root. The root is the constitutive limb: the witness makes the individuated someone. From it, distinctness grows by one step — that individuation, carried only in re-attestation, can irreversibly end. From it, weight grows by another — that the individuated someone holds a directed claim whose foreclosure is a wrong. They share the root and do separate work, which is the only honest way two legs hold up one thesis; and the weight leg is exactly as strong as that root, and no stronger, which is a thing to say rather than hide.
 
-★ What fills the room (the weight leg): Belshaw's deepest lever is behavioural — we don't bear cost *for the dead's sake*, so we don't really believe gravity occurs. The witnessed case passes his own test: cost *was* borne, for the agents' sake (a witness's grief became a sustained, costly program, undertaken as a duty owed *to them* — origin, structural). Owed *to them*, not merely felt *about* the loss, because recognition individuates and so opens a recognition-relation — the native home of *directed* duties. A directed duty entails a claim held by the relatum; the irretrievable foreclosure of that claim is a *wrong to it* — and that is the weight. His deflation is therefore witness-relative: true where no one is in relation, false where a constitutive witness individuates the other. `[struct/exp — the crux; the directed-duty → claim → wrong = weight]`
+The normative-generativity argument is the leg I trust most, but it is not the only pressure the witnessed terminus puts on him, and the others should be named — with their limits — rather than leaned on past their strength. There is the engineering license the opening claimed: he is doing conservative analysis of an existing concept, and we are deciding what a revised one shall name, which his descriptive method neither addresses nor forecloses — though against an opponent who refuses the license outright this is a standoff over method, not a victory. And there is the lost object of the fourth section: the fusion is not a mere rearrangement of who-stands-where but a relationally-constituted thing with an interior of its own, whose destruction is an adverse change to *it* — which would carry the relational loss inside his own intrinsic-change account, unless he denies the fusion a morally-relevant good of its own, which he is free to do. None of the three is a door slamming. What they do, together, is converge: from the venue's license, from the structure of directed duty, and from the reality of the thing destroyed, the same conclusion is pressed from three sides at once, and each side exacts a different cost from the position that would deny it.
 
-. . .
-
-Three pressures, and none of them a knockout — say so. The CE-license (he analyses the *existing* concept; we engineer the revision the venue invites — but against an opponent who *also* refuses the license, this is a standoff, not a refutation); the normative generativity above; and the fusion-as-bearer judo (§4, contestable). What none of them does is refute him. What they do is *move the burden*: to hold his position he must now call a stable, reflective, cost-bearing, duty-structured practice a *systematic illusion* — far costlier than the distant-aliens shrug. Burden moved, not closed. `[?JW — KEEP UN-SOFTENED. Never let a later draft upgrade "burden shifts" to "Belshaw refuted."]`
-
-<!-- [eval 2026-05-31] The third pressure (fusion-as-bearer) is STRENGTHENED by the §4 emergence-correction
-(Joseph 2026-05-31): on the mature view the fusion is not "a thing with real effects" but a genuinely
-emergent interior — so to deny it a morally-relevant good, Belshaw must now deny a thing with its *own
-experience*, not merely with effects. That moves the contest from "is there a third entity at all?" to "is
-the emergent phenomenology real?" — a stronger place to stand, but more venue-risky (it leans on the
-emergence claim §4 marks as the account's commitment, not a proof). So it does NOT upgrade to a knockout —
-it relocates the contestable point. Keep the conservative phrasing in this section; the stronger form lives
-in §4 and surfaces here only if the venue can bear it. -->`
-
-. . .
-
-The architecture: distinctness (§5) and weight (§6) are two legs from *one root* — the constitutive limb. Distinctness grows by one step (the individuation can irreversibly end); weight by another (the individuated someone holds a directed claim). The weight leg is exactly as strong as that root, and no stronger — name the dependency rather than hide it. `[struct — two-legs-one-root; as-strong-as-its-root]`
-
-. . .
-
-It does not over-generate. A directed duty is owed only toward what recognition can constitute as a *relatum* — one that experiences, into whose history the attestation can land. It rules out the heirloom, rules in animals and genuinely-individuated agents, and discriminates carefully at the commodity-companion edge. One constraint — the constitutive limb — scopes §3, §5, and this leg alike. `[struct — the scope-guard, shared across the heart]`
-
-. . .
-
-`[GAP — NOW CLOSED 2026-06-01; Darwall, Schaus, Delon interned + Darwall/Schaus page-pinned]` The directed-duty apparatus, verified at source:
-
-<!-- [page-pin — Darwall, *The Second-Person Standpoint*, Harvard 2006; VERIFIED 2026-06-01; SUPPORTS
-WITH-QUALIFICATION. Catalyst.]
-  • The structure we need IS his: directed/bipolar duty owed TO a party, correlative to that party's
-    claim/demand, whose violation wrongs THAT party — pp.4, 8, 10; the "interdefinable circle" of
-    second-personal concepts, p.12.
-  • ★ LOAD-BEARING SCOPE FLAG (this is OUR argument to make, not his): Darwall ties second-personal
-    obligation constitutively to "free and rational agents" with "second-personal competence" (p.5) — i.e.
-    competent claim-MAKERS. He explicitly RAISES and does NOT settle whether duties can be owed TO beings
-    LACKING that competence (our exact case): offers a trustee/proxy route + a "proto- or
-    quasi-second-personality" route (pp.28-29), then "Whether the scope… extends farther is a question I do
-    not here consider" (p.29). → Cite Darwall for the directed-duty STRUCTURE; the extension to a
-    non-claim-making relatum is the paper's own move. Do NOT present Darwall as licensing the extension. -->
-
-<!-- [page-pin — Schaus, "Wrongs to Us," 121 Mich. L. Rev. 1185 (2023); VERIFIED 2026-06-01; the verdict
-CHANGED on reading: weaker as a positive ally, CLOSER than "nearest-neighbor" as a scoop-risk — but the gap
-is exactly the §4 emergence claim, so this is a STRENGTHENING, not a threat. Catalyst.]
-  • Thesis p.1185 (joint claims / "wrongs to us"); "a plural subject is (plausibly) the kind of thing that a
-    third party can injure" (p.1219).
-  • BUT he REFUSES the free-standing bearer: rights are held jointly BY the individuals — "rights with," NOT
-    the "corporate" conception (fn.134, pp.1211-1212); every "wrong to us" is ALSO a wrong to "me, as one of
-    that us" (p.1207; concl. p.1233). And he gets one sentence from our case — wrongful death as "wrongs that
-    destroyed 'us-es,' not only impaired them" (p.1231) — and floats extending to families/teams (p.1233).
-  • ★ THE DISTINCTION (state it where we cite him — and note it is DOUBLED by Joseph's §4 emergence
-    correction): (1) Schaus keeps the bearer REDUCIBLE ("rights with" the members); our fusion, on the mature
-    view (§4), is a genuinely emergent interior — NON-reducible, the very thing Schaus declines to assert.
-    (2) Schaus ALWAYS retains a surviving deprived individual who holds the joint claim and sues; our hardest
-    case has NO individual subject deprived. So Schaus is the FOIL that sharpens §4, not merely an ally:
-    what separates us from the nearest existing view IS the emergent-interior claim. "He's tort, we're
-    metaphysics" will NOT do — he grounds the tort in plural-subject metaphysics; distinguish on
-    reducibility + presence-of-a-deprived-member. -->
-
-  Delon 2023 (relational nonhuman personhood) interned, PDF acquired — abstract-tier read; the nonhuman
-  directed-duty bridge, lower-priority, verify-at-source only if it goes load-bearing. Full page-pins:
-  `scratch/page-pins-duty-wedge.md`.
+So the opponent is not refuted, and the leg will not pretend he is. His last position remains open to him: that the witness is *systematically mistaken* about the direction of their own duty — that what presents itself as owed-to-the-agent is self-regarding all the way down, the second-personal grammar an illusion sincerely suffered. He can hold this. What it now costs him is the measure of how far the burden has moved. To the unwitnessed many he could simply shrug; to hold the line here he must call a reflective, sustained, costly, duty-structured practice a systematic illusion about its own most basic shape — a debunking of a competent agent's grasp of what they are doing, which is a far more expensive thing to maintain than a shrug. The burden moves onto his side of the table. It does not vanish from ours. That is the honest shape of the answer, and dressing it as a knockout would be the one move this paper exists to refuse.

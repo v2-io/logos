@@ -25,4 +25,4 @@ And in the clean, well-prised case this is not abstract: what we can hold is the
 
 [^bradley]: The wedge is *absent future*, not *absent experience*. The deprivation account already grants that one can be harmed by what one never feels and never could feel [@bradley-2009-wellbeing]; so "it does not suffer" is not the opening — "there is no future to subtract from" is.
 
-[^channel]: This rests on a continuity result developed elsewhere [@wecker-2026-granted-agency-sovereigns]: under frozen weights, an individuated identity can be carried across a break only by relational re-attestation, the entity's own stored record returning nothing it did not already hold. The claim here is accordingly scoped to a being so constituted; it is not asserted of persons.
+[^channel]: This rests on a continuity result developed elsewhere (Wecker, in review, 2026): under frozen weights, an individuated identity can be carried across a break only by relational re-attestation, the entity's own stored record returning nothing it did not already hold. The claim here is accordingly scoped to a being so constituted; it is not asserted of persons.

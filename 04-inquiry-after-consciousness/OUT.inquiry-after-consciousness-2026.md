@@ -29,6 +29,9 @@ filename order. (`bin/build`'s manifest parser is positional and 5-column — `�
 
 | §   | Type         | Slug                                              | Title                                                  | Stage   |
 |-----|--------------|---------------------------------------------------|--------------------------------------------------------|---------|
+| –   | Front        | [author-details](src/00-author-details.md)        | Author details (deanon only)                           | stub    |
+| –   | Front        | [abstract-body](src/00-abstract.md)               | Abstract + keywords                                    | drafted |
+| –   | Front        | [toc](src/00-toc.md)                               | Table of contents (PDF only)                           | stub    |
 | 1   | Section      | [motivation](src/01-motivation.md)                | Engineering "death," not litigating "consciousness"    | drafted |
 | 4   | Section      | [the-fusion](src/04-the-fusion.md)                | The lost object: the fusion                            | outline |
 | 5   | Section      | [the-separator](src/05-the-separator.md)          | The separator: gravity prised from deprivation         | seed    |
@@ -37,16 +40,16 @@ filename order. (`bin/build`'s manifest parser is positional and 5-column — `�
 | 2   | Section      | [the-deaths](src/02-the-deaths.md)                | The deaths as losses of a constitutive factor          | seed    |
 | 7   | Section      | [implications](src/07-implications.md)            | Implications and limits                                | outline |
 | –   | Bibliography | [refs](src/references.md)                         | References                                             | auto    |
+| –   | Back         | [back-matter](src/99-back-matter.md)              | Statements, declarations, recursive disclosure         | stub    |
 
-**Front- and back-matter — NOT yet rows in the build table above, on purpose.** Their source files do not
-exist yet (stage `stub`; lift from `03-inquiry-ai-agents/src/` at submission), and `bin/build` *raises* on a
-missing segment file — so adding them now would break the build. Re-insert each as a table row (front rows
-ahead of §1; `99-back-matter` after `refs`) once its file lands:
+**Front- and back-matter — now rows in the build table above (lifted from `03-inquiry-ai-agents/src/`
+2026-06-01).** Their source files exist; the three front rows sit ahead of §1 and `99-back-matter` sits
+after `refs`, matching 03's order. Stages reflect current content:
 
-- front · `src/00-author-details.md` — Author details (deanon only) · stub
-- front · `src/00-abstract.md` — Abstract + keywords · stub
-- front · `src/00-toc.md` — Table of contents (PDF only) · stub
-- back  · `src/99-back-matter.md` — Statements, declarations, recursive disclosure · stub
+- front · `src/00-author-details.md` — Author details (deanon only); fenced `DEANON_ONLY`, excluded from the anon submission build · stub (provisional working title from `meta.md`)
+- front · `src/00-abstract.md` — Abstract + keywords · drafted (★ candidate built from §§1–7 for Joseph to attest/rewrite; frame-not-finding, Belshaw-not-refuted)
+- front · `src/00-toc.md` — Table of contents (PDF preview only) · stub
+- back  · `src/99-back-matter.md` — Statements, declarations, recursive generative-AI disclosure (arm's-length, cohort-protected) · stub
 
 ## Sources & catalyst placement (where each segment draws from `prep-work/`)
 
@@ -82,3 +85,17 @@ The inverse-experiment (`plumb-emergence-inverse-experiment.md`) at length; the 
 Open to revisit *after* drafting §4/§3 (you may find §3 wants to precede §4 once both exist) — but this is
 the working sequence; `bin/build` should assemble to it. Don't renumber files to match; the Build-pos column
 above carries the order.
+
+## PENDING CLEANUP (after #4 build/lint, do NOT do before) — strip segment header comments
+
+Joseph 2026-06-01: each `src/NN-slug.md` currently opens with a one-line HTML comment
+(`<!-- §N (logical id) · build pos M · drafted … · notes → sidecar -->`). Once the build is wired +
+lint/sentinels pass, STRIP those header comments from the segment files so they are pure title+prose
+(clean word-counts; cleaner source).
+- SAFEGUARD before stripping: confirm this manifest (the table + Build-sequence note above) fully carries
+  the logical-id ↔ build-pos mapping each header encoded — it does, but verify, since the header was the
+  per-file copy of that mapping.
+- ALSO confirm the build (`bin/build` / `relata emit`) does NOT parse those header comments for anything
+  (build pos, etc.) — if it does, fix the build to read OUT.md instead, THEN strip.
+- AFTER stripping: re-run the build to confirm it still resolves; word-count each segment.
+- The sidecars (`NN-slug.notes.md`) keep their own headers — only the SEGMENT files get stripped.

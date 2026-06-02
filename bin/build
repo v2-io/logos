@@ -60,6 +60,19 @@ require "pathname"
 ROOT     = Pathname.new(__dir__).parent.expand_path
 REFS_BIN = ROOT / "bin" / "refs"
 
+# Bibliography source. As of 2026-05-30 the canonical citation store for this
+# portfolio is `relata` (~/src/relata/, on PATH via mise) — the local
+# `refs/entries/` are stale (e.g. paper-4 resolves only 2 of 16 keys there,
+# 16/16 via relata). relata's pandoc scanner reads this build's `[@key]`
+# syntax and honors per-entry `emit_block: true` (e.g. the unconfirmed Emerson
+# entry is skipped). Prefer `relata emit`; fall back to `bin/refs emit` only if
+# relata is not on PATH (which is then surfaced loudly, since the local bib is
+# known-stale). Override with REFS_EMITTER=refs to force the local emitter.
+RELATA_BIN = ENV.fetch("RELATA_BIN") do
+  found = `command -v relata 2>/dev/null`.strip
+  found.empty? ? nil : found
+end
+
 # Chicago author-date CSL — T&F house style for Inquiry. Falls back to
 # pandoc's bundled default if the texlive copy isn't present.
 CSL_CANDIDATES = [
@@ -233,6 +246,7 @@ class Builder
 
     FileUtils.mkdir_p(@build_dir)
     bib_path             = emit_references_bib
+    assert_anon_safe_bib(bib_path)
     docx_md_path, pdf_md_path = assemble_markdown(meta, manifest)
 
     docx_path = render_docx(docx_md_path, bib_path)
@@ -270,17 +284,117 @@ class Builder
     Array(@deny_list&.dig("substitutions"))
   end
 
-  # `bin/refs emit` is the contract. Lands the bib in our build dir; pandoc
-  # consumes it via --bibliography. Same atomicity discipline as the NeurIPS
-  # pipeline (process-isolated; refs-side bug surfaces here as a build error
-  # rather than a silent partial bib).
+  # Lands the bib in our build dir; pandoc consumes it via --bibliography.
+  # Same atomicity discipline as the NeurIPS pipeline (process-isolated;
+  # emitter-side bug surfaces here as a build error rather than a silent
+  # partial bib).
+  #
+  # Source: `relata emit` (canonical, fresh, emit_block-aware) unless
+  # REFS_EMITTER=refs or relata is absent, in which case the stale local
+  # `bin/refs emit` is used with a loud warning. Both emitters report a
+  # trailing "(N entries; M missing)" line on success; any M>0 (unresolved
+  # cited key) is a HARD failure for a submission build, so we parse it and
+  # raise rather than silently shipping a bib with holes.
   def emit_references_bib
     output = @build_dir / "#{@manifest_stem}.references.bib"
-    cmd    = [REFS_BIN.to_s, "emit", @paper_dir.to_s, "--output", output.to_s]
+
+    forced_refs = ENV["REFS_EMITTER"].to_s.downcase == "refs"
+    use_relata  = RELATA_BIN && !forced_refs
+
+    if use_relata
+      cmd = [RELATA_BIN, "emit", @paper_dir.to_s, "--output", output.to_s]
+    else
+      warn "  [bib] WARNING: emitting with stale local bin/refs " \
+           "(#{RELATA_BIN ? "REFS_EMITTER=refs forced" : "relata not on PATH"}) — " \
+           "local refs/entries/ is known-stale; verify the bib." unless forced_refs
+      cmd = [REFS_BIN.to_s, "emit", @paper_dir.to_s, "--output", output.to_s]
+    end
+
     out, status = Open3.capture2e(*cmd)
-    raise "bin/refs emit failed:\n#{out}" unless status.success?
+    emitter = use_relata ? "relata emit" : "bin/refs emit"
+    raise "#{emitter} failed:\n#{out}" unless status.success?
+
+    if (m = out.match(/\((\d+)\s+entr(?:y|ies);\s+(\d+)\s+missing\)/))
+      missing = m[2].to_i
+      raise "#{emitter} reports #{missing} unresolved cited key(s) — " \
+            "bib has holes; not safe to build:\n#{out}" if missing.positive?
+    end
 
     output
+  end
+
+  # Hard anonymisation gate on the EMITTED bib (anon builds only).
+  #
+  # The anon filter rewrites segment *text*, but the bibliography is rendered
+  # by pandoc citeproc straight from this .bib — which the filter never
+  # touches. So a live `[@key]` pointing at a deny-listed entry (e.g. a
+  # `Wecker`-authored companion) silently renders the real name into the anon
+  # bibliography AND its in-text cite — exactly the deanonymisation that
+  # double-blind exists to prevent. The segment-text lint structurally cannot
+  # see this: the offending name lives only in the bib, never in the prose.
+  # `relata lint` detects it, but as a separate manual step; enforcing it here
+  # makes the build itself refuse to ship a deanonymising bib, the same
+  # hard-fail discipline already applied to unresolved keys.
+  #
+  # Remediation is a citation decision, NOT a silently-rewritten bib: an
+  # in-review/in-prep companion self-cite belongs in a plain-text footnote
+  # ("(Wecker, in review, 2026)", anon-substituted to "Author, …") rather
+  # than a `[@key]` — see bin/build.README.md "Conventions worth knowing".
+  # Anonymising only the author is insufficient: the entry's title/journal
+  # stay matchable under double-blind, so the safe form carries no bib entry
+  # at all (dropping the `[@key]` drops the entry, since emit is cite-driven).
+  #
+  # Scope: deny-listed authors + DOIs only. Proper-noun-in-title is left to
+  # `relata lint`'s title-scoped check — matching whole-entry text here would
+  # false-positive on legitimate author names that collide with cohort nouns
+  # (e.g. "Soren", "Resonance") and wrongly block a clean build. Surname
+  # matching can itself false-positive on a genuinely-unrelated "Wecker"; the
+  # deny-list comment treats author hits as surface-for-triage, so an escape
+  # hatch (`ANON_BIB_GATE=warn`) downgrades to a loud warning for that case
+  # rather than trapping a future build with no override.
+  def assert_anon_safe_bib(bib_path)
+    return unless @anon
+    @deny_list ||= load_deny_list
+    return unless @deny_list && bib_path.exist?
+
+    bib = bib_path.read
+    violations = []
+    bib_entries(bib).each do |key, body|
+      Array(@deny_list["authors"]).each do |a|
+        violations << "#{key}: deny-listed author '#{a}' in emitted bib entry" if body.match?(/\b#{Regexp.escape(a)}\b/)
+      end
+      Array(@deny_list["dois"]).each do |doi|
+        violations << "#{key}: deny-listed DOI '#{doi}' in emitted bib entry" if body.include?(doi)
+      end
+    end
+    return if violations.empty?
+
+    message = <<~MSG.rstrip
+      ANON build would deanonymise via the bibliography. The emitted bib
+      (#{bib_path.relative_path_from(ROOT)}) contains deny-listed content that
+      pandoc citeproc renders into the anon bibliography and in-text cites:
+
+      #{violations.map { |v| "  - #{v}" }.join("\n")}
+
+      Fix (a citation decision, not a bib rewrite): replace the offending
+      `[@key]` cite(s) with a plain-text footnote — e.g. "(Wecker, in review,
+      2026)", anon-substituted to "Author, …" — not a live citation. Dropping
+      the [@key] drops the entry from the emitted bib. See bin/build.README.md
+      "Conventions worth knowing". If a flagged author is genuinely unrelated
+      to this project, set ANON_BIB_GATE=warn to downgrade this to a warning.
+    MSG
+
+    raise message unless ENV["ANON_BIB_GATE"].to_s.downcase == "warn"
+
+    warn "── ANON bib gate (downgraded via ANON_BIB_GATE=warn) ──\n#{message}"
+  end
+
+  # Split a BibTeX string into [key, entry-body] pairs so a deny-list hit can
+  # be attributed to a specific bibkey. Minimal — just enough for the
+  # anon-safety gate; not a general BibTeX parser.
+  def bib_entries(text)
+    text.scan(/@\w+\s*\{\s*([^,]+),(.*?)(?=\n@\w+\s*\{|\z)/m)
+        .map { |key, body| [key.strip, body] }
   end
 
   # Concatenate manifest segments into intermediate markdown. Two writer
