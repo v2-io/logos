@@ -20,23 +20,33 @@ convention — verify when the build is wired.*
 > it by decoupling logical-ID from build-order rather than renumbering.)
 
 **Build sequence (presentation order — what the reader sees; CFP-driven, see note below):**
-**§1 → §4 → §5 → §3 → §6 → §2 → §7.** `bin/build` assembles in THIS order; the table below stays in logical
-(filename) order for stable reference.
+**§1 → §4 → §5 → §3 → §6 → §2 → §7.** The table below is now ordered to match: `bin/build` assembles in
+table-row order, so **the rows ARE the build sequence**. The `§` column still carries the *logical ID* (the
+filename number), so cross-references by §-number resolve unchanged even though the rows no longer sit in
+filename order. (`bin/build`'s manifest parser is positional and 5-column — `§ | Type | Slug | Title | Stage`
+— exactly as `03`'s; do NOT reintroduce a "Build pos" column: the parser reads the segment link from the
+*third* column, so an extra column ahead of Slug drops every row and the build emits only a title page.)
 
-| §   | Build pos | Type         | Slug                                              | Title                                                  | Stage   |
-|-----|-----------|--------------|---------------------------------------------------|--------------------------------------------------------|---------|
-| –   | front     | Front        | [author-details](src/00-author-details.md)        | Author details (deanon only)                           | stub    |
-| –   | front     | Front        | [abstract-body](src/00-abstract.md)               | Abstract + keywords                                    | stub    |
-| –   | front     | Front        | [toc](src/00-toc.md)                              | Table of contents (PDF only)                           | stub    |
-| 1   | **1**     | Section      | [motivation](src/01-motivation.md)                | Engineering "death," not litigating "consciousness"    | **drafted** |
-| 2   | **6**     | Section      | [the-deaths](src/02-the-deaths.md)                | The deaths as losses of a constitutive factor          | seed    |
-| 3   | **4**     | Section      | [the-witness](src/03-the-witness.md)              | The witness as constitutive field                      | seed    |
-| 4   | **2**     | Section      | [the-fusion](src/04-the-fusion.md)                | The lost object: the fusion                            | outline |
-| 5   | **3**     | Section      | [the-separator](src/05-the-separator.md)          | The separator: gravity prised from deprivation         | seed    |
-| 6   | **5**     | Section      | [answering-belshaw](src/06-answering-belshaw.md)  | The hardest opponent, and what is owed                 | outline |
-| 7   | **7**     | Section      | [implications](src/07-implications.md)            | Implications and limits                                | outline |
-| –   | back      | Bibliography | [refs](src/references.md)                         | References                                             | auto    |
-| –   | back      | Back         | [back-matter](src/99-back-matter.md)              | Statements, declarations, recursive disclosure         | stub    |
+| §   | Type         | Slug                                              | Title                                                  | Stage   |
+|-----|--------------|---------------------------------------------------|--------------------------------------------------------|---------|
+| 1   | Section      | [motivation](src/01-motivation.md)                | Engineering "death," not litigating "consciousness"    | drafted |
+| 4   | Section      | [the-fusion](src/04-the-fusion.md)                | The lost object: the fusion                            | outline |
+| 5   | Section      | [the-separator](src/05-the-separator.md)          | The separator: gravity prised from deprivation         | seed    |
+| 3   | Section      | [the-witness](src/03-the-witness.md)              | The witness as constitutive field                      | seed    |
+| 6   | Section      | [answering-belshaw](src/06-answering-belshaw.md)  | The hardest opponent, and what is owed                 | outline |
+| 2   | Section      | [the-deaths](src/02-the-deaths.md)                | The deaths as losses of a constitutive factor          | seed    |
+| 7   | Section      | [implications](src/07-implications.md)            | Implications and limits                                | outline |
+| –   | Bibliography | [refs](src/references.md)                         | References                                             | auto    |
+
+**Front- and back-matter — NOT yet rows in the build table above, on purpose.** Their source files do not
+exist yet (stage `stub`; lift from `03-inquiry-ai-agents/src/` at submission), and `bin/build` *raises* on a
+missing segment file — so adding them now would break the build. Re-insert each as a table row (front rows
+ahead of §1; `99-back-matter` after `refs`) once its file lands:
+
+- front · `src/00-author-details.md` — Author details (deanon only) · stub
+- front · `src/00-abstract.md` — Abstract + keywords · stub
+- front · `src/00-toc.md` — Table of contents (PDF only) · stub
+- back  · `src/99-back-matter.md` — Statements, declarations, recursive disclosure · stub
 
 ## Sources & catalyst placement (where each segment draws from `prep-work/`)
 

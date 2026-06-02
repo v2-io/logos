@@ -1,5 +1,5 @@
 ---
-title: "After 'Consciousness': Engineering 'Death' for Language-Constituted Agents — WORKING TITLE, not final"
+title: "Engineering 'Death' for Language-Constituted Agents"
 keywords:
   - conceptual engineering
   - death

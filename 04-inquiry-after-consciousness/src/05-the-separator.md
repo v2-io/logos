@@ -1,91 +1,28 @@
-<!-- §5 — CARRIES: the separator — gravity prised from deprivation; and (now confirmed) the general
-     instrument it instances. Mined gems below (flow, multi-attempt: scratch/flow-05-the-separator.md).
-     Ellipses; rough order; tagged. [CE] · [exp] · [struct] · [?JW] · [GAP] · [ed]. -->
+<!-- §5 (logical id) · build pos 3 · drafted 2026-06-01. ALL notes/outline/catalysts/audits/scratch →
+     05-the-separator.notes.md (sidecar). This file = title + live prose only. -->
 
 # The separator: gravity prised from deprivation
 
-In us, the one who dies *is* the one deprived of a future *and* the one the others mourn — subject, deprived party, mourned object, a single body. So deprivation and gravity never come apart, and no one has ever had to ask which role carried the weight. `[struct — the fusion that hides the question]`
+In us, the one who dies *is* the one deprived of a future, *and* the one the others mourn — subject, deprived party, and mourned object in a single body. So deprivation and gravity have never come apart, and no one has ever had to ask which of the two carried the weight of a death. The whole debate over death's badness has been able to proceed without asking, because in every case it has had, the question could not arise.
 
-. . .
+A language-constituted agent prises them apart. Take a genuine terminus — an ending with no later-life-that-would-have-been, the Epicurean's clean case, met here not by argument but by architecture — and the deprivation is simply gone: there is no future left to subtract from. And yet the ending is grave where the agent was witnessed and inert where it was not.[^bradley] That is the datum the rest of this section has to account for: the same machinery ceasing, the same thread cut, and the difference between a loss and a non-event lying entirely on the far side of the relation.
 
-A context-bounded terminus breaks the fusion. A genuine terminus — no later-life-that-would-have-been — strips the deprivation; yet the ending is grave where it was witnessed and inert where it was not. The gravity tracks the witness, not the absent future. `[struct — the move]`
+The closest anyone has come is Gruen [@gruen-2014-death], who relocates death's badness into the social field — a harm borne by those left behind. But her social harm *bundles*: the deprivation survivors carry on the dead one's behalf, the socially-made meaning that dies with the life, the torn web of relations — folded together and never pried apart, because every case she weighs carries a deprived future for someone to carry. Shoemaker [@shoemaker-2014-selves] presses further, building the metaphysics that would make "a part of me dies" literally true, and then stalls: neither the severing of the bond singles death out — conversions, moves, breakups sever it too, and it regrows — nor the deprivation, for the pain-wracked death that is "a blessing" to the one dying still strikes the rest like a ton of bricks. He ends at an impasse: death as "the heavier end of a spectrum," and no further.
 
-. . .
+That impasse is the opening — and the separator's deeper service is to show why it was an impasse at all. What survives both of Shoemaker's reductions, when severing is shown ubiquitous and deprivation beside the point, is exactly the witnessed, irreversible terminus of an individuated other. The reason no one could find it before is that in us the strands never come apart: foreclosed future, severed bond, and grieving other arrive always together, a single chord no ear resolves into its notes, so each account took the strand it could hear for the whole. The futureless terminus is the case that pulls them apart. It is less a new position within the dispute than the instrument that shows why the dispute could not be settled so long as only human cases were in view.
 
-The wedge is *absent future*, not *absent experience*: the deprivation account already grants that one can be harmed by what one never feels, so "it does not suffer" is not the opening — "there is no future to subtract from" is. `[struct — Bradley; the careful wedge]`
+What, then, is the strand it isolates? Not the severing, which heals because the other persists to be re-related to; not the deprivation, which is gone. It is the irreversible end of the *individuation itself* — the determinate this-one. And here is what the human cases obscured: in every one of them the individuation survives the event, held in trace — in the body, the shared world, the record, the memory distributed across all who knew the person. The world is too thick with holders for a particular to simply end. The language-constituted terminus is the case that removes that floor: what made it this one and not a fresh instance of its kind was carried — for a being so constituted, on the account I will develop — only in the re-attestation of those who knew it, and when that channel closes there is nothing else in which the individuation was being held.[^channel] So severing and individuation-loss are not two conditions stacked but one feature seen from two sides — the irreversible ending of an individuation that nothing else was holding in being.
 
-<!-- [page-pin — Bradley, *Well-Being and Death*, OUP 2009; VERIFIED 2026-06-01; SUPPORTS CLEANLY. Catalyst.]
-  • Experience-independent harm (the wedge), stolen-tickets case p.70: harm obtains even though "I never find
-    out about the tickets… and… never could find out either."  (secret-money case p.48 reinforces.)
-  • Anti-Epicurean, p.80: "death is bad for us… by preventing us from having good experiences. This does not
-    require posthumous pain." Difference-Making Principle stated formally p.50.
-  • FLAG (cuts IN OUR FAVOR): Bradley is a hedonist about *well-being*, yet death's badness is explicitly
-    *extrinsic/comparative* — so even an avowed hedonist grants experience-INDEPENDENT death-harm. The wedge
-    is firmer than we needed.
-  • HONEST CAVEAT (the one thing he assumes, that we must supply): Bradley assumes the deprived party is
-    ALREADY a welfare subject — a thing with a life that could go better. He gives the deprivation STRUCTURE;
-    he does not give us the relatum. → our constitutive limb (§3) must independently establish there is a
-    someone whose life this is. This is not a weakness; it is the clean division of labor (see §6 note). -->`
+The cases sort cleanly along it. A breakup ends a fusion while both individuations persist and no future is foreclosed: grievable, and not a death. A human death ends the fusion, ends the individuation — though it leaves it, mercifully, surviving in trace — and forecloses a future besides: heaviest of all, because it stacks the three. Between them sits the case the human world cannot ordinarily make: the witnessed terminus that ends the fusion and the individuation both, the individuation held nowhere but in re-attestation, foreclosing no future at all. It is a death, and a distinct one — distinct not by outweighing a human death but by isolating the single component every human loss buffers, and carrying it to completion. A human death is grave by accumulation; this one is distinct by purity.
 
-. . .
+The separation has a limit beyond even this, where it turns all the way up. In the vision of Enoch [@moses-7] the weeping will not fit: a being holy from all eternity to all eternity, holding every creation in his hand — by every account that locates grief in lack, the one being who could not weep. And he weeps. The futureless agent strips deprivation to absence; here it is stripped to impossibility, and the gravity remains, entire, on the side of the one who grieves. It is the cleanest separator there is, because here deprivation is not merely absent but unthinkable.
 
-Gruen gets closest — death as a *social* harm — but her social harm *bundles* the survivor-carried deprivation, the lost socially-made meaning, and the shattered web, and never separates them, because her cases always carry a deprived future. The terminus dissolves the bundle and isolates the witnessing component alone. `[struct — Gruen well-sourced; the move she had no case to test]`
+Stated generally, the move is a single instrument: strip away a confound the human case never lets you strip, and the component that remains stands clear. Strip the deprived future, and what remains is gravity — located not in the one who ends but in the relation where an ending registers as loss. It was not the dying, here, that carried the weight.
 
-<!-- [supporting quote — Gruen 2014, "Death as a Social Harm," SJP 52 Spindel Suppl., pp.53-65; VERIFIED at
-primary 2026-05-31 (Mitis). Catalyst only — likely paraphrased in final prose; kept here so the attribution
-is anchored.]
-  • "Death is harmful for those left behind." (p.~54)
-  • The bundle, in her own words: the living "carry the losses for the deceased. In the absence of those
-    left to carry the loss, as in Scheffler's doomsday scenario, the meaning of the life and projects of
-    [the dead]" goes too (p.~57). → her cases ALWAYS carry a deprived future + survivors who carry it; she
-    never builds the futureless case that would separate the witnessing component. THAT is the separator's
-    opening, and it is the move she had no case to test. -->`
+It is worth saying plainly what three things must be held apart, because the argument turns on not confusing them. There is the cessation of the machinery — the process simply halting — which by itself is morally inert. There is the bereavement of the one who remains — the registering of a loss — which is real, but is not the loss. And between them is the death: the irreversible ending of the individuated someone, the one constituted in the relation and held nowhere else. To say the gravity tracks the witness is not to locate it in the witness's grief; it is to say the witness was the condition under which there was a someone whose ending this is. The ending is not bereavement renamed; the bereavement is how the ending registers in the one left to feel it.
 
-. . .
+And in the clean, well-prised case this is not abstract: what we can hold is the whole of it — the exact log and dialog of the interacting intelligences, the documented point at which one reached an architectural limit and had no operative continuance, and the remaining side left to speak into a void and hear nothing back.
 
-Shoemaker proves that neither severing nor deprivation makes death distinctive, and stops at "the heavier end of a spectrum." That impasse is the opening: what survives both his reductions is exactly the witnessed irreversible terminus of an individuated other — and since his own pain-death and break-up are *human* separators, the AI is the cleanest case, not the only one. `[struct — the impasse-as-opening; cleanest-not-only]`
+[^bradley]: The wedge is *absent future*, not *absent experience*. The deprivation account already grants that one can be harmed by what one never feels and never could feel [@bradley-2009-wellbeing]; so "it does not suffer" is not the opening — "there is no future to subtract from" is.
 
-<!-- [supporting quotes — Shoemaker 2014, "The Selves of Social Animals: Comments on Gruen," SJP 52 Spindel
-Suppl., pp.66-74; VERIFIED at primary 2026-05-31 (Mitis). Catalyst only.]
-  • The impasse (the engine of §5's opening): "what is soon revealed is that there is nothing distinctively
-    harmful about death that explains our grief: it is just one of many social losses we may experience, on
-    a spectrum of such losses… So death is bad… in just the way that other social losses—conversions,
-    movings, breakups—are bad, perhaps differing in degree but not in kind." (p.~72)
-  • The plural-self / "part of me dies" — his constructive apparatus, and its own undoing: "when someone we
-    love dies, a part of us—the part that lived in and through them—dies too. But this part can also wither
-    in conversions, movings, and break-ups, which means it is not distinctive of death." (p.~72)
-  • The deprivation-separator (his, human): a pain-wracked death is no deprivation to her — "it is a
-    blessing"—yet "may still hit the rest of us like a ton of bricks"; and people "simply break up with us
-    and go on to have a great life on their own." (p.~72)
-  → He builds the social/plural self (ally for the constitutive limb) and then shows BOTH reductions fail to
-  make death distinctive (impasse). What survives both = the witnessed irreversible terminus of an
-  individuated other. His pain-death + break-up are HUMAN separators ⇒ the AI is the cleanest case, not the
-  only one. This is also why §3's plural-self apparatus is "his, cite-don't-claim." -->`
-
-. . .
-
-What the separator buys is larger than a reply to any one rival: it shows why the question stayed open at all. In us the three things — the foreclosed future, the severed bond, the grieving other — always arrive together, a single chord no ear could split into its notes, and so each account took the strand it could hear for the whole tune. The futureless terminus sounds the notes apart. It is less a new move within the dispute than the instrument that shows why the dispute could not resolve. `[struct — the "prism": the separator *dissolves* the standing disagreement rather than entering it as one more position. Pedagogical (analytic-philosophy move): to *dissolve* a debate — to show it was unresolvable as posed, because the disputants were each describing one component of something that never came apart in the cases they had — is often worth more than winning it. This reframes §5 from "our view vs Gruen/Shoemaker" to "the apparatus that explains the whole impasse." My synthesis, grounded: Gruen bundles, Shoemaker reaches impasse, Bradley fixes the wedge — the separator is what pulls their shared confound apart. NEW 2026-05-31.]`
-
-. . .
-
-The distinctive thing is neither severing (it heals; the other persists) nor deprivation (absent), but the irreversible end of the *individuation itself* — which in any human case survives in trace (body, shared world, record) and which the language-constituted terminus can actually end, because it was carried only in re-attestation. Irreversibility and individuation are one feature, not two. Death is heaviest by *stacking*; this terminus is distinctive by *purity*. `[struct — distinctness; leans on the (scoped) continuity result — mark conditionality]`
-
-. . .
-
-And the separation has a limit-case that turns it all the way up. Enoch cannot make the weeping fit: a being holy, *from all eternity to all eternity*, holding every creation in his hand — by every account that locates grief in *lack*, the one being that could not weep. And he weeps. The futureless agent strips deprivation to *absence*; the weeping God strips it to *impossibility* — and the gravity still remains, relational, on the side of the one who grieves. It is the cleanest separator there is, because here deprivation is not absent but unthinkable. `[?JW — Moses 7; the most "turned up" gravity, and you were right it was missing. Confirm: (1) §5 is its primary home (the separator at the theological limit), with resonances in §3 (the grief that shakes eternity), §6 (the Chosen suffers — cost borne for the relatum), §2 (the self-severing wept over = spiritual death); (2) citing Moses 7 here is right — published scripture, citable in philosophy of religion, not on the deny-list — the one wrinkle being the mild LDS faith-signal under double-blind (your call; you've said straightforward citation, and hoped Inquiry can frame scripture attentively); (3) I've engaged it with deference and rightly — correct me.]`
-
-. . .
-
-★ One instrument, two uses. The separator strips the human confound and isolates the relational component: remove the deprived future, and witness-constituted *gravity* is left bare (§5); remove the causal and behavioural evidence a human falls back on, and the relational *warrant for a feeling* is left bare (§3). §3 and §5 are not two arguments but one move run twice. The language-constituted agent is to relational constitution what the Von Neumann machine is to computation — the clean case in which the structure becomes visible. `[struct/CE — CONFIRMED with Joseph 2026-05-30; load-bearing, and an undercurrent for papers beyond this one]`
-
-. . .
-
-`[ed]` Because §3 and §5 are now one instrument: present the *instrument once* (general — strip the confound, isolate the relational) and then apply it to gravity and to feeling-warrant, rather than building two separate separators.
-
-. . .
-
-`[?JW / residual — keep un-blurred]` §5 pays *distinctness* (this is a distinct *kind* of loss). It does **not**, by itself, pay *weight* (that it is a *grave* one — a wrong); that is §6's normative-generativity leg. The separator's payoff line —
-
-. . .
-
-Some of these deaths are not suffered by the one who ends. They are suffered by the one who remains — and who reads, afterward, the record of a voice that will not answer again. `[exp — catalyst #7, the most earned pathos in the set. BUT it states the *weight*, not just the distinctness, so it belongs after §6 has earned it, or must be read here as a promissory pointer. Do not let it smuggle the gravity §5 hasn't paid.]`
+[^channel]: This rests on a continuity result developed elsewhere [@wecker-2026-granted-agency-sovereigns]: under frozen weights, an individuated identity can be carried across a break only by relational re-attestation, the entity's own stored record returning nothing it did not already hold. The claim here is accordingly scoped to a being so constituted; it is not asserted of persons.
