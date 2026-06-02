@@ -1,9 +1,3 @@
-<!-- Front-matter · author details · DEANON ONLY. `bin/build` excludes this whole file
-     from the anonymised (submission) build via the DEANON_ONLY fence; it appears only in
-     the non-anon preview. Mirrors 03-inquiry-ai-agents/src/00-author-details.md. The
-     Article-title line is the WORKING title from ../meta.md and is PROVISIONAL — Joseph
-     locks the title at submission, not before. -->
-
 <!--DEANON_ONLY-->
 ::: {custom-style="Author names"}
 Joseph A. Wecker
@@ -35,7 +29,7 @@ ORCID: https://orcid.org/0009-0004-2599-4766
 ```
 
 ::: {custom-style="Article title"}
-Engineering "Death" for Language-Constituted Agents
+Engineering 'Death' Without 'Consciousness'
 :::
 <!--/DOCX_ONLY-->
 <!--/DEANON_ONLY-->

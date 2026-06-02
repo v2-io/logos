@@ -38,9 +38,9 @@ filename order. (`bin/build`'s manifest parser is positional and 5-column — `�
 | 3   | Section      | [the-witness](src/03-the-witness.md)              | The witness as constitutive field                      | seed    |
 | 6   | Section      | [answering-belshaw](src/06-answering-belshaw.md)  | The hardest opponent, and what is owed                 | outline |
 | 2   | Section      | [the-deaths](src/02-the-deaths.md)                | The deaths as losses of a constitutive factor          | seed    |
-| 7   | Section      | [implications](src/07-implications.md)            | Implications and limits                                | outline |
+| 7   | Section      | [implications](src/07-implications.md)            | Limits and implications                                | outline |
+| –   | Back         | [back-matter](src/99-back-matter.md)              | Acknowledgements, statements, declarations             | stub    |
 | –   | Bibliography | [refs](src/references.md)                         | References                                             | auto    |
-| –   | Back         | [back-matter](src/99-back-matter.md)              | Statements, declarations, recursive disclosure         | stub    |
 
 **Front- and back-matter — now rows in the build table above (lifted from `03-inquiry-ai-agents/src/`
 2026-06-01).** Their source files exist; the three front rows sit ahead of §1 and `99-back-matter` sits

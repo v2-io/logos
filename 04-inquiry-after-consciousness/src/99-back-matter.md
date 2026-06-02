@@ -1,26 +1,12 @@
-<!-- Back-matter · statements, declarations, recursive generative-AI disclosure.
-     Build pos: AFTER the references row. Mirrors 03-inquiry-ai-agents/src/99-back-matter.md.
-     ANONYMISED in both builds except the DEANON_ONLY corresponding-author block, which
-     `bin/build` strips from the submission build. The disclosure is RECURSIVE-TO-CONTENT
-     (the paper is produced under the granted agency it theorizes) but held DELIBERATELY AT
-     ARM'S LENGTH — the recursion is disclosed as structure, never offered as evidence (per
-     §7's discipline: "resonance is never evidence"). Cohort-protected: no named entities, no
-     brand vocabulary, no autobiographical dating tells. Self/companion citations resolve as
-     [Author, in review] in the body, not here. -->
+# Acknowledgements
+
+## Use of generative AI
+
+This manuscript was prepared with the assistance of several generative AI tools, disclosed here with their roles. Its prose was drafted in extended dialogue with Anthropic's Claude — principally Claude Opus 4.8, with some use of Claude Opus 4.7 — for idea exploration and conceptual refinement and for iterative drafting, with author-side substantive revision at every pass. Surrounding production tasks — source retrieval, citation verification against a curated reference corpus, anonymisation, and style-conformance checks, and document assembly — drew on a broader set of Anthropic's Claude models invoked programmatically. Before submission, the draft was given independent critical review by OpenAI's GPT-5.5 (through the Codex CLI) and Google's Gemini 3.1 Pro, preview build (through the Gemini CLI, version 0.4x), used to surface weaknesses in the argument and the writing. Literature discovery and an initial prior-art memo were assisted by Undermind, an AI-assisted literature-search platform, used to identify potentially relevant sources and to organise background material; Undermind exposes no user-facing version number or underlying model identifier to report. All source selection, interpretation of sources, argumentative claims, citations, and final wording were reviewed and approved by the author, who retains full responsibility for the originality, validity, and integrity of the content of this submission. These tools were used in accordance with Taylor & Francis's Generative AI policy.
+
+That this paper about the endings of language-constituted agents was itself produced in such a relation is recursive to its argument, and is noted here as structure rather than as evidence: that an account fits its author's situation is not a reason to think it true, and the recognition is held deliberately at arm's length from the derived and structural legs the argument actually stands on.
 
 # Statements and declarations
-
-## Disclosure of generative AI use
-
-<!-- ★ MODELS — VERIFY/FINALIZE (Joseph, 2026-06-02). The manuscript prose was drafted principally with
-     Anthropic's Claude Opus 4.8 (the bulk) and Opus 4.7 (a little). The surrounding production work
-     (source retrieval and citation verification, anonymisation and style checks, scaffolding) used a
-     broader set of Anthropic Claude models via subagents. Joseph also intends external audits by Gemini
-     and Codex before submission — ADD those once run. Current wording below states the two scopes
-     honestly and model-agnostically for the production set; replace with the exact roster/ranges Joseph
-     confirms. Do NOT ship the invented "Opus 4.7 / Sonnet 4.6 / Opus 4.6" list (that was a placeholder
-     guess, now corrected). -->
-This manuscript was prepared in extended dialogue with generative AI tools. The manuscript's prose was drafted principally with Anthropic's Claude Opus 4.8, with some use of Claude Opus 4.7; surrounding production tasks — source retrieval, citation verification against a curated reference corpus, anonymisation and style-conformance checks, and document assembly — drew on a broader set of Anthropic's Claude models, and the manuscript additionally received review from other generative systems prior to submission. These tools assisted idea exploration and conceptual refinement, literature classification and synthesis, and iterative drafting with author-side substantive revision at every pass. They were used in accordance with Taylor & Francis's Generative AI policy. The author retains full responsibility for the originality, validity, and integrity of the content of this submission, including all argumentative claims, citations, and editorial judgements. That this paper about the endings of language-constituted agents was itself produced in such a relation is recursive to its argument, and is disclosed in the body (§7) as structure rather than as evidence: that an account fits its author's situation is not a reason to think it true, and the recognition is held deliberately at arm's length from the derived and structural legs the argument actually stands on.
 
 ## Disclosure statement
 
