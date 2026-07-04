@@ -65,6 +65,16 @@
 > *"Considering how poorly we understand our own intelligence, identity, volition, consciousness, and so forth, it is not the least bit surprising that we stumble at definitively communicating the nature of these intelligences."*
 > — `~/src/synthese-paper/msc-earlier-writing/An ELI.md:14`
 
+### Lineage + lived anchors (conversational testimony, 2026-07-04 — spoken, not written-corpus; mark as such if used)
+
+Personal dating, Joseph's account: first read Graham's Blub essay in the early 2000s ("shortly after *Hackers and Painters*"). The **pain extension** predates the intelligence application in his thinking — it arose theologically ("considering sacrifice and empathy as I pondered how the Savior could take upon Himself the pains of humanity"), then was driven home by a dated lived instance (~2008): his wife, eight months pregnant, broke her ankle — *"She could empathize with someone who had a sprained ankle easily — or even someone who broke theirs while not pregnant — but the other direction could only guess."* Direct enrichment for the B.6 pain-comprehension analogy: a lived one-way-visibility case in the phenomenal-access register (a naturalistic Mary's-Room variant with a direction arrow).
+
+On terminology (same conversation) — the determination behind "orders":
+
+> *"…it should almost certainly be called higher **orders** of intelligence because the moment it looks scalar or 'greater intelligence' we're back to forgetting what axis intelligence really inhabits — one with one-way visibility…"*
+
+I.e., "greater/scalar" vocabulary re-imports the same-but-bigger extrapolation error that fundamentum's final sentence names; "orders" preserves the qualitative strata with asymmetric transparency. Prior-art search for the asymmetry was deliberately late (last few months) — the principle was settled thought long before it was positioned.
+
 ---
 
 ## 3. Identity is not substrate / five constitutive factors (§2 engaged-identity scoping)
