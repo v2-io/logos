@@ -14,6 +14,13 @@ submission; these are revision-window items, should the paper be accepted.*
   death* becomes canonical (plainer, self-explanatory; departs from the cognitive/relational/truth
   lineage) or the abstract reverts to *cognitive*. This is the durable mental model future work hangs
   off, so it is an author call, not a mechanical fix.
+  - **Author call made 2026-06-10 (canon side):** *continuity death* is canonical. Joseph: *"I don't
+    think we've defined 'cognitive' at all at this point in the theory, so continuity is likely upstream
+    from cognition (and consciousness)."* The ASF canon taxonomy is being restructured under that name
+    (see `~/src/agentic-systems/msc/deaths-grounding-plan-2026-06-10.md`); at revision, rename §2's
+    *cognitive death* → *continuity death* to match the abstract, and adjust §2's gloss ("the severing
+    of cognition from its own continuation") accordingly — continuity is the factor; cognition is
+    downstream vocabulary the theory has not defined.
 
 ## Citation verification — state and remaining debt
 
