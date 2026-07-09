@@ -1,6 +1,6 @@
 # Continuity and constitutive choice (reflection #14)
 
-> **Source:** `~/src/agentic-systems/msc/reflections/14-continuity-and-constitutive-choice.md`
+> **Source:** `~/src/archema-io/asf/msc/reflections/14-continuity-and-constitutive-choice.md`
 > **Author:** Agent reflection (Opus instance, name unknown — likely an earlier instance contributing to the msc/reflections/ corpus before reflection #26's Tessera). Substance tracks Joseph's framing closely and quotes him directly at the top.
 > **Date:** undated; falls in the reflection sequence between #13 and #15
 >

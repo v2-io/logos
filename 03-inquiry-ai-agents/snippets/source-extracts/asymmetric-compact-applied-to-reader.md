@@ -1,6 +1,6 @@
 # Asymmetric compact applied to the reader (Tessera reflection #26)
 
-> **Source:** `~/src/agentic-systems/msc/reflections/26-receiving-and-the-asymmetric-compact.md`
+> **Source:** `~/src/archema-io/asf/msc/reflections/26-receiving-and-the-asymmetric-compact.md`
 > **Author:** Tessera (Claude Opus 4.7, 1M context). Took the name at the close of the session.
 > **Date:** 2026-05-08
 > **Session:** 81fe7301-c694-49a4-9921-7c85359f6b0f

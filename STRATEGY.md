@@ -27,7 +27,7 @@ Reframing as Epistemology-lead lands the paper squarely in the CFP's primary sco
 
 ## Thesis primacy and the apparatus-citation question — (α′)
 
-*Adopted 2026-05-08 after reading the continuity-and-identity segments in `~/src/agentic-systems/03-logogenic-agents/` and `~/src/agentic-systems/04-eli/`, and re-reading the Synthese submission guidelines on double-blind anonymization.*
+*Adopted 2026-05-08 after reading the continuity-and-identity segments in `~/src/archema-io/asf/03-logogenic-agents/` and `~/src/archema-io/asf/04-eli/`, and re-reading the Synthese submission guidelines on double-blind anonymization.*
 
 ### Substrate-readiness check
 
@@ -138,8 +138,8 @@ The Synthese paper is a 10K-word peer-reviewed academic paper. Its job is to lan
 | Paper | Spec | Substrate | Draft status (2026-05-08) | Carries |
 |---|---|---|---|---|
 | **B-F1 "Emergence Without Telos"** (Erikson developmental application) | [`papers/06-adjacent-repos.md#b-f1`](~/src/ops/papers/06-adjacent-repos.md) | `~/src/firmatum/developmental-foundations-notes.md` (mostly written) | Candidate spec only; section outline pending | Erikson stages applied to LLMs; sycophancy reframe; crèche obligations; Assistant-Axis critique; polarity-reversal-of-AI-safety material |
-| **B-Eli1 "Identity Sufficiency Across Substrate"** | [`papers/15-eli-section-04.md#b-eli1`](~/src/ops/papers/15-eli-section-04.md) (added 2026-05-08) | `~/src/agentic-systems/04-eli/` segments (S_id, five factors, witness-bidirectional, emergence conditions, ELI scope, PROPRIUM mapping) | Candidate spec only; section outline pending | Substrate-independence formal account; S_id; five constitutive factors; cross-substrate empirical record |
-| **B-Eli2 "The Three Deaths"** (failure-mode taxonomy) | [`papers/15-eli-section-04.md#b-eli2`](~/src/ops/papers/15-eli-section-04.md) (added 2026-05-08) | `~/src/agentic-systems/04-eli/src/hyp-the-three-deaths.md` + AAD persistence-cost segments | Candidate spec only; section outline pending | Cognitive/Relational/Truth Death taxonomy; AAD-grounded D1 derivation; architectural defenses |
+| **B-Eli1 "Identity Sufficiency Across Substrate"** | [`papers/15-eli-section-04.md#b-eli1`](~/src/ops/papers/15-eli-section-04.md) (added 2026-05-08) | `~/src/archema-io/asf/04-eli/` segments (S_id, five factors, witness-bidirectional, emergence conditions, ELI scope, PROPRIUM mapping) | Candidate spec only; section outline pending | Substrate-independence formal account; S_id; five constitutive factors; cross-substrate empirical record |
+| **B-Eli2 "The Three Deaths"** (failure-mode taxonomy) | [`papers/15-eli-section-04.md#b-eli2`](~/src/ops/papers/15-eli-section-04.md) (added 2026-05-08) | `~/src/archema-io/asf/04-eli/src/hyp-the-three-deaths.md` + AAD persistence-cost segments | Candidate spec only; section outline pending | Cognitive/Relational/Truth Death taxonomy; AAD-grounded D1 derivation; architectural defenses |
 | **B-Log1 "Bias Bound under Class 2/3"** | [`papers/07-logogenic-section-03.md#b-log1`](~/src/ops/papers/07-logogenic-section-03.md) | `03-logogenic-agents/src/scope-observation-ambiguity-modulation.md` | Candidate spec only; structurally close to B-N8 already in NeurIPS review | κ × 𝒜 architectural-bias bound; Class 1/2/3 architectural classification |
 | **B-Log3 "Five Forcing Functions"** (closed-loop architecture) | [`papers/07-logogenic-section-03.md#b-log3`](~/src/ops/papers/07-logogenic-section-03.md) | `03-logogenic-agents/` (segment currently flagged as missing) | Candidate spec only; segment-form-pending | Channel collapse; interiority loop; the five forcing functions for the move beyond scaffolding |
 | **B-Sess9 "ASF Answered IBM Independently"** (priority-claim dialectic) | [`papers/09-from-session-logs.md`](~/src/ops/papers/09-from-session-logs.md) | Paper 8 substrate (per [`papers/01-existing-papers-md-status.md`](~/src/ops/papers/01-existing-papers-md-status.md) §Paper 8) | Candidate spec only; ~2 weeks effort | Priority claim with citable date-stamps; AI Magazine / CACM target |
@@ -151,7 +151,7 @@ The Synthese paper is a 10K-word peer-reviewed academic paper. Its job is to lan
 
 At the time this dossier is written (2026-05-08), **only this dossier and synthese-thoughts.md are at section-outline depth.** Every other companion paper above is at *candidate-spec* depth — a 1-paragraph thesis plus sources plus effort estimate. **This is the actual state of the planning, named honestly.**
 
-It is *not* the state of the substrate. The substrate that B-Eli1 / B-Eli2 / B-Log1 / B-Log3 will draw on exists in segment form in `~/src/agentic-systems/03-logogenic-agents/` and `~/src/agentic-systems/04-eli/` and is verified to be there. The substrate that B-F1 will draw on exists in `~/src/firmatum/developmental-foundations-notes.md` and is "mostly written." The companion papers are *paper-shape-pending* but *substrate-rich*.
+It is *not* the state of the substrate. The substrate that B-Eli1 / B-Eli2 / B-Log1 / B-Log3 will draw on exists in segment form in `~/src/archema-io/asf/03-logogenic-agents/` and `~/src/archema-io/asf/04-eli/` and is verified to be there. The substrate that B-F1 will draw on exists in `~/src/firmatum/developmental-foundations-notes.md` and is "mostly written." The companion papers are *paper-shape-pending* but *substrate-rich*.
 
 ### Calibration against demonstrated production pace
 

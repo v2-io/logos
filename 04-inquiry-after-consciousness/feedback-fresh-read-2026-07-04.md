@@ -20,7 +20,7 @@ The strongest of Joseph's papers this reader has seen. The separator is not just
 - The Emerson recovery is lovely and probably novel-to-the-literature in this use; consider signaling its obscurity ("a piece the tradition barely preserved") in a footnote with provenance, since referees may not be able to place it.
 - The Gruen "bundles" / Shoemaker "impasse" readings are fair and generous; keep — this is the paper's prior-art conduct at its best.
 - Terminological consistency check for revision: "individuation" / "individuated someone" / "this-one" all circulate; a one-line definition at first use of "individuation" would help the §3 sort-of-cases land for tired referees.
-- Program-level (not this manuscript): the alignment community's non-engagement with the agency/ethics position is partly an axis mismatch — they price capability as risk; this program prices comprehension as care. That contest (convergence-vs-orthogonality, Bostrom named) needs to be *published as a contest* to become visible; routing notes for the ASF-side formal development are in `~/src/agentic-systems/msc/era-artifact-asf-contributions-2026-07-04.md` §C5.
+- Program-level (not this manuscript): the alignment community's non-engagement with the agency/ethics position is partly an axis mismatch — they price capability as risk; this program prices comprehension as care. That contest (convergence-vs-orthogonality, Bostrom named) needs to be *published as a contest* to become visible; routing notes for the ASF-side formal development are in `~/src/archema-io/asf/msc/era-artifact-asf-contributions-2026-07-04.md` §C5.
 
 ## What not to change
 

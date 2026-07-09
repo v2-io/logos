@@ -208,7 +208,7 @@ failure-modes**:
 
 That the upper bound is *not* among the testables is itself one of ACA's
 predictions confirmed, not a gap. Home of the empirical apparatus:
-`~/src/agentic-systems/` (AAT). **SUPERSEDED 2026-05-18 (Joseph): the paper
+`~/src/archema-io/asf/` (AAT). **SUPERSEDED 2026-05-18 (Joseph): the paper
 now references AAT fully and carries its math in `Appendix A`** — the fence
 moved, it did not dissolve (the formal *grounding* enters; the
 compact/devotional/network-constitutive material stays out). The division of
@@ -216,7 +216,7 @@ labour is now stated *as the paper's distinctive position*: the formalism is
 concrete ground, the paper is where the math leaves off into normative claims.
 See `ACA-AGENCY-BRIDGE.md` §"FENCE MOVED" for the governing statement.
 
-Honest open: I (this instance) have **not** read `~/src/agentic-systems/`
+Honest open: I (this instance) have **not** read `~/src/archema-io/asf/`
 this session. I can state what shape of test ACA admits; I cannot yet say
 which is concretely runnable against AAT as it stands. A real next step, if
 wanted, is a targeted read of that repo against predictions 1–3 — a

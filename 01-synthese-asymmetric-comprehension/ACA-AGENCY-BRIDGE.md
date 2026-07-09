@@ -130,7 +130,7 @@ arbitrary — and a reason to leave it to Joseph, not to run with it here.
 
 # Cross-substrate confirmation from AAT (2026-05-18) — solidifying, NOT paper content
 
-Joseph sent me to `~/src/agentic-systems/` to see whether the formal core
+Joseph sent me to `~/src/archema-io/asf/` to see whether the formal core
 (AAT) has theorems bearing on this philosophy. First targeted pass; one result
 read in full and **verified by reading the result statement**, not the heading:
 

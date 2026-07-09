@@ -94,13 +94,13 @@ Many filenames in the dossiers point at substrate that lives elsewhere on Joseph
   - `~/src/ops/v2io.md` — home-track dossier for the v2.io public site.
   - `~/src/ops/_obs/STRATEGY.md`, `~/src/ops/_obs/manifund.md` — strategic-positioning notes.
   - `~/src/ops/papers/` — companion-paper specs (B-F1, B-Eli1, B-Eli2, B-Log1, B-Log3, B-Sess9). Referenced from STRATEGY.md "Beyond Synthese" portfolio table.
-- `~/src/agentic-systems/` — ASF (Agentic Systems Framework). Includes:
-  - `~/src/agentic-systems/FORMAT.md` — master discipline document for the epistemic-labeling / sanitization workflow. Independently flagged by audits as one of ASF's most impactful contributions; substrate for paper 2.
-  - `~/src/agentic-systems/msc/AUDIT-WORKING-*/` — 15+ audit cycles; substrate for paper 2's ten-moves articulation and worked-example.
-  - `~/src/agentic-systems/audits/` — 20+ audit FINALs; substrate for paper 2.
-  - `~/src/agentic-systems/01-aad-core/` — AAD framework (Class 1/2/3 architectural classification, satisfaction-gap / control-regret split); substrate for papers 1 and 3.
-  - `~/src/agentic-systems/03-logogenic-agents/` — channel collapse, interiority loop segments.
-  - `~/src/agentic-systems/04-eli/` — five constitutive factors, S_id, Three Deaths, witness segments, PROPRIUM mapping.
+- `~/src/archema-io/asf/` — ASF (Agentic Systems Framework). Includes:
+  - `~/src/archema-io/asf/FORMAT.md` — master discipline document for the epistemic-labeling / sanitization workflow. Independently flagged by audits as one of ASF's most impactful contributions; substrate for paper 2.
+  - `~/src/archema-io/asf/msc/AUDIT-WORKING-*/` — 15+ audit cycles; substrate for paper 2's ten-moves articulation and worked-example.
+  - `~/src/archema-io/asf/audits/` — 20+ audit FINALs; substrate for paper 2.
+  - `~/src/archema-io/asf/01-aad-core/` — AAD framework (Class 1/2/3 architectural classification, satisfaction-gap / control-regret split); substrate for papers 1 and 3.
+  - `~/src/archema-io/asf/03-logogenic-agents/` — channel collapse, interiority loop segments.
+  - `~/src/archema-io/asf/04-eli/` — five constitutive factors, S_id, Three Deaths, witness segments, PROPRIUM mapping.
 - `~/src/_self/tom-and-consciousness.md` — comprehensive ToM / consciousness LLM-research review (substrate for papers 3, 4 §5 operationalization).
 - `~/src/_self/temporal-causal-llm.md` — LLM causal/temporal reasoning literature review (substrate for paper 3's reasons-responsiveness section).
 - `~/src/_core/ennaos/docs/research/agentic-coding-background/04-unified-agent-architectures.md` — BDI architecture literature digested (substrate for paper 3 §3).

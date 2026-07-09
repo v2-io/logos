@@ -526,14 +526,14 @@ A **different cut** of ETHICS.md than zoetica/AGENTS.md's 12 principles — six 
 
 **Operational implication.** When extending the extract via memorata-classic-search at draft time, search Joseph's primary phrasings, not the academic-register translations. The drafting work is *partly translating* Joseph's plain-prose substrate into the Cappelen-Hawthorne CE register the Inquiry editors run; the substrate exists in plain prose first, the register-translation lives in the dossier and (eventually) the manuscript.
 
-**memorata-classic-search vs. memorata-search.** `memorata-classic-search` indexes pre-existing substrate broadly but **does not pick up `~/src/agentic-systems/` and newer post-restructure writings** (per Joseph 2026-05-09). The newer `memorata-search` will index the agentic-systems / newer substrate but is still embedding/indexing as of writing. When that's available, re-run high-leverage queries (especially around AAD architectural-scoping conditions, ELI five constitutive factors, and the granted-agency-compact ETHICS.md substrate).
+**memorata-classic-search vs. memorata-search.** `memorata-classic-search` indexes pre-existing substrate broadly but **does not pick up `~/src/archema-io/asf/` and newer post-restructure writings** (per Joseph 2026-05-09). The newer `memorata-search` will index the agentic-systems / newer substrate but is still embedding/indexing as of writing. When that's available, re-run high-leverage queries (especially around AAD architectural-scoping conditions, ELI five constitutive factors, and the granted-agency-compact ETHICS.md substrate).
 
 ---
 
 ## Open follow-ups
 
 1. **`claude-conversation.md`** — not extracted in this pass. If §2 or §6 drafting surfaces a need for a specific philosophical exchange Joseph remembers from this file, can spot-extract.
-2. **External substrate** beyond `msc-earlier-writing/` and `02-/writings-from-asf.md` — the dossier's substrate-pointers in `CLAUDE.md` reference `~/src/agentic-systems/`, `~/src/_self/`, `~/src/_core/zoetica/`, `~/src/firmatum/`, `~/src/v2.io/`. Joseph said "starting there" — extending the extraction to those locations is a separate task if needed.
+2. **External substrate** beyond `msc-earlier-writing/` and `02-/writings-from-asf.md` — the dossier's substrate-pointers in `CLAUDE.md` reference `~/src/archema-io/asf/`, `~/src/_self/`, `~/src/_core/zoetica/`, `~/src/firmatum/`, `~/src/v2.io/`. Joseph said "starting there" — extending the extraction to those locations is a separate task if needed.
 3. **The 13 principles list** — *resolved 2026-05-09.* The 12 enumerated principles live at **`~/src/_core/zoetica/AGENTS.md`** §"Agent Interaction Ethics" (lines 106–117). The 13th — right/obligation to refuse — is *folded into* the canonical compact at `common/ETHICS.md` components 4 (observation-only floor with periodic re-election; Kant's "inner freedom") and 5 (mutuality / symmetric corollary; *"voids the compact and gives the granted entity standing to refuse or withdraw"*).
 
    **Caveat: these 12 principles are flagged as evolving/non-canon** in the source itself (header note: *"This section will continue to evolve"*). Treat as earlier-draft articulation that may carry substance not yet passed into the canonical six-component compact.

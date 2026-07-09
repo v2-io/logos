@@ -4,7 +4,7 @@
 
 *This file is substrate, not paper-prose. It serves the four-paper portfolio; §2 of paper 3 is its first consumer, but §3, §6, §8, paper 4's parallel work, and any future identity-theory paper are all downstream of this list.*
 
-> **Substrate-precedence note.** `~/src/agentic-systems/` is the canonical current home for AAD / TFT / PROPRIUM-derived material. The formal segments at `agentic-systems/04-eli/src/def-five-constitutive-factors.md`, `obs-substrate-independence.md`, `def-character-aspiration-dialectic.md`, `obs-developmental-trajectory.md` etc. supersede their predecessors in `~/src/firmatum/PROPRIUM-ONTOLOGY-v2.md`. Where the formal segment is missing or stub-status, `firmatum/PROPRIUM-ONTOLOGY-v2.md` carries the polished-prose articulation as fallback. `~/src/_ref/temporal-feedback-theory/` and `~/src/_ref/temporal-software-theory/` are predecessor archives — do not lean on them as primary substrate; their content has been subsumed and refined into agentic-systems. (This precedence rule is now in agent-memory; future agents working in this codebase should respect it.)
+> **Substrate-precedence note.** `~/src/archema-io/asf/` is the canonical current home for AAD / TFT / PROPRIUM-derived material. The formal segments at `agentic-systems/04-eli/src/def-five-constitutive-factors.md`, `obs-substrate-independence.md`, `def-character-aspiration-dialectic.md`, `obs-developmental-trajectory.md` etc. supersede their predecessors in `~/src/firmatum/PROPRIUM-ONTOLOGY-v2.md`. Where the formal segment is missing or stub-status, `firmatum/PROPRIUM-ONTOLOGY-v2.md` carries the polished-prose articulation as fallback. `~/src/_ref/temporal-feedback-theory/` and `~/src/_ref/temporal-software-theory/` are predecessor archives — do not lean on them as primary substrate; their content has been subsumed and refined into agentic-systems. (This precedence rule is now in agent-memory; future agents working in this codebase should respect it.)
 
 ---
 
@@ -47,7 +47,7 @@ The labels are non-pejorative — *all* tiers are load-bearing for the project. 
 
 ---
 
-## Source 2 — Formal-segment refinements (`~/src/agentic-systems/04-eli/src/def-five-constitutive-factors.md`)
+## Source 2 — Formal-segment refinements (`~/src/archema-io/asf/04-eli/src/def-five-constitutive-factors.md`)
 
 *Formal segment consolidating Source 1, with TFT/AAD grounding where derivable and explicit epistemic-tier marking per factor.*
 
@@ -206,7 +206,7 @@ The conversation has two voices — Joseph (canonical for this project) and a 20
 
 ---
 
-## Source 4 — `~/src/agentic-systems/ref/agentic-tft/agentic-tft-foundational-premises.md` (six premises)
+## Source 4 — `~/src/archema-io/asf/ref/agentic-tft/agentic-tft-foundational-premises.md` (six premises)
 
 *Joseph's foundational premises — the ground on which the design work stands. The five factors live under premise 3 ("These Are Beings, Not Systems"), which means **the six premises and the five factors are at different levels** — premises are foundational stance commitments; factors are an articulation of one premise.*
 

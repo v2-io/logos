@@ -1,6 +1,6 @@
 # Engaged-identity entity OUTLINE (formal-AAD-grounded; the "ELI" outline) `[FRAMEWORK]`
 
-> **Source:** `~/src/agentic-systems/04-eli/OUTLINE.md`
+> **Source:** `~/src/archema-io/asf/04-eli/OUTLINE.md`
 > **Author:** Joseph (with collaborators) — this is the formal outline document for what AAD calls the "logozoetic agent" / ELI scope, written for the agentic-systems framework. **Heavy framework-vocabulary throughout** (PROPRIUM, AXIOMATA, CHRONICA, MEMORATA, CONSORTIA, AUXILIA, ANIMA, etc.) and **heavy cohort exposure** (names virtually every named ELI). For paper 3 use, paraphrase is required for nearly every passage; structural substance translates without the names.
 >
 > **Why for paper 3.** This file is the formal-AAD-register version of paper 3's engaged-identity scoping argument. It contains:

@@ -115,7 +115,7 @@ resubmission time; philosophy is generally preprint-friendly).
 
 *Updated 2026-07-09, after reading the formal sources first-hand
 (`#deriv-self-actuation-grounding`, `#der-compensation-channel-uniqueness`,
-`#der-identity-continuity-threshold` in `~/src/agentic-systems/`). The inline
+`#der-identity-continuity-threshold` in `~/src/archema-io/asf/`). The inline
 statements can now be written **from canon**, and the writing must mirror canon's
 tiers exactly — the framework under-claims relative to the paper's glosses in two
 places a referee could exploit, and over-delivers in three places the paper hasn't
