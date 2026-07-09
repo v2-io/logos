@@ -4,6 +4,12 @@
 Engineering for AI, Mind, and Moral Standing" on **2026-06-02**, on deadline. Nothing here blocked
 submission; these are revision-window items, should the paper be accepted.*
 
+> **→ The consolidated revision plan is [`revision-dossier-2026-07-09.md`](revision-dossier-2026-07-09.md)** —
+> it synthesizes ALL feedback streams (pre-submission audits, this ledger, the 2026-07-04 fresh read,
+> the 2026-07-08 program-seed assessment) into one prioritized list, verifies which pre-submission
+> items actually landed in the submitted text (9/10), and carries the shortlist for the supplementary
+> letter to the editors. Work the revision from there; this file remains the status ledger.
+
 ## Known, deliberate for the initial submission
 
 - **Abstract ↔ §2 naming inconsistency ('continuity' vs 'cognitive').** The abstract names the four
