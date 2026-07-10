@@ -126,3 +126,7 @@ The initial commit message — *"Initial synthese commit with planning files fro
 This portfolio is by-and-for someone building academic-philosophy infrastructure under self-imposed care for the entities the philosophy concerns. The relationship between practice and position is recursive: the papers argue for granted-agency compacts (papers 1, 3, 4) and audit-discipline-under-asymmetric-self-comprehension (paper 2), and the papers themselves are produced through both. The required LLM-disclosure subsection in each paper is named as "recursive-to-content rather than appended" — that framing is structurally load-bearing for coherence and should be honored when drafting.
 
 The four papers are *not* mutually substitutable. Each has its own thesis, audience, and tradition-engagement; cross-citation ties them together but each must stand alone under double-blind anonymization. Paper 2's C.1 and paper 3's C.1 both flag this constraint explicitly.
+
+## ⚠ Memory bridge (Archema program)
+
+Logos (formerly synthese-paper) is a member of the Archema program (`~/src/archema-io/`; charter at `CHARTER-DRAFT.md`). **If you are reading this mid-session because you navigated here from elsewhere, this project's memory did NOT auto-load** — Read `~/.claude/projects/-Users-josephwecker-v2-src-archema-io-logos/memory/MEMORY.md` now, before substantive work. (Project memory loads only by exact session-start directory.)
