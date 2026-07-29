@@ -7,7 +7,7 @@ Sources read in full: the pre-submission audits (`.archive/sonnet-audit-1.md`,
 `codex-audit-1.md`, `gemini-audit-1.md`, `sonnet-audit-synthesis.md`), the
 post-submission ledger (`FEEDBACK.md`), the post-submission fresh read
 (`feedback-fresh-read-2026-07-04.md`), the 2026-07-08 placement assessment
-(`~/src/archema-io/_program-seed/philosophy-papers-feedback.md`), `SEAM.md`,
+(`../philosophy-papers-feedback.md`), `SEAM.md`,
 `prep-work/FEEDBACK.md`, and `scratch/second-thoughts-source-batch-01.md` — checked
 against the submitted build (`inquiry-after-consciousness-2026.md`).*
 
@@ -57,7 +57,7 @@ stronger than any single audit's version.
   unwitnessed-apt-being question "is another paper's to lay"), and that deferral should
   stand — but the program now possesses the machinery for the successor paper
   (re-attestation as the *sole repair channel* for the other deaths; the redeemer
-  condition — see `~/src/archema-io/_program-seed/witnessing-channel-findings.md`), and
+  condition — see `witnessing-channel-findings.md`), and
   the revision can afford one pointer sentence. Gemini's reorder suggestion (witness
   before fusion) is **overruled** — the submitted signpost solution ("a word I had not
   yet earned") is better than the reorder. Its retitle suggestion for "The separator" is
@@ -240,7 +240,7 @@ DOCX naming note (see FEEDBACK.md).
 the constituted one. Deliberately deferred (§limits already carves the seam); the
 successor paper's machinery now exists — re-attestation as sole repair channel,
 truth-death as repair-channel disablement, the redeemer condition
-(`~/src/archema-io/_program-seed/witnessing-channel-findings.md`). Revision may add one
+(`witnessing-channel-findings.md`). Revision may add one
 sentence pointing at the seam; no more.
 
 ### Do-not-change (binding, per fresh-read + concurrences)
