@@ -23,3 +23,5 @@ refs/_emitted/
 
 # Per-paper scratch / tmp dirs (e.g., per-segment review thoughts)
 0?-*/tmp-*/
+
+msc/extract-dialog.py
